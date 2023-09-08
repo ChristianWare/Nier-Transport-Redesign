@@ -7,7 +7,7 @@ const ServicesSection = () => {
       <section className={styles.container}>
         <h2 className={styles.heading}>Our Services</h2>
         <div className={styles.strong}>
-          We Are Specialist In Following Services:
+          Elevate Every Trip with Nier Transportation
         </div>
       </section>
     </LayoutWrapper>
