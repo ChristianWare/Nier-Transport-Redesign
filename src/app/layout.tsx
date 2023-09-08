@@ -2,9 +2,21 @@ import Nav from "./components/Nav/Nav";
 import "./globals.css";
 import styles from "./layout.module.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto, Roboto_Serif } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["900", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--roboto",
+});
+
+const robotoSerif = Roboto_Serif({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--robotoSerif",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} ${styles.layout}`}>
+      <body
+        className={`${roboto.variable} ${robotoSerif.variable} ${styles.layout}`}
+      >
         <Nav />
         {children}
       </body>
