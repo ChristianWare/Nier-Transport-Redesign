@@ -1,8 +1,8 @@
 :root {
-  --darkBlue: #2B3467;
-  --lightBlue: #BAD7E9;
+  --darkBlue: #2b3467;
+  --lightBlue: #bad7e9;
   --cream: #fefffa;
-  --red: #EB455F;
+  --red: #eb455f;
 }
 
 * {
@@ -30,14 +30,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 7rem;
-  line-height: 120%;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px
-}
-
 h1,
 h2,
 h3,
@@ -49,26 +41,32 @@ strong {
   color: var(--darkBlue);
 }
 
+h1 {
+  font-size: 7rem;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 h2 {
-  font-size: 3.6rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 3rem;
-  color: var(--text);
-  text-decoration: underline;
-}
-
-h4 {
   font-size: 3.5rem;
 }
 
+h4 {
+  font-size: 3rem;
+}
+
 h5 {
-  font-size: 3.1rem;
+  font-size: 2.8rem;
 }
 
 h6 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 strong {
@@ -85,7 +83,7 @@ p,
 input,
 textarea {
   font-weight: 400;
-  font-family: var(--robotoSerif);
+  font-family: var(--roboto);
   hyphens: auto;
   font-size: 1.6rem;
   color: var(--text);

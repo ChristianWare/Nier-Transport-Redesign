@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Roboto, Roboto_Serif, Anton } from "next/font/google";
 
 const roboto = Roboto({
-  weight: ["900", "700"],
+  weight: ["900", "700", "500", "400"],
   style: ["normal"],
   subsets: ["latin"],
   variable: "--roboto",

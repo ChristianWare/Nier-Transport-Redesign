@@ -46,6 +46,9 @@
 .copy {
   color: var(--cream);
   width: 80%;
+  font-family: var(--roboto);
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .btnContainer {
@@ -75,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
   .content {
     padding: 1rem;
     padding-top: 3rem;
