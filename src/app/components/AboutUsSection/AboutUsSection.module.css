@@ -1,11 +1,13 @@
 .container {
-  margin-bottom: 15rem;
+  padding-bottom: 15rem;
 }
 
 .content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 3rem;
+  padding: 5rem;
 }
 
 .left,
@@ -16,9 +18,8 @@
 
 .imgContainer {
   position: relative;
-  height: 600px;
+  height: 700px;
   width: 100%;
-  border: 1px solid var(--primary);
   border-radius: 10px;
 }
 
@@ -26,5 +27,89 @@
   object-fit: cover;
   font-size: 0;
   border-radius: 10px;
-  border: 5px solid var(--secondary);
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+.copy {
+  margin-bottom: 3rem;
+  opacity: 0.7;
+}
+
+.iconTextContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.strong {
+  font-family: var(--roboto);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    flex-direction: column;
+    padding: 3rem;
+    padding-top: 5rem;
+  }
+
+  .imgContainer {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .imgContainer {
+    height: 400px;
+  }
+
+  .iconTextContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .heading,
+  .strong {
+    text-align: center;
+    width: 100%;
+  }
+
+  .iconTextContainer {
+    border: 2px solid var(--border);
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+  }
+
+  .itexRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 }
