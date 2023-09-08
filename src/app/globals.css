@@ -31,9 +31,11 @@ a {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 7rem;
   line-height: 120%;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px
 }
 
 h1,
@@ -43,7 +45,7 @@ h4,
 h5,
 h6,
 strong {
-  font-family: var(--roboto);
+  font-family: var(--anton);
   color: var(--darkBlue);
 }
 

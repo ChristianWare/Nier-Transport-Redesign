@@ -22,10 +22,6 @@
   display: none;
 }
 
-.officialLogo {
-  /* margin-top: 1rem; */
-}
-
 .menuItemsGroup,
 .navMenu {
   display: flex;
@@ -97,9 +93,6 @@
 }
 
 @media screen and (max-width: 870px) {
-  .header {
-    /* margin-top: 2rem; */
-  }
 
   .navMenu {
     position: fixed;
@@ -108,7 +101,7 @@
     flex-direction: column;
     gap: 3rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     text-align: left;
@@ -181,12 +174,6 @@
 @media screen and (max-width: 768px) {
   .logo {
     font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .content {
-    animation: fadeIn 1s;
   }
 }
 
