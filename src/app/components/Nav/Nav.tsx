@@ -96,15 +96,7 @@ const Nav = () => {
                   pathname.includes("/pricing") ? styles.activeLink : ""
                 }
               >
-                Pricing
-              </Link>
-            </li>
-            <li className={styles.navItem} onClick={openMenu}>
-              <Link
-                href='/faq'
-                className={pathname.includes("/faq") ? styles.activeLink : ""}
-              >
-                FAQ
+                Fleet
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>

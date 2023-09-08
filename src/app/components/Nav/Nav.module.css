@@ -61,7 +61,7 @@
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
-  background-color: var(--text);
+  background-color: var(--darkBlue);
   transition: all 0.3s ease-in-out;
 }
 
