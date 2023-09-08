@@ -37,6 +37,11 @@
   font-size: 1.8rem;
   position: relative;
   user-select: none;
+  transition: all 0.1s ease-in
+}
+
+.navItem:hover {
+  color: var(--red)
 }
 
 .activeLink {
