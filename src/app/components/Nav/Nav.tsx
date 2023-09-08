@@ -6,6 +6,7 @@ import Link from "next/link";
 import Logo from "../../../../public/icons/nierlogo.png";
 import Image from "next/image";
 import Phone from "../../../../public/icons/phone.svg";
+import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,120 +39,124 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href='/' className={styles.logo}>
-            <Image
-              src={Logo}
-              alt='logo'
-              width={107}
-              height={50}
-              className={styles.officialLogo}
-            />
-          </Link>
-        </div>
-        <ul
-          className={
-            isOpen === false
-              ? styles.navMenu
-              : styles.navMenu + " " + styles.active
-          }
-        >
-          <li onClick={openMenu}>
-            <Image
-              src={Logo}
-              alt='logo'
-              width={107}
-              height={50}
-              className={styles.officialLogoMobile}
-            />
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <Link
-              href='/'
-              className={pathname === "/" ? styles.activeLink : ""}
-            >
-              Home
+    <LayoutWrapper>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <div className={styles.logo}>
+            <Link href='/' className={styles.logo}>
+              <Image
+                src={Logo}
+                alt='logo'
+                width={107}
+                height={50}
+                className={styles.officialLogo}
+              />
             </Link>
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <Link
-              href='/about'
-              className={pathname.includes("/about") ? styles.activeLink : ""}
-            >
-              About
-            </Link>
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <Link
-              href='/services'
-              className={
-                pathname.includes("/services") ? styles.activeLink : ""
-              }
-            >
-              Services
-            </Link>
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <Link
-              href='/fleet'
-              className={pathname.includes("/fleet") ? styles.activeLink : ""}
-            >
-              Fleet
-            </Link>
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <Link
-              href='/blog'
-              className={pathname.includes("/blog") ? styles.activeLink : ""}
-            >
-              Blog
-            </Link>
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <Link
-              href='/contact'
-              className={pathname.includes("/contact") ? styles.activeLink : ""}
-            >
-              Contact
-            </Link>
-          </li>
-          <li className={styles.navItem} onClick={openMenu}>
-            <div className={styles.mobilePhone}>
-              <span>
-                <Phone className={styles.mobileIcon} />
-              </span>
-              480-300-6003
-            </div>
-          </li>
-          <div className={styles.bottom}>
-            <p className={styles.copy}>
-              Copyright &copy; 2023 Nier Transportation || All Rights Reserved
-              || Designed and Developed By The Chris Ware Agency
-            </p>
           </div>
-        </ul>
-        <div className={styles.phone}>
-          <span>
-            <Phone className={styles.icon} />
+          <ul
+            className={
+              isOpen === false
+                ? styles.navMenu
+                : styles.navMenu + " " + styles.active
+            }
+          >
+            <li onClick={openMenu}>
+              <Image
+                src={Logo}
+                alt='logo'
+                width={107}
+                height={50}
+                className={styles.officialLogoMobile}
+              />
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link
+                href='/'
+                className={pathname === "/" ? styles.activeLink : ""}
+              >
+                Home
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link
+                href='/about'
+                className={pathname.includes("/about") ? styles.activeLink : ""}
+              >
+                About
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link
+                href='/services'
+                className={
+                  pathname.includes("/services") ? styles.activeLink : ""
+                }
+              >
+                Services
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link
+                href='/fleet'
+                className={pathname.includes("/fleet") ? styles.activeLink : ""}
+              >
+                Fleet
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link
+                href='/blog'
+                className={pathname.includes("/blog") ? styles.activeLink : ""}
+              >
+                Blog
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <Link
+                href='/contact'
+                className={
+                  pathname.includes("/contact") ? styles.activeLink : ""
+                }
+              >
+                Contact
+              </Link>
+            </li>
+            <li className={styles.navItem} onClick={openMenu}>
+              <div className={styles.mobilePhone}>
+                <span>
+                  <Phone className={styles.mobileIcon} />
+                </span>
+                480-300-6003
+              </div>
+            </li>
+            <div className={styles.bottom}>
+              <p className={styles.copy}>
+                Copyright &copy; 2023 Nier Transportation || All Rights Reserved
+                || Designed and Developed By The Chris Ware Agency
+              </p>
+            </div>
+          </ul>
+          <div className={styles.phone}>
+            <span>
+              <Phone className={styles.icon} />
+            </span>
+            480-300-6003
+          </div>
+          <span
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : styles.hamburger + " " + styles.active
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
           </span>
-          480-300-6003
-        </div>
-        <span
-          className={
-            isOpen === false
-              ? styles.hamburger
-              : styles.hamburger + " " + styles.active
-          }
-          onClick={openMenu}
-        >
-          <span className={styles.whiteBar}></span>
-          <span className={styles.whiteBar}></span>
-          <span className={styles.whiteBar}></span>
-        </span>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </LayoutWrapper>
   );
 };
 export default Nav;

@@ -1,6 +1,6 @@
 import Nav from "./components/Nav/Nav";
 import "./globals.css";
-import styles from "./layout.module.css";
+
 import type { Metadata } from "next";
 import { Roboto, Roboto_Serif } from "next/font/google";
 
@@ -30,9 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body
-        className={`${roboto.variable} ${robotoSerif.variable} ${styles.layout}`}
-      >
+      <body className={`${roboto.variable} ${robotoSerif.variable}`}>
         <Nav />
         {children}
       </body>

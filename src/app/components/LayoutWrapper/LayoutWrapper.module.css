@@ -1,0 +1,28 @@
+.layout {
+  z-index: 1000;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: var(--neutral);
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .layout {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

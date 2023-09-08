@@ -68,7 +68,8 @@
   display: none;
 }
 
-.icon, .mobileIcon {
+.icon,
+.mobileIcon {
   width: 30px;
   height: 30px;
   color: var(--red);
@@ -154,12 +155,6 @@
     display: block;
     cursor: pointer;
     z-index: 999;
-    border: 2px solid var(--darkBlue);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: relative;
-    padding-top: 2rem;
   }
 
   .hamburger.active .whiteBar:nth-child(1) {
