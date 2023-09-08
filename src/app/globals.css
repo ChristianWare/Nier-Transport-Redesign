@@ -1,12 +1,8 @@
 :root {
-  --primary: #591fce;
-  --secondary: #2bffea;
-  --accent1: #84faa1;
-  --accent2: #0c9cee;
-  --neutral: #f9fafb;
-  --text: #2d1069;
-  --border: rgba(89, 31, 206, 0.2);
-  --border2: rgba(184, 164, 225, 0.1);
+  --darkBlue: #2B3467;
+  --lightBlue: #BAD7E9;
+  --cream: #FCFFE7;
+  --red: #EB455F;
 }
 
 * {
@@ -48,7 +44,7 @@ h5,
 h6,
 strong {
   font-family: var(--roboto);
-  color: var(--primary);
+  color: var(--darkBlue);
 }
 
 h2 {
@@ -87,7 +83,7 @@ p,
 input,
 textarea {
   font-weight: 400;
-  font-family: var(--roboto);
+  font-family: var(--robotoSerif);
   hyphens: auto;
   font-size: 1.6rem;
   color: var(--text);
@@ -97,7 +93,7 @@ textarea {
 input:focus {
   outline: none;
 }
-
+/* 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: var(--secondary);
@@ -112,7 +108,7 @@ input:focus {
 }
 ::-moz-selection {
   background: var(--secondary);
-}
+} */
 
 @media screen and (max-width: 768px) {
   html {
