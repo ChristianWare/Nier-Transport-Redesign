@@ -1,7 +1,8 @@
 .header {
-  margin-top: 1rem;
+  padding-top: 1rem;
   font-family: var(--roboto);
   color: var(--darkBlue);
+  background-color: var(--cream);
 }
 
 .navbar {
@@ -14,6 +15,7 @@
   font-size: 2.5rem;
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in;
+  z-index: 998;
 }
 
 .officialLogoMobile {
@@ -21,7 +23,7 @@
 }
 
 .officialLogo {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .menuItemsGroup,
@@ -64,6 +66,10 @@
   gap: 1rem;
 }
 
+.phone {
+  z-index: 998;
+}
+
 .mobilePhone {
   display: none;
 }
@@ -92,7 +98,7 @@
 
 @media screen and (max-width: 870px) {
   .header {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
   .navMenu {

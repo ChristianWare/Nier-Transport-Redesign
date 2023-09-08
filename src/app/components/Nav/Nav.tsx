@@ -39,8 +39,8 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <LayoutWrapper>
-      <header className={styles.header}>
+    <header className={styles.header}>
+      <LayoutWrapper>
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <Link href='/' className={styles.logo}>
@@ -155,8 +155,8 @@ const Nav = () => {
             <span className={styles.whiteBar}></span>
           </span>
         </nav>
-      </header>
-    </LayoutWrapper>
+      </LayoutWrapper>
+    </header>
   );
 };
 export default Nav;
