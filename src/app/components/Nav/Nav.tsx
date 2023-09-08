@@ -122,12 +122,12 @@ const Nav = () => {
               </Link>
             </li>
             <li className={styles.navItem} onClick={openMenu}>
-              <div className={styles.mobilePhone}>
+              <a href='tel:+4803006003' className={styles.mobilePhone}>
                 <span>
                   <Phone className={styles.mobileIcon} />
                 </span>
                 480-300-6003
-              </div>
+              </a>
             </li>
             <div className={styles.bottom}>
               <p className={styles.copy}>
@@ -136,12 +136,12 @@ const Nav = () => {
               </p>
             </div>
           </ul>
-          <div className={styles.phone}>
+          <a href='tel:+4803006003' className={styles.phone}>
             <span>
               <Phone className={styles.icon} />
             </span>
             480-300-6003
-          </div>
+          </a>
           <span
             className={
               isOpen === false
