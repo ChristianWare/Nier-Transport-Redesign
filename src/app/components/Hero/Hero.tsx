@@ -14,7 +14,6 @@ const Hero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            
             <h1 className={styles.heading}>
               Black Car Service in Phoenix & Scottsdale
             </h1>

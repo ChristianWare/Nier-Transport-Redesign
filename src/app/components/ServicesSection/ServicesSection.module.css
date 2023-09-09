@@ -83,6 +83,13 @@
   margin-top: 1rem;
 }
 
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
 @media screen and (max-width: 870px) {
   .content {
     padding: 3rem;
@@ -121,7 +128,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .card:nth-child(1), .card:nth-child(3), .card:nth-child(5) {
+  .card:nth-child(1),
+  .card:nth-child(3),
+  .card:nth-child(5) {
     border-right: 1px solid var(--border);
   }
 
@@ -138,5 +147,11 @@
 
   .heading {
     text-align: center;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }
