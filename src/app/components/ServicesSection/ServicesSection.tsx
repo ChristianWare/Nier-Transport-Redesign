@@ -6,8 +6,8 @@ import Button from "../Button/Button";
 
 const ServicesSection = () => {
   return (
-    <LayoutWrapper>
-      <section className={styles.container}>
+    <section className={styles.container}>
+      <LayoutWrapper>
         <div className={styles.content}>
           <h2 className={styles.heading}>Our Services</h2>
           <p className={styles.copy}>
@@ -35,8 +35,8 @@ const ServicesSection = () => {
         <div className={styles.btnContainer}>
           <Button href='/' text='See All Services' btnType='primary' />
         </div>
-      </section>
-    </LayoutWrapper>
+      </LayoutWrapper>
+    </section>
   );
 };
 

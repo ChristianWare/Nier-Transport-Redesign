@@ -18,7 +18,7 @@ export const servicesSection = [
     icon: Event,
     service: "Special Events",
     descr:
-      "Arrive in Style and Elegance at Weddings, Parties, and Special Occasions.",
+      "Waste Management Open, PGA Tour, Super Bowl, Spring Training, and much more. ",
   },
   {
     id: 3,
