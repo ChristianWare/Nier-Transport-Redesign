@@ -80,32 +80,10 @@
     height: 400px;
   }
 
-  .iconTextContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
   .heading,
   .strong {
     text-align: center;
     width: 100%;
-  }
-
-  .iconTextContainer {
-    border: 2px solid var(--border);
-    padding: 2rem;
-    padding-bottom: 1rem;
-    margin-bottom: 3rem;
-    border-radius: 8px;
-  }
-
-  .itexRight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .btnContainer {
