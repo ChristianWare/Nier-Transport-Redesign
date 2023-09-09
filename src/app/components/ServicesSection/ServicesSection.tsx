@@ -10,10 +10,7 @@ const ServicesSection = () => {
         <div className={styles.content}>
           <h2 className={styles.heading}>Our Services</h2>
           <p className={styles.copy}>
-            Elevate Your Experience with Our Luxury Car Service Near You in
-            Scottsdale and Phoenix. We go beyond transportation to provide a
-            personalized promise of a smooth, comfortable ride that turns every
-            needed occasion into a cherished memory. Whether it&#39;s a wedding,
+            Whether it&#39;s a wedding,
             corporate event, or simply a night out, our black car service
             delivers the epitome of luxury, setting us apart in Scottsdale
             airport transportation and beyond. Book your next ride with us. Here
