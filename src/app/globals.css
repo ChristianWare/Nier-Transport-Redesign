@@ -60,7 +60,6 @@ h3 {
   font-weight: 500;
   color: var(--darkBlue);
   text-transform: capitalize;
-  /* font-size: 3.5rem; */
 }
 
 h4 {
@@ -98,6 +97,7 @@ textarea {
   font-size: 1.8rem;
   color: var(--darkBlue);
   line-height: 150%;
+  opacity: 0.7;
 }
 
 input:focus {
