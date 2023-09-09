@@ -1,4 +1,9 @@
 import Plane from "../../../public/icons/plane.png";
+import Event from "../../../public/icons/event.png";
+import Party from "../../../public/icons/party.png";
+import Reoccurring from "../../../public/icons/reoccurring.png";
+import Distance from "../../../public/icons/distance.png";
+import Golf from "../../../public/icons/golf.png";
 
 export const servicesSection = [
   {
@@ -6,41 +11,40 @@ export const servicesSection = [
     icon: Plane,
     service: "Airport Transfers",
     descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport.",
+      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport and Phoenix-Mesa Gateway.",
   },
   {
-    id: 1,
-    icon: Plane,
-    service: "Airport Transfers",
+    id: 2,
+    icon: Event,
+    service: "Special Events",
     descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport.",
+      "Arrive in Style and Elegance at Weddings, Parties, and Special Occasions.",
   },
   {
-    id: 1,
-    icon: Plane,
-    service: "Airport Transfers",
+    id: 3,
+    icon: Party,
+    service: "Part Bus",
     descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport.",
+      "Have something to celebrate? Celebrate in stles with our party bus services.",
   },
   {
-    id: 1,
-    icon: Plane,
-    service: "Airport Transfers",
+    id: 4,
+    icon: Reoccurring,
+    service: "Reocurring Rides",
     descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport.",
+      "Tired of getting a different Uber driver every time? Book with us for one driver.",
   },
   {
-    id: 1,
-    icon: Plane,
-    service: "Airport Transfers",
+    id: 5,
+    icon: Distance,
+    service: "Long Distance Drives",
     descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport.",
+      "Need to take a long distance trip? We will get you where you need to go in no time. Sit back relax and enjoy the ride.",
   },
   {
-    id: 1,
-    icon: Plane,
-    service: "Airport Transfers",
-    descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport.",
+    id: 6,
+    icon: Golf,
+    service: "Golf Tournament Pickup",
+    descr: "Scottsdale TPC, Troon Golf Course, Grayhawk, We-Ko-Pa",
   },
 ] as const;
