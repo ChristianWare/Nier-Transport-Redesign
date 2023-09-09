@@ -11,7 +11,7 @@ export const servicesSection = [
     icon: Plane,
     service: "Airport Transfers",
     descr:
-      "Seamless and Stress-Free Transfers to and from Scottsdale Airport and Phoenix Sky Harbor International Airport and Phoenix-Mesa Gateway.",
+      "Scottsdale Airport, Phoenix Sky Harbor International Airport, Phoenix-Mesa Gateway.",
   },
   {
     id: 2,
@@ -39,12 +39,13 @@ export const servicesSection = [
     icon: Distance,
     service: "Long Distance Drives",
     descr:
-      "Need to take a long distance trip? We will get you where you need to go in no time. Sit back relax and enjoy the ride.",
+      "Need to take a long distance trip? We will get you where you need to go, however far.",
   },
   {
     id: 6,
     icon: Golf,
     service: "Golf Tournament Pickup",
-    descr: "Scottsdale TPC, Troon Golf Course, Grayhawk, We-Ko-Pa",
+    descr:
+      "Scottsdale TPC, Troon Golf Course, Grayhawk, We-Ko-Pa golf courses.",
   },
 ] as const;
