@@ -7,12 +7,14 @@
 
 .content {
   padding: 5rem;
-  /* background-color: var(--cream); */
   border-radius: 10px;
 }
 
 .heading {
   margin-bottom: 2rem;
+  position: relative;
+  width: fit-content;
+  z-index: 1;
 }
 
 .copy {
@@ -179,6 +181,7 @@
 
   .heading {
     text-align: center;
+    width: 100%;
   }
 
   .btnContainer {
