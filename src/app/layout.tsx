@@ -40,7 +40,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${robotoSerif.variable} ${anton.variable}`}
       >
-        <Nav />
+        {/* <Nav /> */}
         {children}
       </body>
     </html>

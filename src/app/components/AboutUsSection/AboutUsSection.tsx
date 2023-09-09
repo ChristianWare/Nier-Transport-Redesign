@@ -33,9 +33,9 @@ const AboutUsSection = () => {
                 <Driver width={50} height={50} />
               </div>
               <div className={styles.itexRight}>
-                <strong className={styles.strong}>
+                <h3 className={styles.h3}>
                   Professional Chauffeurs
-                </strong>
+                </h3>
                 <p className={styles.copy}>
                   Our experienced and courteous chauffeurs are the epitome of
                   professionalism, providing you with a seamless journey from
@@ -48,7 +48,7 @@ const AboutUsSection = () => {
                 <Options width={50} height={50} />
               </div>
               <div className={styles.itexRight}>
-                <strong className={styles.strong}>Diverse Services</strong>
+                <h3 className={styles.h3}>Diverse Services</h3>
                 <p className={styles.copy}>
                   Whether you require airport transfers, city tours, or
                   executive transportation, we have tailored services to suit
@@ -61,7 +61,7 @@ const AboutUsSection = () => {
                 <Diamond width={50} height={50} />
               </div>
               <div className={styles.itexRight}>
-                <strong className={styles.strong}>Timeless Elegance</strong>
+                <h3 className={styles.h3}>Timeless Elegance</h3>
                 <p className={styles.copy}>
                   Our fleet of meticulously maintained black cars exudes class
                   and style, ensuring that you arrive at your destination not

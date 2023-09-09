@@ -3,12 +3,14 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import BG from "../../../../public/images/Hero1.png";
 import Button from "../Button/Button";
+import Nav from "../Nav/Nav";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
       <Image src={BG} alt='Nier Transportation' fill className={styles.img} />
+      <Nav />
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>

@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Link from "next/link";
-import Logo from "../../../../public/icons/nierlogo.png";
+import Logo from "../../../../public/icons/logowhite.png";
+import LogoMobile from "../../../../public/icons/nierlogo.png";
 import Image from "next/image";
 import Phone from "../../../../public/icons/phone.svg";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
@@ -62,7 +63,7 @@ const Nav = () => {
           >
             <li onClick={openMenu}>
               <Image
-                src={Logo}
+                src={LogoMobile}
                 alt='logo'
                 width={107}
                 height={50}

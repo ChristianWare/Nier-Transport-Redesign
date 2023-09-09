@@ -9,10 +9,6 @@
   width: 100%;
 }
 
-.strong {
-  font-size: 2.4rem;
-  font-family: var(--roboto);
-  font-weight: 500;
-  color: var(--darkBlue);
-  text-transform: capitalize;
+.subHeading {
+  text-align: center;
 }
