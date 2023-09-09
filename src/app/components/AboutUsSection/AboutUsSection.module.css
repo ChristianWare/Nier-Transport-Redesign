@@ -23,6 +23,31 @@
   border-radius: 10px;
 }
 
+.imgContainer::after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 40%;
+  top: -25px;
+  left: -25px;
+  background-color: var(--red2);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.imgContainer::before {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 30%;
+  bottom: -25px;
+  right: -25px;
+  background-image: radial-gradient(var(--lightBlue2) 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  z-index: 2;
+  border-radius: 10px;
+}
+
 .img {
   object-fit: cover;
   font-size: 0;
@@ -84,6 +109,16 @@
   .strong {
     text-align: center;
     width: 100%;
+  }
+
+  .imgContainer {
+    border: 5px solid var(--red2);
+    border-radius: 15px;
+  }
+
+  .imgContainer::after, .imgContainer::before {
+    width: 0%;
+    height: 0%;
   }
 
   .btnContainer {
