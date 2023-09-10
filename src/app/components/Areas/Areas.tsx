@@ -3,6 +3,8 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Areas.module.css";
 import BG from "../../../../public/images/phoenix.png";
 import ContentPadding from "../ContentPadding/ContentPadding";
+import { areas } from "@/app/lib/data";
+import Button from "../Button/Button";
 
 const Areas = () => {
   return (
@@ -20,15 +22,18 @@ const Areas = () => {
                 If you need to go someowhere else outside of our service area,
                 we will take you there as well.
               </p>
+              <div className={styles.btnContainer}>
+                <Button href='/' text='Book Now' btnType='primary' />
+                <Button href='/' text='Contact us' btnType='secondary' />
+              </div>
             </div>
             <div className={styles.right}>
-              <h3 className={styles.city}>Scotsdale</h3>
-              <h3 className={styles.city}>Phoenix</h3>
-              <h3 className={styles.city}>Mesa</h3>
-              <h3 className={styles.city}>Tempe</h3>
-              <h3 className={styles.city}>Chandler</h3>
-              <h3 className={styles.city}>Goodyear</h3>
-              <h3 className={styles.city}>Surprise</h3>
+              {areas.map((x) => (
+                <div key={x.id} className={styles.cityDescContainer}>
+                  <h3 className={styles.city}>{x.city}</h3>
+                  <p className={styles.copy}>{x.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </ContentPadding>

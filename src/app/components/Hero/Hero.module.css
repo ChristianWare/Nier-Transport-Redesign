@@ -41,6 +41,7 @@
   color: var(--cream);
   margin-top: 1rem;
   margin-bottom: 2rem;
+  hyphens: brea;
 }
 
 .span {
@@ -97,6 +98,10 @@
   .content {
     padding: 1rem;
     padding-top: 3rem;
+  }
+
+  .heading {
+    font-size: 5rem;
   }
 
   .btnContainer {

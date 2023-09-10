@@ -49,3 +49,31 @@ export const servicesSection = [
       "Scottsdale TPC, Troon Golf Course, Grayhawk, We-Ko-Pa golf courses.",
   },
 ] as const;
+
+export const areas = [
+  {
+    id: 7,
+    city: "Scottsdale",
+    desc: "Scottsdale is known for its vibrant arts scene, upscale shopping, and stunning desert landscapes.",
+  },
+  {
+    id: 8,
+    city: "Phoenix",
+    desc: "The state's capital and largest city, offering a diverse cultural scene, desert botanical gardens, and outdoor adventures in the nearby Sonoran Desert.",
+  },
+  {
+    id: 9,
+    city: "Mesa",
+    desc: "Mesa boasts a rich history, with attractions like the Mesa Arts Center and a thriving downtown area, making it a hub for arts and culture.",
+  },
+  {
+    id: 10,
+    city: "Tempe",
+    desc: "Home to Arizona State University, combines a lively college atmosphere with recreational opportunities along Tempe Town Lake.",
+  },
+  {
+    id: 13,
+    city: "West Valley",
+    desc: "The West Valley is made up of Avondale, Goodyear, Buckeye, Surprise, Glendale, Tolleson, and Peoria. These cities are known for its suburban lifestyle, and access to recreational opportunities. ",
+  },
+] as const;

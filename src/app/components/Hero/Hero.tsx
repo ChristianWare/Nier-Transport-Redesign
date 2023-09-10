@@ -14,7 +14,7 @@ const Hero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h1 className={styles.heading}>
+            <h1 className={styles.heading} lang='en'>
               <span className={styles.span}>
                 <span className={styles.span}>Nier</span> Transportation:
               </span>
