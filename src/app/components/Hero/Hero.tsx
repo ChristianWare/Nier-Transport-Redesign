@@ -15,7 +15,9 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              Black Car Service in Phoenix & Scottsdale
+              <span className={styles.span}>Nier Transportation:</span>
+              <br />
+              Black Car Service in Phoenix & Scottsdale.
             </h1>
             <p className={styles.copy}>
               From airport pickups and drop-offs to seamless golf course

@@ -23,7 +23,7 @@ export const servicesSection = [
   {
     id: 3,
     icon: Party,
-    service: "Part Bus",
+    service: "Party Bus",
     descr:
       "Have something to celebrate? Celebrate in stles with our party bus services.",
   },
