@@ -53,7 +53,7 @@
 }
 
 .right {
-  background-color: rgba(43, 52, 10, 0.5);
+  /* background-color: rgba(43, 52, 10, 0.5); */
   padding: 2rem;
   border-radius: 10px;
   border: 2px solid var(--cream);
