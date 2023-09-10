@@ -14,7 +14,7 @@ const Areas = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h2 className={styles.heading}>
-                Proudly Serveing Scottsdale, Phoenix, and Surrounding Areas.
+                Proudly Serving Scottsdale, Phoenix, and Surrounding Areas.
               </h2>
               <p className={styles.copy}>
                 If you need to go someowhere else outside of our service area,

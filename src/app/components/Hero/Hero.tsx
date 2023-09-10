@@ -15,9 +15,11 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              <span className={styles.span}>Nier Transportation:</span>
+              <span className={styles.span}>
+                <span className={styles.span}>Nier</span> Transportation:
+              </span>
               <br />
-              Black Car Service in Phoenix & Scottsdale.
+              Black Car Service in Phoenix & Scottsdale
             </h1>
             <p className={styles.copy}>
               From airport pickups and drop-offs to seamless golf course
