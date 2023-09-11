@@ -12,8 +12,8 @@ export default function Home() {
       <Hero />
       <AboutUsSection />
       <ServicesSection />
-      <Areas />
       <FleetSection />
+      <Areas />
       <BookingProcess />
       <ContactSection />
     </main>

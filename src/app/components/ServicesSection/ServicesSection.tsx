@@ -26,8 +26,8 @@ const ServicesSection = () => {
                   height={40}
                   className={styles.img}
                 />
-                <h3>{x.service}</h3>
-                <p className={styles.desc}>{x.descr}</p>
+                <h3 className={styles.subheading}>{x.service}</h3>
+                <p content={styles.desc} className={styles.desc}>{x.descr}</p>
               </div>
             ))}
           </div>
