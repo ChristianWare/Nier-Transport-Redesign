@@ -29,6 +29,15 @@
   width: 60%;
 }
 
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 870px) {
   .content {
     grid-template-columns: repeat(2, 1fr);
@@ -42,6 +51,14 @@
   }
 
   .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }

@@ -4,6 +4,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./BlogSection.module.css";
 import { FC } from "react";
 import BlogPreview from "../BlogPreview/BlogPreview";
+import Button from "../Button/Button";
 
 const BlogSection: FC<BlogSection> = ({ blogData }) => {
   return (
@@ -21,6 +22,9 @@ const BlogSection: FC<BlogSection> = ({ blogData }) => {
             {blogData.map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />
             ))}
+          </div>
+          <div className={styles.btnContainer}>
+            <Button href='/' text='See all Articles' btnType='primary' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

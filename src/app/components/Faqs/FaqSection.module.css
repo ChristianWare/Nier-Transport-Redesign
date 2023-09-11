@@ -49,6 +49,7 @@
   width: 100%;
   cursor: pointer;
   user-select: none;
+  transition: all 0.1s ease-in;
 }
 
 .qaContainer:hover,
