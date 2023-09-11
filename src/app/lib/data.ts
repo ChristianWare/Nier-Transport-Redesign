@@ -10,7 +10,7 @@ import Sprinter3 from "../../../public/images/sprinter3.png";
 import Sub1 from "../../../public/images/sub1.png";
 import Sub2 from "../../../public/images/sub2.png";
 import Sub3 from "../../../public/images/sub3.png";
-import Person from '../../../public/icons/person.png'
+import Person from "../../../public/icons/person.png";
 
 export const servicesSection = [
   {
@@ -176,5 +176,66 @@ export const reviews = [
     reviewer: "Lisa S.",
     company: "NBC",
     person: Person,
+  },
+] as const;
+
+export const faqs = [
+  {
+    id: 36,
+    question:
+      "What types of vehicles do you offer for your black car services?",
+    answer:
+      "We provide a fleet of premium vehicles, including luxury sedans, SUVs, and executive vans, all designed for your comfort and style.",
+  },
+  {
+    id: 37,
+    question: " How do I book a black car service with your company?",
+    answer:
+      "Booking is easy! You can make a reservation through our website, mobile app, or by calling our customer service team.",
+  },
+  {
+    id: 39,
+    question: " Is your service available 24/7?",
+    answer:
+      "Yes, we operate 24/7, 365 days a year to meet your transportation needs, including holidays and late-night pickups.",
+  },
+  {
+    id: 40,
+    question: "Are your drivers professional and experienced?",
+    answer:
+      "Absolutely. Our drivers are highly trained, licensed, and have years of experience in providing safe and reliable transportation.",
+  },
+  {
+    id: 41,
+    question: "Can I request a specific driver for my ride?",
+    answer:
+      "While we can't guarantee a specific driver, we can note your preferences, and we always strive to provide consistent and exceptional service.",
+  },
+  {
+    id: 42,
+    question:
+      "Are your rates competitive, and do you offer any discounts or packages?",
+    answer:
+      " We offer competitive rates for our premium black car services. We also have special packages and discounts available for frequent travelers and corporate clients.",
+  },
+  {
+    id: 43,
+    question: "Can I make changes to my reservation or cancel it if necessary?",
+    answer:
+      "Yes, you can modify or cancel your reservation up to a certain time before your scheduled pick-up. Our customer service team can assist you with any changes.",
+  },
+  {
+    id: 44,
+    question:
+      "Do you provide airport transportation, and do you track flight arrivals?",
+    answer:
+      "Yes, we offer airport transfers, and we monitor flight arrivals to ensure timely pickups, even if your flight is delayed.",
+  },
+  {
+    id: 45,
+    question:
+      " Is gratuity included in the fare, or should I tip the driver separately",
+    answer:
+      "Gratuity is not included in the fare. Tipping is at your discretion, but it's customary to tip the driver for excellent service.",
   },
 ] as const;

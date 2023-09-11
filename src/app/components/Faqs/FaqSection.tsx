@@ -1,14 +1,69 @@
+"use client";
+
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./FaqSection.module.css";
+import { useState } from "react";
+import { faqs } from "@/app/lib/data";
+import Plus from "../../../../public/icons/plus.svg";
 
 const FaqSection = () => {
+  const [selected, setSelected] = useState(0);
+
+  const toggle = (i: any) => {
+    setSelected(i);
+  };
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
-            <h2>FAQ&#39;s</h2>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>FAQ&#39;s</h2>
+              <p className={styles.copy}>
+                Commonly asked questions and answers. If you do not see your
+                question here, feel free to call us anytime to ask, and we will
+                gladly give you a satisfactory answer.
+              </p>
+            </div>
+            <div className={styles.bottom}>
+              {faqs.map((x, i) => (
+                <div
+                  key={x.id}
+                  className={`${styles.qaContainer} ${
+                    selected === i ? styles.active : ""
+                  }`}
+                  onClick={() => toggle(i)}
+                >
+                  <div className={styles.headingArrowContainer}>
+                    <h3 className={styles.question} lang='en'>
+                      {x.question}
+                    </h3>
+                    {selected === i ? (
+                      <Plus
+                        className={styles.iconFlip}
+                        width={30}
+                        height={30}
+                      />
+                    ) : (
+                      <Plus className={styles.icon} width={30} height={30} />
+                    )}
+                  </div>
+                  <div
+                    className={
+                      selected === i
+                        ? styles.answerContainer + " " + styles.show
+                        : styles.answerContainer
+                    }
+                  >
+                    <p className={styles.answer} lang='en'>
+                      {x.answer}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
