@@ -33,7 +33,7 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin-top: 3rem;
   padding-top: 0rem;
 }

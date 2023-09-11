@@ -156,7 +156,7 @@ export const reviews = [
   {
     id: 12,
     review:
-      "I regularly book [Your Company Name] for our corporate events. Their professionalism, reliability, and attention to detail have been instrumental in our event's success.",
+      "I regularly book Nier Transportation for our corporate events. Their professionalism, reliability, and attention to detail have been instrumental in our event's success.",
     reviewer: "Jessica M.",
     company: " Event Coordinator,",
     person: Person,
@@ -172,7 +172,7 @@ export const reviews = [
   {
     id: 14,
     review:
-      "Our family vacation was made easier with [Your Company Name]. Their friendly and accommodating service ensured our family's comfort throughout our trip. We'll definitely book again!",
+      "Our family vacation was made easier with Nier Transportation. Their friendly and accommodating service ensured our family's comfort throughout our trip. We'll definitely book again!",
     reviewer: "Linda T. ",
     company: "Family Vacation",
     person: Person,
