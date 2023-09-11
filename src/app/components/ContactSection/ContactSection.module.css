@@ -34,6 +34,10 @@
   left: 0;
 }
 
+.copy {
+  width: 90%;
+}
+
 .form {
   padding: 2rem;
   padding-bottom: 3rem;
@@ -113,10 +117,12 @@
 @media screen and (max-width: 568px) {
   .left {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
   }
-  
+
   .namesContainer {
     flex-direction: column;
     gap: 0rem;

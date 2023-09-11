@@ -35,6 +35,11 @@ const ContactSection = () => {
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <h2 className={styles.heading}>Contact Us</h2>
+                <p className={styles.copy}>
+                  Reach out to us anytime. Our dedicated team is ready to assist
+                  you with bookings, inquiries, and personalized travel
+                  solutions. We&#39;re just a message or call away.
+                </p>
               </div>
               <div className={styles.right}>
                 <form
