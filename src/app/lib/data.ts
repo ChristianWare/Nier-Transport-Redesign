@@ -116,65 +116,65 @@ export const reviews = [
   {
     id: 7,
     review:
-      "Astounding work! Their team took my vague ideas and turned them into a sleek, functional website that perfectly represents my brand.",
-    reviewer: "Sarah K.",
-    company: "TikTok",
+      "I rely on Nier Transportation for all my business trips. Their professionalism, punctuality, and luxurious vehicles make every journey a breeze. Highly recommended!",
+    reviewer: "John S.",
+    company: "Business Traveler",
     person: Person,
   },
   {
     id: 8,
     review:
-      "I was amazed by their attention to detail and commitment to delivering beyond my expectations. My website now stands out, thanks to their expertise.",
-    reviewer: "Alex M.",
-    company: "Disney",
+      "Our wedding day was made even more special with Nier Transportation. The elegant black car service added a touch of sophistication to our celebration. Thank you for making it unforgettable!",
+    reviewer: "Sara M.",
+    company: "Wedding Party",
     person: Person,
   },
   {
     id: 9,
     review:
-      "Incredible results! From the initial concept to the final execution, their web development prowess transformed our online presence.",
-    reviewer: "Jessica R.",
-    company: "NBA",
+      "As a frequent traveler, I've tried many car services, but Nier Transportation stands out. Their consistency and top-notch service keep me coming back every time.",
+    reviewer: "David R.",
+    company: "Frequent Traveler",
     person: Person,
   },
   {
     id: 10,
     review:
-      "Working with them was a breeze. They understood our requirements and delivered a user-friendly website that exceeded our hopes.",
-    reviewer: "Mark T.",
-    company: "Pendant",
+      "I always choose Nier Transportation for airport transfers. They've never let me down, and the peace of mind knowing they'll be waiting, even if my flight is delayed, is priceless.",
+    reviewer: "Emily R.",
+    company: "Airport Transfer",
     person: Person,
   },
   {
     id: 11,
     review:
-      "Fast, responsive, and creative. Our website's revamp was flawlessly executed, showcasing their dedication to quality and innovation.",
-    reviewer: "Emily H.",
-    company: "Meta",
+      "We celebrated our anniversary with Nier Transportation, and it was a romantic and unforgettable experience. The luxurious ride and attentive driver made it truly special.",
+    reviewer: "Mark and Lisa H.",
+    company: "Anniversary Celebration",
     person: Person,
   },
   {
     id: 12,
     review:
-      "Impressed by the seamless process they provided. Our e-commerce platform is now a smooth experience for customers, driving sales.",
-    reviewer: "David T.",
-    company: "TikTok,",
+      "I regularly book [Your Company Name] for our corporate events. Their professionalism, reliability, and attention to detail have been instrumental in our event's success.",
+    reviewer: "Jessica M.",
+    company: " Event Coordinator,",
     person: Person,
   },
   {
     id: 13,
     review:
-      "A game-changer for my business! Their intuitive design and functionality enhancements elevated our brand and user engagement.",
-    reviewer: "Billy V.",
-    company: "Transit",
+      "I recently used Nier Transportation for a long-distance trip, and it was a comfortable and stress-free journey. Their spacious vehicles and courteous drivers made the miles fly by.",
+    reviewer: "Michael B. ",
+    company: "Long-Distance Travel",
     person: Person,
   },
   {
     id: 14,
     review:
-      "Exemplary collaboration and communication throughout the project. They transformed our vision into an interactive website that captivates visitors.",
-    reviewer: "Lisa S.",
-    company: "NBC",
+      "Our family vacation was made easier with [Your Company Name]. Their friendly and accommodating service ensured our family's comfort throughout our trip. We'll definitely book again!",
+    reviewer: "Linda T. ",
+    company: "Family Vacation",
     person: Person,
   },
 ] as const;
