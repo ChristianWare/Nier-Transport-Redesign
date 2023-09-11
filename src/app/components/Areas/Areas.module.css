@@ -55,7 +55,7 @@
 }
 
 .right {
-  background-color: rgba(43, 52, 103, .5);
+  background-color: rgba(43, 52, 103, 0.5);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -86,6 +86,11 @@
   font-weight: 900;
 }
 
+.desc {
+  color: var(--cream);
+  width: 80%;
+}
+
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
@@ -99,12 +104,13 @@
     width: 100%;
   }
 
-  .heading{
+  .heading {
     width: 100%;
     text-align: center;
   }
 
-  .copy {
+  .copy,
+  .desc {
     width: 100%;
   }
 }

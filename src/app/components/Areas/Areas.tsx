@@ -31,7 +31,7 @@ const Areas = () => {
               {areas.map((x) => (
                 <div key={x.id} className={styles.cityDescContainer}>
                   <h3 className={styles.city}>{x.city}</h3>
-                  <p className={styles.copy}>{x.desc}</p>
+                  <p className={styles.desc}>{x.desc}</p>
                 </div>
               ))}
             </div>
