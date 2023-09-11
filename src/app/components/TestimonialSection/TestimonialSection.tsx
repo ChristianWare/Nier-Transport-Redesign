@@ -10,8 +10,12 @@ const TestimonialSection = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
-            <h2 className={styles.heading}>Testimonials</h2>
-            <p>Read What Our Clients Have to Say About Their Journey with Us</p>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>Testimonials</h2>
+              <p>
+                Read What Our Clients Have to Say About Their Journey with Us
+              </p>
+            </div>
             <div className={styles.bottom}>
               <div className={styles.cardContainer1}>
                 {reviews.slice(0, 4).map((x) => (
