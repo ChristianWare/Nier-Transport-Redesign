@@ -1,12 +1,13 @@
 :root {
-  --darkBlue: #2b3467;
-  --lightBlue: #F9FAFF;
+  --darkBlue: #0a071b;
+  --lightBlue: #f9faff;
   --lightBlue2: #b7c3fc;
   --lightBlue3: #e4e8fe;
   --cream: #fefffa;
   --red: #eb455f;
-  --red2: #F38493;
+  --red2: #f38493;
   --border: rgba(43, 52, 103, 0.2);
+  --border2: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -160,7 +161,6 @@ input:focus {
     letter-spacing: -0.1rem;
   }
 } */
-
 
 .toastFont {
   font-family: var(--roboto);

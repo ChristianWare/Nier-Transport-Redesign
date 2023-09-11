@@ -10,6 +10,7 @@ import Sprinter3 from "../../../public/images/sprinter3.png";
 import Sub1 from "../../../public/images/sub1.png";
 import Sub2 from "../../../public/images/sub2.png";
 import Sub3 from "../../../public/images/sub3.png";
+import Person from '../../../public/icons/person.png'
 
 export const servicesSection = [
   {
@@ -108,5 +109,72 @@ export const fleet = [
   {
     id: 18,
     src: Sprinter3,
+  },
+] as const;
+
+export const reviews = [
+  {
+    id: 7,
+    review:
+      "Astounding work! Their team took my vague ideas and turned them into a sleek, functional website that perfectly represents my brand.",
+    reviewer: "Sarah K.",
+    company: "TikTok",
+    person: Person,
+  },
+  {
+    id: 8,
+    review:
+      "I was amazed by their attention to detail and commitment to delivering beyond my expectations. My website now stands out, thanks to their expertise.",
+    reviewer: "Alex M.",
+    company: "Disney",
+    person: Person,
+  },
+  {
+    id: 9,
+    review:
+      "Incredible results! From the initial concept to the final execution, their web development prowess transformed our online presence.",
+    reviewer: "Jessica R.",
+    company: "NBA",
+    person: Person,
+  },
+  {
+    id: 10,
+    review:
+      "Working with them was a breeze. They understood our requirements and delivered a user-friendly website that exceeded our hopes.",
+    reviewer: "Mark T.",
+    company: "Pendant",
+    person: Person,
+  },
+  {
+    id: 11,
+    review:
+      "Fast, responsive, and creative. Our website's revamp was flawlessly executed, showcasing their dedication to quality and innovation.",
+    reviewer: "Emily H.",
+    company: "Meta",
+    person: Person,
+  },
+  {
+    id: 12,
+    review:
+      "Impressed by the seamless process they provided. Our e-commerce platform is now a smooth experience for customers, driving sales.",
+    reviewer: "David T.",
+    company: "TikTok,",
+    person: Person,
+  },
+  {
+    id: 13,
+    review:
+      "A game-changer for my business! Their intuitive design and functionality enhancements elevated our brand and user engagement.",
+    reviewer: "Billy V.",
+    company: "Transit",
+    person: Person,
+  },
+  {
+    id: 14,
+    review:
+      "Exemplary collaboration and communication throughout the project. They transformed our vision into an interactive website that captivates visitors.",
+    reviewer: "Lisa S.",
+    company: "NBC",
+    person: Person,
   },
 ] as const;

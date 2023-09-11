@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 
 import type { Metadata } from "next";
 import { Roboto, Roboto_Serif, Anton } from "next/font/google";
+import Footer from "./components/Footer/Footer";
 
 const roboto = Roboto({
   weight: ["900", "700", "500", "400"],
@@ -48,6 +49,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <Footer />
       </body>
     </html>
   );

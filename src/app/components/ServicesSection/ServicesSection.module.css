@@ -52,7 +52,7 @@
   gap: 2rem;
   position: relative;
   border-right: 0px;
-  border: 2px solid var(--cream);
+  border: 1px solid var(--border2);
   padding: 4rem 3rem;
 }
 
@@ -69,18 +69,18 @@
 
 .card:nth-child(3) {
   border-left: 0px;
-  border-top: 2px solid var(--cream);
+  border-top: 1px solid var(--border2);
   border-top-right-radius: 10px;
 }
 
 .card:nth-child(4) {
-  border-top: 2px solid var(--cream);
+  border-top: 1px solid var(--border2);
   border-right: 0px;
   border-bottom-left-radius: 10px;
 }
 
 .card:nth-child(5) {
-  border-left: 2px solid var(--cream);
+  border-left: 1px solid var(--border2);
 }
 
 .card:nth-child(6) {
@@ -124,14 +124,14 @@
 
   .card:nth-child(3) {
     border-top-right-radius: 0px;
-    border-left: 2px solid var(--cream);
+    border-left: 1px solid var(--border2);
     border-right: 0px;
   }
 
   .card:nth-child(4) {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    border-right: 2px solid var(--cream);
+    border-right: 1px solid var(--border2);
     border-bottom: 0px;
   }
 
@@ -141,7 +141,7 @@
   }
 
   .card:nth-child(6) {
-    border-left: 2px solid var(--cream);
+    border-left: 1px solid var(--border2);
   }
 }
 
@@ -153,7 +153,7 @@
   .card:nth-child(1),
   .card:nth-child(3),
   .card:nth-child(5) {
-    border-right: 2px solid var(--cream);
+    border-right: 1px solid var(--border2);
   }
 
   .card:nth-child(1) {
