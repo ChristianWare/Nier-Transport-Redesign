@@ -13,6 +13,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import BlogSection from "./components/BlogSection/BlogSection";
 import BlogPreview from "./components/BlogPreview/BlogPreview";
+import FinalCTA from "./components/FinalCTA/FinalCTA";
 
 export default function Home() {
   const blogDir = "blogs";
@@ -39,8 +40,8 @@ export default function Home() {
       <FaqSection />
       <BlogSection blogData={blogs} />
       <ContactSection />
-      <div>
-      </div>
+      <FinalCTA />
+      <div></div>
     </main>
   );
 }

@@ -43,8 +43,8 @@ const FaqSection = () => {
                     {selected === i ? (
                       <Plus
                         className={styles.iconFlip}
-                        width={30}
-                        height={30}
+                        width={35}
+                        height={35}
                       />
                     ) : (
                       <Plus className={styles.icon} width={30} height={30} />
