@@ -3,6 +3,7 @@ import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import Areas from "./components/Areas/Areas";
 import FleetSection from "./components/FleetSection/FleetSection";
+import BookingProcess from "./components/BookingProcess/BookingProcess";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ServicesSection />
       <Areas />
       <FleetSection />
+      <BookingProcess />
     </main>
   );
 }
