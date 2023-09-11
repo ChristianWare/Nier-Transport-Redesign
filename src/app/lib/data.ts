@@ -4,6 +4,12 @@ import Party from "../../../public/icons/party.png";
 import Reoccurring from "../../../public/icons/reoccurring.png";
 import Distance from "../../../public/icons/distance.png";
 import Golf from "../../../public/icons/golf.png";
+import Sprinter1 from "../../../public/images/sprinter1.png";
+import Sprinter2 from "../../../public/images/sprinter2.png";
+import Sprinter3 from "../../../public/images/sprinter3.png";
+import Sub1 from "../../../public/images/sub1.png";
+import Sub2 from "../../../public/images/sub2.png";
+import Sub3 from "../../../public/images/sub3.png";
 
 export const servicesSection = [
   {
@@ -75,5 +81,32 @@ export const areas = [
     id: 13,
     city: "West Valley",
     desc: "The West Valley is made up of Avondale, Goodyear, Buckeye, Surprise, Glendale, Tolleson, and Peoria. These cities are known for its suburban lifestyle, and access to recreational opportunities. ",
+  },
+] as const;
+
+export const fleet = [
+  {
+    id: 14,
+    src: Sub1,
+  },
+  {
+    id: 15,
+    src: Sub2,
+  },
+  {
+    id: 14,
+    src: Sub3,
+  },
+  {
+    id: 16,
+    src: Sprinter1,
+  },
+  {
+    id: 17,
+    src: Sprinter2,
+  },
+  {
+    id: 18,
+    src: Sprinter3,
   },
 ] as const;
