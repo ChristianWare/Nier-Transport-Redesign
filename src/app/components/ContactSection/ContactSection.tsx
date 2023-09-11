@@ -34,9 +34,7 @@ const ContactSection = () => {
           <div className={styles.content}>
             <div className={styles.bottom}>
               <div className={styles.left}>
-                <h2 className={styles.heading}>
-                  Contact Nier Transportation
-                </h2>
+                <h2 className={styles.heading}>Contact Us</h2>
               </div>
               <div className={styles.right}>
                 <form
@@ -116,9 +114,7 @@ const ContactSection = () => {
                       />
                     </div>
                     <div className={styles.labelInputBox}>
-                      <label htmlFor='currentWebsiteUrl'>
-                        Length of Stay
-                      </label>
+                      <label htmlFor='currentWebsiteUrl'>Length of Stay</label>
                       <input
                         id='currentWebsiteUrl'
                         type='text'

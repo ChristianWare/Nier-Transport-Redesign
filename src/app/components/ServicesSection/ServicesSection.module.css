@@ -41,6 +41,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 3rem;
+  grid-gap: 1rem;
   color: var(--cream);
 }
 
@@ -51,41 +52,9 @@
   justify-content: center;
   gap: 2rem;
   position: relative;
-  border-right: 0px;
-  border: 1px solid var(--border2);
+  border-radius: 10px;
   padding: 4rem 3rem;
-}
-
-.card:nth-child(1),
-.card:nth-child(2),
-.card:nth-child(3) {
-  border-bottom: 0px;
-}
-
-.card:nth-child(1) {
-  border-right: 0px;
-  border-top-left-radius: 10px;
-}
-
-.card:nth-child(3) {
-  border-left: 0px;
-  border-top: 1px solid var(--border2);
-  border-top-right-radius: 10px;
-}
-
-.card:nth-child(4) {
-  border-top: 1px solid var(--border2);
-  border-right: 0px;
-  border-bottom-left-radius: 10px;
-}
-
-.card:nth-child(5) {
-  border-left: 1px solid var(--border2);
-}
-
-.card:nth-child(6) {
-  border-left: 0px;
-  border-bottom-right-radius: 10px;
+  background-color: var(--darkBlue2);
 }
 
 .img {
@@ -117,63 +86,9 @@
   .servicesGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .card:nth-child(2) {
-    border-top-right-radius: 10px;
-  }
-
-  .card:nth-child(3) {
-    border-top-right-radius: 0px;
-    border-left: 1px solid var(--border2);
-    border-right: 0px;
-  }
-
-  .card:nth-child(4) {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-right: 1px solid var(--border2);
-    border-bottom: 0px;
-  }
-
-  .card:nth-child(5) {
-    border-bottom-left-radius: 10px;
-    border-right: 0px;
-  }
-
-  .card:nth-child(6) {
-    border-left: 1px solid var(--border2);
-  }
 }
 
 @media screen and (max-width: 668px) {
-  .servicesGrid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card:nth-child(1),
-  .card:nth-child(3),
-  .card:nth-child(5) {
-    border-right: 1px solid var(--border2);
-  }
-
-  .card:nth-child(1) {
-    border-top-right-radius: 10px;
-    border-bottom: 0px;
-  }
-
-  .card:nth-child(2) {
-    border-top-right-radius: 0px;
-    border-bottom: 0px;
-  }
-
-  .card:nth-child(5) {
-    border-bottom-left-radius: 0px;
-    border-bottom: 0px;
-  }
-
-  .card:nth-child(6) {
-    border-bottom-left-radius: 10px;
-  }
 }
 
 @media screen and (max-width: 568px) {
@@ -188,6 +103,10 @@
 
   .heading {
     text-align: center;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .card {
