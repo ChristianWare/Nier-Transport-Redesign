@@ -28,7 +28,7 @@ const FaqSection = () => {
               </p>
             </div>
             <div className={styles.bottom}>
-              {faqs.map((x, i) => (
+              {faqs.slice(0, 5).map((x, i) => (
                 <div
                   key={x.id}
                   className={`${styles.qaContainer} ${
