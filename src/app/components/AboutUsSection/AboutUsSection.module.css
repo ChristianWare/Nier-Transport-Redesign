@@ -18,7 +18,7 @@
 
 .imgContainer {
   position: relative;
-  height: 700px;
+  height: 550px;
   width: 100%;
   border-radius: 10px;
 }
@@ -103,7 +103,7 @@
   }
 
   .imgContainer {
-    height: 600px;
+    height: 650px;
   }
 }
 

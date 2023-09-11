@@ -3,6 +3,8 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./FleetSection.module.css";
 import Image from "next/image";
+import Button from "../Button/Button";
+
 
 const FleetSection = () => {
   return (
@@ -13,15 +15,13 @@ const FleetSection = () => {
             <div className={styles.top}>
               <h2 className={styles.heading}>Our Fleet</h2>
               <p className={styles.copy}>
-                At Nier Transportation, our commitment is not just to get you
-                from point A to point B; it&#39;s to provide an exceptional,
-                comfortable, and enjoyable journey. Experience the difference
-                with our carefully curated fleet of vehicles that cater to your
-                every need. We invite you to explore our services and reserve
-                your preferred vehicle today for a transportation experience
-                like no other. Travel in style with Nier Transportation - where
-                luxury meets the road. Our vehicle line up includes the 2024
-                Chevy Suburban, and the 2023 Ford Sprinter.
+                Experience the difference with our carefully curated fleet of
+                vehicles that cater to your every need. We invite you to explore
+                our services and reserve your preferred vehicle today for a
+                transportation experience like no other. Travel in style with
+                Nier Transportation - where luxury meets the road. Our vehicle
+                line up includes the 2024 Chevy Suburban, and the 2023 Ford
+                Sprinter.
               </p>
             </div>
             <div className={styles.bottom}>
@@ -36,6 +36,9 @@ const FleetSection = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className={styles.btnContainer}>
+            <Button href='/' text='Book Now' btnType='primary' />
           </div>
         </ContentPadding>
       </LayoutWrapper>
