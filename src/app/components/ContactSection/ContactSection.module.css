@@ -111,6 +111,12 @@
 }
 
 @media screen and (max-width: 568px) {
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .namesContainer {
     flex-direction: column;
     gap: 0rem;
