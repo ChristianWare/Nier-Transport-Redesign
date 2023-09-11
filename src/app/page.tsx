@@ -4,6 +4,7 @@ import ServicesSection from "./components/ServicesSection/ServicesSection";
 import Areas from "./components/Areas/Areas";
 import FleetSection from "./components/FleetSection/FleetSection";
 import BookingProcess from "./components/BookingProcess/BookingProcess";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Areas />
       <FleetSection />
       <BookingProcess />
+      <ContactSection />
     </main>
   );
 }

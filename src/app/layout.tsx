@@ -1,5 +1,6 @@
 import Nav from "./components/Nav/Nav";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 import type { Metadata } from "next";
 import { Roboto, Roboto_Serif, Anton } from "next/font/google";
@@ -40,7 +41,12 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${robotoSerif.variable} ${anton.variable}`}
       >
-        {/* <Nav /> */}
+        <Toaster
+          position='top-right'
+          toastOptions={{
+            className: "toastFont",
+          }}
+        />
         {children}
       </body>
     </html>
