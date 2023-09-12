@@ -23,7 +23,6 @@ const Areas = () => {
                 we will take you there as well.
               </p>
               <div className={styles.btnContainer}>
-                <Button href='/' text='Book Now' btnType='primary' />
                 <Button href='/' text='Contact us' btnType='secondary' />
               </div>
             </div>

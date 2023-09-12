@@ -99,12 +99,13 @@
 @media screen and (max-width: 568px) {
   .btnContainer {
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
+   align-items: flex-start;
   }
 
   .heading {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .copy,
