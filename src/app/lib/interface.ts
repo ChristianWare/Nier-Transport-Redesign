@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export interface Button {
@@ -29,3 +30,8 @@ export interface BlogSection {
   blogData: any;
 }
 
+export interface PageIntroProps {
+  heading: string;
+  copy: string;
+  src: StaticImageData;
+}
