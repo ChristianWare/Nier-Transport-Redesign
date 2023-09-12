@@ -1,4 +1,4 @@
-import { BlogSection, BlogData } from "@/app/lib/interface";
+// import { BlogSection, BlogData } from "@/app/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./BlogSection.module.css";
@@ -6,7 +6,8 @@ import { FC } from "react";
 import BlogPreview from "../BlogPreview/BlogPreview";
 import Button from "../Button/Button";
 
-const BlogSection: FC<BlogSection> = ({ blogData }) => {
+// const BlogSection: FC<BlogSection> = ({ blogData }) => {
+const BlogSection = () => {
   return (
     <section className={styles.continer}>
       <LayoutWrapper>
