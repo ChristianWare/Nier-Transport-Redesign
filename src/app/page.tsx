@@ -10,9 +10,7 @@ import FaqSection from "./components/Faqs/FaqSection";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
 import BlogSection from "./components/BlogSection/BlogSection";
-import BlogPreview from "./components/BlogPreview/BlogPreview";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 
 export default function Home() {
@@ -41,7 +39,6 @@ export default function Home() {
       <BlogSection blogData={blogs} />
       <ContactSection />
       <FinalCTA />
-      <div></div>
     </main>
   );
 }
