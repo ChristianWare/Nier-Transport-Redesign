@@ -36,7 +36,7 @@ export default function Home() {
       <BookingProcess />
       <TestimonialSection />
       <FaqSection />
-      {/* <BlogSection blogData={blogs} /> */}
+      <BlogSection  />
       <ContactSection />
       <FinalCTA />
     </main>

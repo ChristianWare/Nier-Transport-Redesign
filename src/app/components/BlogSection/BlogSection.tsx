@@ -18,11 +18,11 @@ const BlogSection: FC<BlogSection> = ({ blogData }) => {
               insights to enhance your black car service experience.
             </p>
           </div>
-          <div className={styles.content}>
+          {/* <div className={styles.content}>
             {blogData.map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />
             ))}
-          </div>
+          </div> */}
           <div className={styles.btnContainer}>
             <Button href='/' text='See all Articles' btnType='primary' />
           </div>
