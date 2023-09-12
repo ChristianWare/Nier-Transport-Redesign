@@ -9,7 +9,9 @@ const BlogPreview: FC<BlogPreview> = ({ mapData, key }) => {
     <div className={styles.container} key={key}>
       <div className={styles.content}>
         <div className={styles.imgContainer}>
-          <Link href={`/${mapData.meta.category}/${mapData.slug}`}>
+          {/* <Link href={`/${mapData.meta.category}/${mapData.slug}`}> */}
+          {/* https://stackoverflow.com/questions/76686377/application-error-a-server-side-exception-has-occurred-next-js */}
+          <Link href='/'>
             <Image
               alt='image'
               src={mapData.meta.thumbnaillUrl}
@@ -20,9 +22,7 @@ const BlogPreview: FC<BlogPreview> = ({ mapData, key }) => {
         </div>
         <div className={styles.textContainer}>
           <div className={styles.dateTimeContainer}>
-            <time dateTime='2023-02-02'>
-              {mapData.meta.date}
-            </time>
+            <time dateTime='2023-02-02'>{mapData.meta.date}</time>
           </div>
           <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>
             <h2 className={styles.title}>{mapData.meta.title}</h2>
