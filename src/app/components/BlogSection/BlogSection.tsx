@@ -19,7 +19,7 @@ const BlogSection: FC<BlogSection> = ({ blogData }) => {
             </p>
           </div>
           <div className={styles.content}>
-            {blogData.slice(0, 3).map((x: BlogData, index: number) => (
+            {blogData.map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />
             ))}
           </div>
