@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 
 import type { Metadata } from "next";
-import { Roboto, Roboto_Serif, Anton } from "next/font/google";
+import { Roboto, Anton } from "next/font/google";
 import Footer from "./components/Footer/Footer";
 
 const roboto = Roboto({
@@ -11,13 +11,6 @@ const roboto = Roboto({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--roboto",
-});
-
-const robotoSerif = Roboto_Serif({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-  variable: "--robotoSerif",
 });
 
 const anton = Anton({
@@ -40,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${roboto.variable} ${robotoSerif.variable} ${anton.variable}`}
+        className={`${roboto.variable} ${anton.variable}`}
       >
         <Toaster
           position='top-right'
