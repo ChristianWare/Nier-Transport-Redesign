@@ -13,7 +13,7 @@ import matter from "gray-matter";
 import BlogSection from "./components/BlogSection/BlogSection";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 
-export default async function Home() {
+export default function Home() {
   const blogDir = "blogs";
   const files = fs.readdirSync(path.join(blogDir));
   const blogs = files.map((filename) => {
