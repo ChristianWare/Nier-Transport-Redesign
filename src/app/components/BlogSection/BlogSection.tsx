@@ -27,7 +27,7 @@ const BlogSection: FC<BlogSection> = ({ blogData }) => {
             ))}
           </div>
           <div className={styles.btnContainer}>
-            <Button href='/' text='See all Articles' btnType='primary' />
+            <Button href='/' text='See all Articles' btnType='tertiary' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

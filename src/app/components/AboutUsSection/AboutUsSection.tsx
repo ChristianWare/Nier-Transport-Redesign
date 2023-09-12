@@ -70,7 +70,7 @@ const AboutUsSection = () => {
                 </div>
               </div>
               <div className={styles.btnContainer}>
-                <Button href='/' text='More about us' btnType='primary' />
+                <Button href='/' text='More about us' btnType='tertiary' />
               </div>
             </div>
           </div>
