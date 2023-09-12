@@ -1,3 +1,8 @@
+.container {
+  background-color: var(--lightBlue);
+  /* padding-top: 8rem; */
+}
+
 .content {
   background-color: var(--darkBlue);
   padding: 5rem;
@@ -103,9 +108,8 @@
   }
 }
 
-
 @media screen and (max-width: 480px) {
-    .heading {
-        font-size: 5rem;
-    }
+  .heading {
+    font-size: 5rem;
+  }
 }
