@@ -1,7 +1,7 @@
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import BG from "../../../../public/images/Hero1.png";
+import BG from "../../../../public/images/Hero3.png";
 import Button from "../Button/Button";
 import Nav from "../Nav/Nav";
 
