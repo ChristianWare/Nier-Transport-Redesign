@@ -152,7 +152,7 @@ input:focus {
 }
 
 /* Only use in production */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   h1,
   h2,
   h3,
@@ -162,7 +162,7 @@ input:focus {
   strong {
     letter-spacing: -0.1rem;
   }
-}
+} */
 
 .toastFont {
   font-family: var(--roboto);

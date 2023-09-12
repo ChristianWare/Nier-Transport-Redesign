@@ -9,9 +9,7 @@ const BlogPreview: FC<BlogPreview> = ({ mapData, key }) => {
     <div className={styles.container} key={key}>
       <div className={styles.content}>
         <div className={styles.imgContainer}>
-          {/* <Link href={`/${mapData.meta.category}/${mapData.slug}`}> */}
-          {/* https://stackoverflow.com/questions/76686377/application-error-a-server-side-exception-has-occurred-next-js */}
-          <Link href='/'>
+          <Link href={`/${mapData.meta.category}/${mapData.slug}`}>
             <Image
               alt='image'
               src={mapData.meta.thumbnaillUrl}
