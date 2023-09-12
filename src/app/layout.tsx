@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${roboto.variable} ${anton.variable}`}
+        suppressHydrationWarning={true}
       >
         <Toaster
           position='top-right'
