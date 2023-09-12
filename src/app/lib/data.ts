@@ -239,3 +239,94 @@ export const faqs = [
       "Gratuity is not included in the fare. Tipping is at your discretion, but it's customary to tip the driver for excellent service.",
   },
 ] as const;
+
+export const footer = [
+  {
+    id: 1,
+    heading: "About",
+    section: [
+      {
+        id: 2,
+        name: "Terms of Use",
+      },
+      {
+        id: 3,
+        name: "Privacy Poilicy",
+      },
+      {
+        id: 4,
+        name: "Accessibility Policy",
+      },
+      {
+        id: 5,
+        name: "California Disclosures",
+      },
+    ],
+  },
+  {
+    id: 6,
+    heading: "Services",
+    section: [
+      {
+        id: 7,
+        name: "Best Clubs",
+      },
+      {
+        id: 8,
+        name: "Drivers",
+      },
+      {
+        id: 9,
+        name: "Putters",
+      },
+      {
+        id: 10,
+        name: "Hybrids",
+      },
+    ],
+  },
+  {
+    id: 11,
+    heading: "Booking",
+    section: [
+      {
+        id: 12,
+        name: "United States",
+      },
+      {
+        id: 13,
+        name: "Europe",
+      },
+      {
+        id: 14,
+        name: "Canada",
+      },
+      {
+        id: 15,
+        name: "Asia",
+      },
+    ],
+  },
+  {
+    id: 16,
+    heading: "Contact",
+    section: [
+      {
+        id: 17,
+        name: "PGA",
+      },
+      {
+        id: 18,
+        name: "U.S. Open",
+      },
+      {
+        id: 19,
+        name: "Masters",
+      },
+      {
+        id: 20,
+        name: "Ryder Cup",
+      },
+    ],
+  },
+] as const;
