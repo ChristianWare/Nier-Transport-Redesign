@@ -19,7 +19,7 @@ const Nav = () => {
     const body = document.querySelector("body");
     if (body) {
       // check if body element exists:
-      if (window.innerWidth <= 768 && isOpen) {
+      if (window.innerWidth <= 910 && isOpen) {
         body.style.overflow = "hidden";
       } else {
         body.style.overflow = "auto";

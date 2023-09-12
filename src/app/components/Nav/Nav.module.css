@@ -29,7 +29,7 @@
 }
 
 .navItem {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
   user-select: none;
@@ -91,7 +91,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 910px) {
   .navMenu {
     position: fixed;
     left: -100%;
