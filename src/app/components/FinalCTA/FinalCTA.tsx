@@ -14,7 +14,8 @@ const FinalCTA = () => {
             <div className={styles.left}>
               <h2 className={styles.heading}>
                 <span className={styles.span}>
-                  <span className={styles.span} >Nier</span> Transportation:
+                  <span className={styles.span}>Nier</span>
+                  <span className={styles.span}>Transportation:</span>
                 </span>
               </h2>
               <p className={styles.copy}>

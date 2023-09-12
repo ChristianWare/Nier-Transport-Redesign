@@ -43,6 +43,10 @@
   left: 0;
 }
 
+.heading {
+  text-align: center;
+}
+
 .copy {
   color: var(--cream);
   width: 80%;
