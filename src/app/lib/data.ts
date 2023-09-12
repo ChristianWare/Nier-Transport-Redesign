@@ -269,19 +269,19 @@ export const footer = [
     section: [
       {
         id: 7,
-        name: "Best Clubs",
+        name: "Airport Transfers",
       },
       {
         id: 8,
-        name: "Drivers",
+        name: "Long Distance",
       },
       {
         id: 9,
-        name: "Putters",
+        name: "Party Bus",
       },
       {
         id: 10,
-        name: "Hybrids",
+        name: "Special Events",
       },
     ],
   },
@@ -291,19 +291,19 @@ export const footer = [
     section: [
       {
         id: 12,
-        name: "United States",
+        name: "24/7",
       },
       {
         id: 13,
-        name: "Europe",
+        name: "Phoenix",
       },
       {
         id: 14,
-        name: "Canada",
+        name: "Scottsdale",
       },
       {
         id: 15,
-        name: "Asia",
+        name: "West Valle",
       },
     ],
   },
@@ -313,19 +313,19 @@ export const footer = [
     section: [
       {
         id: 17,
-        name: "PGA",
+        name: "Phone",
       },
       {
         id: 18,
-        name: "U.S. Open",
+        name: "Email",
       },
       {
         id: 19,
-        name: "Masters",
+        name: "Address",
       },
       {
         id: 20,
-        name: "Ryder Cup",
+        name: "LinkedIn",
       },
     ],
   },
