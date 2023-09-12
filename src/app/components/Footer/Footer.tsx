@@ -99,6 +99,7 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.bottomRight}>
+              
               {/* <Socials borderSize='smallBorder' iconSize='smallIcon' /> */}
             </div>
           </div>
