@@ -1,3 +1,5 @@
+"use client";
+
 import { BlogSection, BlogData } from "@/app/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
@@ -7,7 +9,7 @@ import BlogPreview from "../BlogPreview/BlogPreview";
 import Button from "../Button/Button";
 
 const BlogSection: FC<BlogSection> = ({ blogData }) => {
-// const BlogSection = () => {
+  // const BlogSection = () => {
   return (
     <section className={styles.continer}>
       <LayoutWrapper>
