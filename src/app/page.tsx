@@ -17,13 +17,20 @@ export default function Home() {
   const blogDir = "blogs";
   const files = fs.readdirSync(path.join(blogDir));
   const blogs = files.map((filename) => {
-    const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
-
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      meta: frontMatter,
-      slug: filename.replace(".mdx", ""),
-    };
+    try {
+      const fileContent = fs.readFileSync(
+        path.join(blogDir, filename),
+        "utf-8"
+      );
+      const { data: frontMatter } = matter(fileContent);
+      return {
+        meta: frontMatter,
+        slug: filename.replace(".mdx", ""),
+      };
+    } catch (error) {
+      console.error(`Error reading or parsing file: ${filename}`, error);
+      return null; // or handle the error in an appropriate way
+    }
   });
 
   return (
