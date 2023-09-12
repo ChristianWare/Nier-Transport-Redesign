@@ -125,4 +125,8 @@
   .content {
     flex-direction: column;
   }
+
+  .copy {
+    width: 100%;
+  }
 }

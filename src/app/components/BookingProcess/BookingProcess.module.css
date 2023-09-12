@@ -93,7 +93,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -125,20 +124,12 @@
   }
 
   .btnContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    justify-content: center;
   }
 
   .imgContainer {
     border: 5px solid var(--red2);
     border-radius: 15px;
-  }
-
-  .btnContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
   }
 
   .right {

@@ -44,7 +44,7 @@
 }
 
 .heading {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .copy {
@@ -92,6 +92,10 @@
 
   .right {
     padding: 1rem;
+  }
+
+  .br {
+    display: none;
   }
 
   .copy {
