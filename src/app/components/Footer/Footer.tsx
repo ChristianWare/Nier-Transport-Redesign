@@ -24,7 +24,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.logo}>
+          {/* <div className={styles.logo}>
             <Link href='/' className={styles.logo}>
               <Image
                 src={Logo}
@@ -34,7 +34,7 @@ const Footer = () => {
                 className={styles.officialLogo}
               />
             </Link>
-          </div>
+          </div> */}
           <div className={styles.top}></div>
           <div className={styles.middleDesktop}>
             {footer.map((f, index) => (
