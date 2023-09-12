@@ -1,7 +1,7 @@
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import BG from "../../../../public/images/Hero3.png";
+import BG2 from "../../../../public/images/Hero5.png";
 import Button from "../Button/Button";
 import Nav from "../Nav/Nav";
 
@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
-      <Image src={BG} alt='Nier Transportation' fill className={styles.img} />
+      <Image src={BG2} alt='Nier Transportation' fill className={styles.img2} />
       <Nav />
       <LayoutWrapper>
         <div className={styles.content}>
