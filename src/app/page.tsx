@@ -7,24 +7,24 @@ import BookingProcess from "./components/BookingProcess/BookingProcess";
 import ContactSection from "./components/ContactSection/ContactSection";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 import FaqSection from "./components/Faqs/FaqSection";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+// import fs from "fs";
+// import path from "path";
+// import matter from "gray-matter";
 import BlogSection from "./components/BlogSection/BlogSection";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 
 export default function Home() {
-  const blogDir = "blogs";
-  const files = fs.readdirSync(path.join(blogDir));
-  const blogs = files.map((filename) => {
-    const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
+  // const blogDir = "blogs";
+  // const files = fs.readdirSync(path.join(blogDir));
+  // const blogs = files.map((filename) => {
+  //   const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
 
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      meta: frontMatter,
-      slug: filename.replace(".mdx", ""),
-    };
-  });
+  //   const { data: frontMatter } = matter(fileContent);
+  //   return {
+  //     meta: frontMatter,
+  //     slug: filename.replace(".mdx", ""),
+  //   };
+  // });
 
   return (
     <main>
