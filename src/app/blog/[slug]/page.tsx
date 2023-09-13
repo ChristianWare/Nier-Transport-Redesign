@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import LayoutWrapper from "@/app/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/app/components/ContentPadding/ContentPadding";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
+import SlugImage from "@/app/components/SlugImage/SlugImage";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -31,6 +32,8 @@ function getPost({ slug }: { slug: string }) {
   };
 }
 
+const components = { SlugImage }
+
 export default function Page({ params }: any) {
   const props = getPost(params);
 
@@ -44,7 +47,7 @@ export default function Page({ params }: any) {
       <LayoutWrapper>
         <ContentPadding>
           <article>
-            <MDXRemote source={props.content} />
+            <MDXRemote source={props.content} components={components} />
           </article>
         </ContentPadding>
       </LayoutWrapper>
