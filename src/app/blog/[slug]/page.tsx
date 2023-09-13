@@ -53,7 +53,7 @@ const components = { SlugImage };
 
 export default function Page({ params }: any) {
   const props = getPost(params);
-  console.log(blogs)
+  console.log(props);
 
   return (
     <main>
@@ -65,14 +65,25 @@ export default function Page({ params }: any) {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.container}>
-            <div className={styles.left}></div>
+            <div className={styles.left}>
+              <div className={styles.tocContainer}>
+                <span className={styles.headingTitle}>In This Article</span>
+                <div className={styles.gradient}></div>
+                {props.frontMatter.toc.map((x: any, index: number) => (
+                  // <TableOfCont key={index} info={x} slug={slug} />
+                  <div key={index}>
+                    <p>{x.heading}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className={styles.mdxContent}>
               <MDXRemote source={props.content} components={components} />
             </div>
             <div className={styles.right}>
               <span className={styles.headingTitle}>You May Also Like</span>
               <div className={styles.gradient}></div>
-              {blogs.map((x, index) => (
+              {blogs.slice(0, 3).map((x, index) => (
                 <div key={index}>
                   <h3>{x.meta.title}</h3>
                 </div>
