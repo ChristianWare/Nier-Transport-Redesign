@@ -1,21 +1,20 @@
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import BG from "../../../../public/images/Hero4.png";
-import BG2 from "../../../../public/images/Hero6.png";
+import BG from "../../../../public/images/fleet2.png";
 import Button from "../Button/Button";
 import Nav from "../Nav/Nav";
+import ContentPadding from "../ContentPadding/ContentPadding";
 
 const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
       <Image src={BG} alt='Nier Transportation' fill className={styles.img} />
-      <Image src={BG2} alt='Nier Transportation' fill className={styles.img2} />
       <Nav />
       <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.left}>
+        <ContentPadding>
+          <div className={styles.content}>
             <h1 className={styles.heading} lang='en'>
               <span className={styles.span}>
                 <span className={styles.span}>Nier</span> Transportation:
@@ -33,8 +32,7 @@ const Hero = () => {
               <Button href='/' text='Contact us' btnType='secondary' />
             </div>
           </div>
-          <div className={styles.right}></div>
-        </div>
+        </ContentPadding>
       </LayoutWrapper>
     </section>
   );
