@@ -7,7 +7,6 @@ import BlogPreview from "../BlogPreview/BlogPreview";
 import Button from "../Button/Button";
 
 const BlogSection: FC<BlogSection> = ({ blogData }) => {
-  // const BlogSection = () => {
   return (
     <section className={styles.continer}>
       <LayoutWrapper>

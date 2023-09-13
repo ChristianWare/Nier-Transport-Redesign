@@ -22,7 +22,7 @@ const BlogPreview: FC<BlogPreview> = ({ mapData, key }) => {
           <div className={styles.dateTimeContainer}>
             <time dateTime='2023-02-02'>{mapData.meta.date}</time>
           </div>
-          <Link href={`/${mapData.meta.category}/${mapData.slug}`} passHref>
+          <Link href={`/blog/${mapData.slug}`} passHref>
             <h2 className={styles.title}>{mapData.meta.title}</h2>
           </Link>
           <p className={styles.copy}>{mapData.meta.description}</p>
