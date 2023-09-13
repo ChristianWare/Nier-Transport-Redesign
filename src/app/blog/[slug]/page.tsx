@@ -2,6 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import LayoutWrapper from "@/app/components/LayoutWrapper/LayoutWrapper";
+import ContentPadding from "@/app/components/ContentPadding/ContentPadding";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -32,10 +35,19 @@ export default function Page({ params }: any) {
   const props = getPost(params);
 
   return (
-    <article>
-      <h1>{props.frontMatter.title}</h1>
-
-      <MDXRemote source={props.content}></MDXRemote>
-    </article>
+    <main>
+      <PageIntro
+        heading={props.frontMatter.title}
+        copy={props.frontMatter.description}
+        src={props.frontMatter.thumbnaillUrl}
+      />
+      <LayoutWrapper>
+        <ContentPadding>
+          <article>
+            <MDXRemote source={props.content} />
+          </article>
+        </ContentPadding>
+      </LayoutWrapper>
+    </main>
   );
 }
