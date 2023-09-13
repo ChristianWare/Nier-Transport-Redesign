@@ -5,6 +5,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import Button from "../Button/Button";
 import { FC } from "react";
 import { PageIntroProps } from "@/app/lib/interface";
+import ContentPadding from "../ContentPadding/ContentPadding";
 
 const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
   return (
@@ -13,12 +14,14 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
       <Image src={src} alt='Nier Transportation' fill className={styles.img2} />
       <Nav />
       <LayoutWrapper>
-        <div className={styles.content}>
+        <ContentPadding>
+          <div className={styles.content}>
             <h1 className={styles.heading} lang='en'>
               {heading}
             </h1>
             <p className={styles.copy}>{copy}</p>
-        </div>
+          </div>
+        </ContentPadding>
       </LayoutWrapper>
     </section>
   );

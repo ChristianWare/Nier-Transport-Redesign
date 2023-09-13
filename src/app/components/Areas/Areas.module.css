@@ -94,6 +94,10 @@
   .content {
     flex-direction: column;
   }
+
+  .desc {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -105,11 +109,9 @@
 
   .heading {
     width: 100%;
-    /* text-align: center; */
   }
 
-  .copy,
-  .desc {
+  .copy {
     width: 100%;
   }
 }
