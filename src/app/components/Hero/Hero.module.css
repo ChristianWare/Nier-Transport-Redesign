@@ -15,7 +15,9 @@
   object-fit: cover;
 }
 
-
+.img2 {
+  display: none;
+}
 
 .content {
   padding: 5rem;
@@ -23,7 +25,6 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  /* height: 100vh; */
 }
 
 .left,
@@ -43,7 +44,6 @@
   color: var(--cream);
   margin-top: 1rem;
   margin-bottom: 2rem;
-  hyphens: brea;
 }
 
 .span {
@@ -93,6 +93,14 @@
 
   .copy {
     width: 100%;
+  }
+
+  .img2 {
+    display: block;
+  }
+
+  .img {
+    display: none;
   }
 }
 
