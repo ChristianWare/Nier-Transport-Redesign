@@ -66,6 +66,24 @@ const Mission = () => {
           </div>
         </ContentPadding>
       </LayoutWrapper>
+      <LayoutWrapper>
+        <ContentPadding>
+          <div className={styles.content2}>
+            <div className={styles.left}>
+              <h2 className={styles.heading}>Our Commitment</h2>
+            </div>
+            <div className={styles.right2}>
+              <p className={styles.copy}>
+                Your safety is our top priority. We adhere to the highest safety
+                standards, regularly maintain our vehicles, and ensure that our
+                chauffeurs are trained to deliver a secure and comfortable ride.
+                We&#39;re dedicated to making every trip exceptional. Your
+                satisfaction is our ultimate measure of success.
+              </p>
+            </div>
+          </div>
+        </ContentPadding>
+      </LayoutWrapper>
     </section>
   );
 };

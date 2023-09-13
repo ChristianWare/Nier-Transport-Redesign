@@ -17,9 +17,9 @@
 .content,
 .content2 {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .content2 {
@@ -34,7 +34,13 @@
   width: 100%;
 }
 
-.right, .right2 {
+.right,
+.right2 {
+  max-width: 500px;
+}
+
+.right,
+.right2 {
   border: 1px solid var(--border2);
 }
 
@@ -150,6 +156,11 @@
   .content2 {
     flex-direction: column;
   }
+
+  .right,
+  .right2 {
+    max-width: 100%;
+  }
   .heading {
     width: 100%;
     text-align: center;
@@ -175,12 +186,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .btnContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
   .copy,
   .desc {
     width: 100%;

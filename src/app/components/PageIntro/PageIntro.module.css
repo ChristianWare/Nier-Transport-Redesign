@@ -47,7 +47,7 @@
 .copy {
   z-index: 3;
   color: var(--cream);
-  width: 60%;
+  width: 80%;
   font-family: var(--roboto);
   font-size: 2rem;
   font-weight: 400;
