@@ -44,12 +44,12 @@ export const servicesSection = [
     icon: Party,
     service: "Party Bus",
     descr:
-      "Have something to celebrate? Celebrate in stles with our party bus services.",
+      "Have something to celebrate? Celebrate in style with our party bus services.",
   },
   {
     id: 4,
     icon: Reoccurring,
-    service: "Reocurring Rides",
+    service: "Reoccurring Rides",
     descr:
       "Tired of getting a different Uber driver every time? Book with us for one driver.",
   },
@@ -354,7 +354,7 @@ export const commitment = [
     id: 47,
     icon: Punctuality,
     title: "Punctuality",
-    desc: "We understand the importance of your time. Count on us for prompt and reliable service that keeps you on schedule. We will get you where you need to go in a secure and timeley manner.",
+    desc: "We understand the importance of your time. Count on us for prompt and reliable service that keeps you on schedule. We will get you where you need to go in a secure and timely manner.",
   },
   {
     id: 48,
@@ -392,7 +392,7 @@ export const servicesPage = [
   {
     id: 53,
     src: repeat,
-    title: "Reocurring Rides",
+    title: "Reoccurring Rides",
     desc: "Streamline your regular transportation needs with our dependable recurring ride services. Whether it's a daily commute to work, weekly appointments, or monthly outings, we offer a hassle-free solution for your ongoing travel requirements. Our dedicated chauffeurs and flexible scheduling ensure that you have a dependable and convenient transportation partner for all your recurring journeys, making your life easier and more efficient.",
   },
   {

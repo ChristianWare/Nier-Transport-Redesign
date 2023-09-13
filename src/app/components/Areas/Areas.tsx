@@ -19,7 +19,7 @@ const Areas = () => {
                 Serving the Phoenix metropolitan area
               </h2>
               <p className={styles.copy}>
-                If you need to go someowhere else outside of our service area,
+                If you need to go somewhere else outside of our service area,
                 we will take you there as well.
               </p>
               <div className={styles.btnContainer}>
