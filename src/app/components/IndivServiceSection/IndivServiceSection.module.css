@@ -96,6 +96,11 @@
 }
 
 @media screen and (max-width: 870px) {
+  .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .serviceContainer {
     flex-direction: column-reverse;
     background-color: var(--lightBlue);

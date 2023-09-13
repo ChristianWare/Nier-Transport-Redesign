@@ -1,10 +1,8 @@
 import { servicesPage } from "@/app/lib/data";
 import ContentPadding from "../ContentPadding/ContentPadding";
-import IndivService from "../IndivService/IndivService";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./IndivServiceSection.module.css";
 import Image from "next/image";
-import Img from "../../../../public/images/Sub2.png";
 import Button from "../Button/Button";
 
 const IndivServiceSection = () => {
