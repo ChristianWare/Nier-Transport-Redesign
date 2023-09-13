@@ -3,6 +3,7 @@ import styles from "./About.module.css";
 
 import Img from "../../../public/images/aboutPageIntro.png";
 import CompanyOverview from "../components/CompanyOverview/CompanyOverview";
+import Mission from "../components/Mission/Mission";
 
 const AboutPage = () => {
   return (
@@ -13,6 +14,7 @@ const AboutPage = () => {
         src={Img}
       />
       <CompanyOverview />
+      <Mission />
     </main>
   );
 };
