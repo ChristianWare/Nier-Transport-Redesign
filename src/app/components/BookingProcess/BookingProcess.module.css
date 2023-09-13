@@ -55,7 +55,7 @@
 
 .imgContainer {
   position: relative;
-  height: 650px;
+  height: 615px;
   width: 100%;
   border-radius: 10px;
   z-index: 1;
@@ -79,7 +79,6 @@
   padding: 5rem;
   border-radius: 10px;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 2rem;
