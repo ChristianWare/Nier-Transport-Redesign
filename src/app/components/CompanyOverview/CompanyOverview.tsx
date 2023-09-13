@@ -15,12 +15,7 @@ const CompanyOverview = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h2 className={styles.heading}>
-                <span className={styles.span}>
-                  <span className={styles.span}>Nier</span>{" "}
-                  <span className={styles.span}>Transportation:</span>
-                </span>
-                <br />
-                the best car service in phoenix
+                We&#39;re the best car service in phoenix
               </h2>
               <h3 className={styles.subheading}>
                 Experience the premier Arizona Car Service

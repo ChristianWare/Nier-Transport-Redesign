@@ -9,7 +9,8 @@
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
 }
-p .img {
+
+.img {
   object-fit: cover;
 }
 
