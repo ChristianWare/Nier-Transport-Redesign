@@ -35,9 +35,9 @@ const ServicesSection = () => {
                 </div>
               ))}
             </div>
-          </div>
           <div className={styles.btnContainer}>
             <Button href='/' text='See All Services' btnType='secondary' />
+          </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
