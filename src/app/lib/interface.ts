@@ -35,3 +35,10 @@ export interface PageIntroProps {
   copy: string;
   src: StaticImageData;
 }
+
+export interface IndivServiceProps {
+  src: StaticImageData;
+  title: string;
+  desc: string;
+  mapData: any;
+}

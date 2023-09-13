@@ -4,6 +4,7 @@ import FaqSection from "../components/Faqs/FaqSection";
 import FinalCTA from "../components/FinalCTA/FinalCTA";
 import PageIntro from "../components/PageIntro/PageIntro";
 import Fleet from "../../../public/images/fleet.png";
+import IndivServiceSection from "../components/IndivServiceSection/IndivServiceSection";
 
 const ServicesPage = () => {
   const fs = require("fs");
@@ -35,6 +36,7 @@ const ServicesPage = () => {
         copy='Welcome to Nier Transportation, where your journey is our priority. We offer a range of distinguished services tailored to meet your transportation needs. Our service categories include:'
         src={Fleet}
       />
+      <IndivServiceSection />
       <FaqSection />
       <BlogSection blogData={blogs} />
       <ContactSection />
