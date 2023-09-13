@@ -101,6 +101,10 @@
     align-items: center;
   }
 
+  .desc {
+    text-align: center;
+  }
+
   .btnContainer {
     justify-content: center;
   }
