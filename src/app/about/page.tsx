@@ -11,6 +11,7 @@ import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCTA from "../components/FinalCTA/FinalCTA";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
+import Commitment from "../components/Commitment/Commitment";
 
 const AboutPage = () => {
     const fs = require("fs");
@@ -43,6 +44,7 @@ const AboutPage = () => {
         src={Img}
       />
       <CompanyOverview />
+      <Commitment />
       <Mission />
       <ServicesSection />
       <TestimonialSection />

@@ -15,7 +15,11 @@ const CompanyOverview = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h2 className={styles.heading}>
-                Nier Transportation: <br />
+                <span className={styles.span}>
+                  <span className={styles.span}>Nier</span>{" "}
+                  <span className={styles.span}>Transportation:</span>
+                </span>
+                <br />
                 the best car service in phoenix
               </h2>
               <h3 className={styles.subheading}>

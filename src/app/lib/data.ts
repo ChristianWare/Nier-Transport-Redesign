@@ -11,6 +11,10 @@ import Sub1 from "../../../public/images/sub1.png";
 import Sub2 from "../../../public/images/sub2.png";
 import Sub3 from "../../../public/images/sub3.png";
 import Person from "../../../public/icons/person.png";
+import Saftey from "../../../public/icons/saftey.png";
+import Punctuality from "../../../public/icons/punctual.png";
+import Luxury from "../../../public/icons/luxury.png";
+import Customer from "../../../public/icons/customer.png";
 
 export const servicesSection = [
   {
@@ -330,3 +334,30 @@ export const footer = [
     ],
   },
 ] as const;
+
+export const commitment = [
+  {
+    id: 46,
+    icon: Saftey,
+    title: "Safety",
+    desc: "Your safety is our top priority. We adhere to the highest safety standards, regularly maintain our vehicles, and ensure that our chauffeurs are trained to deliver a secure and comfortable ride.",
+  },
+  {
+    id: 47,
+    icon: Punctuality,
+    title: "Punctuality",
+    desc: "We understand the importance of your time. Count on us for prompt and reliable service that keeps you on schedule. We will get you where you need to go in a secure and timeley manner.",
+  },
+  {
+    id: 48,
+    icon: Luxury,
+    title: "Luxury",
+    desc: "Experience the epitome of luxury and comfort with our premium vehicles and courteous chauffeurs. Our commitment to excellence ensures an unforgettable experience.",
+  },
+  {
+    id: 49,
+    icon: Customer,
+    title: "Customer Satisfaction",
+    desc: "We're dedicated to making every trip exceptional. Your satisfaction is our measure of success. We always strive for excellence and make your journeys truly memorable.",
+  },
+];

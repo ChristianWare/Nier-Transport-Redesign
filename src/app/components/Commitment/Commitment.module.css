@@ -1,0 +1,63 @@
+.container {
+  background-color: var(--lightBlue);
+}
+
+.top,
+.commitBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading, .span {
+  margin-bottom: 2rem;
+  position: relative;
+  width: fit-content;
+}
+
+.span::after, .heading::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 7px;
+  background-color: var(--red);
+  bottom: 0;
+  left: 0;
+}
+
+.copy {
+  color: var(--cream);
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.commitBox {
+  padding: 3rem;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
+
+.img {
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    text-align: center;
+  }
+}

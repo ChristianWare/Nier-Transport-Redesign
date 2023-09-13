@@ -49,7 +49,7 @@ const Mission = () => {
           </div>
         </ContentPadding>
       </LayoutWrapper>
-      <LayoutWrapper>
+      {/* <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
@@ -83,7 +83,7 @@ const Mission = () => {
             </div>
           </div>
         </ContentPadding>
-      </LayoutWrapper>
+      </LayoutWrapper> */}
     </section>
   );
 };
