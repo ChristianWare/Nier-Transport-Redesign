@@ -55,7 +55,7 @@ const ContactSection = () => {
                   </div>
                   <div className={styles.iconInfoContainer}>
                     <Location width={25} height={25} />
-                    <span className={styles.info}>Phoenix, AZ</span>
+                    <span className={styles.info}>Scottsdale, AZ</span>
                   </div>
                 </div>
               </div>
