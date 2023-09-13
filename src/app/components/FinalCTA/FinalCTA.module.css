@@ -43,10 +43,6 @@
   left: 0;
 }
 
-.heading {
-  /* text-align: center; */
-}
-
 .copy {
   color: var(--cream);
   width: 80%;
@@ -115,7 +111,7 @@
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     width: 100%;
   }
 }
