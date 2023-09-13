@@ -68,8 +68,8 @@
   content: "";
   width: 40%;
   height: 40%;
-  top: -25px;
-  left: -25px;
+  top: -15px;
+  left: -15px;
   background-color: var(--red2);
   z-index: -1;
   border-radius: 10px;
