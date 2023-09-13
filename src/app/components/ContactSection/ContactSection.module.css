@@ -38,6 +38,35 @@
   width: 90%;
 }
 
+.letsTalkContainer {
+  margin-top: 3rem;
+  border: 2px solid var(--border);
+  width: fit-content;
+  padding: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--lightBlue);
+}
+
+.iconInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.info {
+  font-weight: 700;
+  font-family: var(--roboto);
+  hyphens: auto;
+  font-size: 1.8rem;
+  color: var(--darkBlue);
+  line-height: 150%;
+  opacity: 0.8;
+}
+
 .form {
   padding: 2rem;
   padding-bottom: 3rem;
@@ -121,6 +150,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+  }
+
+  .letsTalkContainer {
+    width: 100%;
   }
 
   .namesContainer {

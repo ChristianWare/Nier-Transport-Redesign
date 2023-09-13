@@ -7,6 +7,9 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./ContactSection.module.css";
 import SubmitButton from "../SubmitButton/SubmitButton";
 import toast from "react-hot-toast";
+import Phone from "../../../../public/icons/phone2.svg";
+import Email from "../../../../public/icons/email.svg";
+import Location from "../../../../public/icons/location.svg";
 
 const ContactSection = () => {
   const [inputs, setInputs] = useState({
@@ -40,6 +43,21 @@ const ContactSection = () => {
                   you with bookings, inquiries, and personalized travel
                   solutions. We&#39;re just a message or call away.
                 </p>
+                <div className={styles.letsTalkContainer}>
+                  <h3>Let&#39;s talk</h3>
+                  <div className={styles.iconInfoContainer}>
+                    <Email width={35} height={35} />
+                    <span className={styles.info}>hello@niertransportation.com</span>
+                  </div>
+                  <div className={styles.iconInfoContainer}>
+                    <Phone width={35} height={35} />
+                    <span className={styles.info}>480-300-6003</span>
+                  </div>
+                  <div className={styles.iconInfoContainer}>
+                    <Location width={25} height={25} />
+                    <span className={styles.info}>Phoenix, AZ</span>
+                  </div>
+                </div>
               </div>
               <div className={styles.right}>
                 <form
