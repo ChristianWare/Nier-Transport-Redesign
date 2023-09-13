@@ -1,6 +1,4 @@
 import PageIntro from "../components/PageIntro/PageIntro";
-import styles from "./About.module.css";
-
 import Img from "../../../public/images/aboutPageIntro.png";
 import CompanyOverview from "../components/CompanyOverview/CompanyOverview";
 import Mission from "../components/Mission/Mission";
