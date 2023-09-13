@@ -15,6 +15,14 @@ import Saftey from "../../../public/icons/saftey.png";
 import Punctuality from "../../../public/icons/punctual.png";
 import Luxury from "../../../public/icons/luxury.png";
 import Customer from "../../../public/icons/customer.png";
+import Airport from "../../../public/images/airport.png";
+import Event2 from "../../../public/images/event.png";
+import Party2 from "../../../public/images/party.png";
+import Long from "../../../public/images/long.png";
+import Golf2 from "../../../public/images/golf.png";
+import Corporate from "../../../public/images/corporate.png";
+import Hourly from "../../../public/images/hourly.png";
+import repeat from "../../../public/images/repeat.png";
 
 export const servicesSection = [
   {
@@ -359,5 +367,56 @@ export const commitment = [
     icon: Customer,
     title: "Customer Satisfaction",
     desc: "We're dedicated to making every trip exceptional. Your satisfaction is our measure of success. We always strive for excellence and make your journeys truly memorable.",
+  },
+] as const;
+
+export const servicesPage = [
+  {
+    id: 50,
+    src: Airport,
+    title: "Airport Transfers",
+    desc: "Our black car services extend to seamless airport transfers for your convenience, covering Scottsdale Airport, Phoenix Sky Harbor International Airport, and Phoenix-Mesa Gateway. Whether you're arriving or departing, our dedicated chauffeurs ensure punctual and stress-free transportation to and from these key airports, allowing you to focus on your journey while we take care of the rest. Experience the epitome of luxury and reliability with us.",
+  },
+  {
+    id: 51,
+    src: Event2,
+    title: "Special Events",
+    desc: "Elevate your special event experience with our premium black car services, catering to a wide range of occasions including the Waste Management Open, PGA Tour, Super Bowl, Spring Training, and much more. From sporting events to cultural festivals, our chauffeurs are committed to ensuring your transportation is as memorable as the event itself. Count on us to provide luxurious and reliable transportation for all your special occasions.",
+  },
+  {
+    id: 52,
+    src: Party2,
+    title: "Party Bus",
+    desc: "Turn any occasion into an unforgettable celebration with our party bus services. Our party buses are designed to enhance the excitement and fun. With spacious interiors, entertainment systems, and a professional chauffeur at the helm, our party buses are the perfect choice for your next big event. Make your journey as memorable as the destination with our party bus services.",
+  },
+  {
+    id: 53,
+    src: repeat,
+    title: "Reocurring Rides",
+    desc: "Streamline your regular transportation needs with our dependable recurring ride services. Whether it's a daily commute to work, weekly appointments, or monthly outings, we offer a hassle-free solution for your ongoing travel requirements. Our dedicated chauffeurs and flexible scheduling ensure that you have a dependable and convenient transportation partner for all your recurring journeys, making your life easier and more efficient.",
+  },
+  {
+    id: 54,
+    src: Long,
+    title: "Long Distance Drives",
+    desc: "Embark on comfortable and stress-free long-distance journeys with our specialized long-distance drive services. Whether you're traveling to another city or state for business or leisure, our experienced chauffeurs and well-maintained vehicles ensure a smooth and enjoyable ride. Sit back, relax, and let us handle the miles, providing you with a safe and convenient travel experience, so you can arrive at your destination refreshed and ready to go.",
+  },
+  {
+    id: 55,
+    src: Golf2,
+    title: "Golf Course Transfers",
+    desc: "Enjoy a seamless and stylish journey with our specialized golf course transfer services to renowned destinations such as Scottsdale TPC, Troon Golf Course, Grayhawk, and We-Ko-Pa golf courses. Whether you're hitting the links for a round of golf or attending events at these prestigious venues, our chauffeurs guarantee on-time and comfortable transportation, allowing you to fully relish your golfing experience. Count on us to elevate your time on the fairways and greens.",
+  },
+  {
+    id: 56,
+    src: Corporate,
+    title: "Corporate Transportation",
+    desc: "Elevate your corporate travel experience with our exceptional corporate transfer services. We prioritize professionalism and convenience above all else, guaranteeing that every aspect of your business transportation is seamlessly executed. Our highly trained chauffeurs not only prioritize punctuality but also offer a level of professionalism that sets the standard for corporate travel.",
+  },
+  {
+    id: 57,
+    src: Hourly,
+    title: "Hourly Charters",
+    desc: "With our hourly charters, you're in control of your schedule, allowing you to maximize your time and productivity while enjoying the comfort and style of our premium vehicles. Our dedicated chauffeurs are at your service, ensuring you reach each destination promptly and in the utmost comfort.",
   },
 ];
