@@ -420,3 +420,26 @@ export const servicesPage = [
     desc: "With our hourly charters, you're in control of your schedule, allowing you to maximize your time and productivity while enjoying the comfort and style of our premium vehicles. Our dedicated chauffeurs are at your service, ensuring you reach each destination promptly and in the utmost comfort.",
   },
 ];
+
+export const options = [
+  {
+    id: 58,
+    city: "Vehicle Options",
+    desc: "Choose from our diverse fleet, including spacious SUVs, sprinter vans, and more. Our vehicles are equipped with modern amenities for your comfort and enjoyment.",
+  },
+  {
+    id: 59,
+    city: "Amenities",
+    desc: "Select vehicles come with a range of amenities, such as Wi-Fi, refreshments, and entertainment systems, ensuring a delightful journey.",
+  },
+  {
+    id: 60,
+    city: "Customization",
+    desc: "We understand that every client is unique. That's why we offer customization options to meet your specific preferences and requirements.",
+  },
+  {
+    id: 61,
+    city: "Payment Options",
+    desc: "For your convenience, we offer secure online payment options for those who wish to pay in advance. We accept major payment methods, including credit cards and PayPal.",
+  },
+];

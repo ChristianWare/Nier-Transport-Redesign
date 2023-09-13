@@ -42,7 +42,7 @@
   padding: 2rem;
   padding-bottom: 3rem;
   border-radius: 10px;
-  border: 2px solid var(--darkBlue);
+  border: 2px solid var(--border);
   width: 100%;
 }
 
@@ -126,9 +126,5 @@
   .namesContainer {
     flex-direction: column;
     gap: 0rem;
-  }
-
-  .btnBtnContainer {
-    /* display: grid; */
   }
 }

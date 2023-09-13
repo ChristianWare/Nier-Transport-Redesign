@@ -5,6 +5,7 @@ import FinalCTA from "../components/FinalCTA/FinalCTA";
 import PageIntro from "../components/PageIntro/PageIntro";
 import Fleet from "../../../public/images/fleet.png";
 import IndivServiceSection from "../components/IndivServiceSection/IndivServiceSection";
+import Options from "../components/Options/Options";
 
 const ServicesPage = () => {
   const fs = require("fs");
@@ -37,8 +38,9 @@ const ServicesPage = () => {
         src={Fleet}
       />
       <IndivServiceSection />
-      <FaqSection />
+      <Options />
       <BlogSection blogData={blogs} />
+      <FaqSection />
       <ContactSection />
       <FinalCTA />
     </main>
