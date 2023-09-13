@@ -81,4 +81,8 @@
   .heading {
     font-size: 5rem;
   }
+
+  .heading::after {
+    bottom: -6px;
+  }
 }
