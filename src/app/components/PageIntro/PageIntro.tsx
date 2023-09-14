@@ -19,7 +19,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
             <h1 className={styles.heading} lang='en'>
               {heading}
             </h1>
-            <p className={styles.copy}>{copy}</p>
+            {/* <p className={styles.copy}>{copy}</p> */}
           </div>
         </ContentPadding>
       </LayoutWrapper>
