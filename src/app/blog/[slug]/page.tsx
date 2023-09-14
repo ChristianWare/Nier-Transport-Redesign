@@ -13,6 +13,7 @@ import FinalCTA from "@/app/components/FinalCTA/FinalCTA";
 import BlogPreview from "@/app/components/BlogPreview/BlogPreview";
 import { BlogData, BlogSection } from "@/app/lib/interface";
 import { FC } from "react";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -94,16 +95,19 @@ export default function Page({ params }: any) {
               <MDXRemote source={props.content} components={components} />
             </div>
             <div className={styles.right}>
-              <span className={styles.headingTitle}>You May Also Like</span>
-              <div className={styles.gradient}></div>
+              <div className={styles.headingTitle}>You May Also Like</div>
               {blogs.slice(0, 3).map((x, index) => (
                 <div key={index}>
-                  <h3>{x.meta.title}</h3>
+                  <h3 className={styles.blogTitle}>{x.meta.title}</h3>
+                  <p className={styles.blogDesc}>{x.meta.description}</p>
+                  <Link href={`/blog/${x.slug}`} className={styles.link}>
+                    Continue Reading <span className={styles.arrow}>→</span>
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
-            <h2 className={styles.relatedArticlesHeading}>Relted Articles</h2>
+          <h2 className={styles.relatedArticlesHeading}>Relted Articles</h2>
           <div className={styles.relatedArticles}>
             {blogs.slice(0, 3).map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />

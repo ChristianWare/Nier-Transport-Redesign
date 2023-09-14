@@ -27,8 +27,7 @@
 .tocHeadingTitle {
   font-size: 2.4rem;
   font-family: var(--roboto);
-  border-bottom: 2px solid var(--border);
-  width: 100%;
+  border-bottom: 2px solid var(--red);
 }
 
 .heading {
@@ -50,6 +49,40 @@
   max-height: calc(100vh - 70px);
   overflow: auto;
   margin-top: 3rem;
+}
+
+.headingTitle {
+  font-family: var(--roboto);
+  opacity: 0.8;
+  width: 100%;
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 1rem;
+}
+
+.blogTitle {
+  padding-top: 1rem;
+  opacity: 0.8;
+}
+
+.blogDesc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 1.6rem;
+  opacity: 0.6;
+}
+
+.link {
+  font-family: var(--roboto);
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+.arrow {
+  font-size: 2rem;
+  margin-left: 1rem;
+  opacity: 0.8;
 }
 
 .relatedArticlesHeading {
