@@ -1,13 +1,34 @@
-import PageIntro from "../components/PageIntro/PageIntro";
 import Img from "../../../public/images/barry.jpg";
 import LayoutWrapper from "../components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../components/ContentPadding/ContentPadding";
 import styles from "../leagal.module.css";
+import Image from "next/image";
+import Nav from "../components/Nav/Nav";
 
 const TermsPage = () => {
   return (
     <main>
-      <PageIntro heading='Terms and Conditions' src={Img} />
+      <section className={styles.container}>
+        <div className={styles.imgOverlay}></div>
+        <Image
+          src={Img}
+          alt='Nier Transportation'
+          fill
+          className={styles.img2}
+        />
+        <Nav />
+        <LayoutWrapper>
+          <ContentPadding>
+            <div className={styles.content}>
+              <h1 className={styles.heading} lang='en'>
+                <span className={styles.span}>Terms </span>
+                <span className={styles.span}>and </span>
+                <span className={styles.span}>Conditions </span>
+              </h1>
+            </div>
+          </ContentPadding>
+        </LayoutWrapper>
+      </section>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>

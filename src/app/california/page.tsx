@@ -1,4 +1,3 @@
-import PageIntro from "../components/PageIntro/PageIntro";
 import Img from "../../../public/images/barry.jpg";
 import LayoutWrapper from "../components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../components/ContentPadding/ContentPadding";
@@ -24,10 +23,10 @@ const CaliforniaPage = () => {
               <h1 className={styles.heading} lang='en'>
                 <span className={styles.span}>California </span>
                 <span className={styles.span}>Consumer </span>
-                <span className={styles.span}>Privacy </span>
+                <br />
+                <span className={styles.span}>privacy </span>
                 <span className={styles.span}>Act </span>
                 <span className={styles.span}>(CCPA) </span>
-                <span className={styles.span}>Privacy Notice </span>
               </h1>
             </div>
           </ContentPadding>
@@ -61,23 +60,17 @@ const CaliforniaPage = () => {
               <br />
               <strong>Personal Information Categories:</strong>
               <br />
-              <p>
-                This may include information such as your postal address and
-                payment information.
-              </p>
+              This may include information such as your postal address and
+              payment information.
               <strong>Internet or Other Network Activity Information:</strong>
-              <p>
-                This may include information about your interaction with our
-                website and services, including browsing history and usage data.
-              </p>
+              This may include information about your interaction with our
+              website and services, including browsing history and usage data.
               <strong>Geolocation Data:</strong>
-              <p>This may include information about your physical location.</p>
+              This may include information about your physical location.
               <strong>Inferences: </strong>
-              <p>
-                This may include information derived from the personal
-                information we collect to create a profile about your
-                preferences and characteristics.
-              </p>
+              This may include information derived from the personal information
+              we collect to create a profile about your preferences and
+              characteristics.
             </p>
             <br />
             <h2>3. How We Use Your Personal Information</h2>

@@ -1,13 +1,33 @@
-import PageIntro from "../components/PageIntro/PageIntro";
 import Img from "../../../public/images/barry.jpg";
 import LayoutWrapper from "../components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../components/ContentPadding/ContentPadding";
 import styles from "../leagal.module.css";
+import Image from "next/image";
+import Nav from "../components/Nav/Nav";
 
 const PrivacyPage = () => {
   return (
     <main>
-      <PageIntro heading='Privacy Policy' src={Img} />
+      <section className={styles.container}>
+        <div className={styles.imgOverlay}></div>
+        <Image
+          src={Img}
+          alt='Nier Transportation'
+          fill
+          className={styles.img2}
+        />
+        <Nav />
+        <LayoutWrapper>
+          <ContentPadding>
+            <div className={styles.content}>
+              <h1 className={styles.heading} lang='en'>
+                <span className={styles.span}>Privacy </span>
+                <span className={styles.span}>Policy </span>
+              </h1>
+            </div>
+          </ContentPadding>
+        </LayoutWrapper>
+      </section>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
@@ -28,6 +48,7 @@ const PrivacyPage = () => {
             <p>
               We may collect the following types of information:
               <br />
+              <br />
               <strong>Personal Information:</strong>
               <br />
               This may include your name, email address, phone number, and other
@@ -37,12 +58,15 @@ const PrivacyPage = () => {
             <br />
             <h2>3. How We Use Your Information</h2>
             <p>
-              - We may use your information for the following purposes:
+              We may use your information for the following purposes:
+              <br />
               <br />
               - To provide and maintain our services.
               <br />
+              <br />
               - To communicate with you, including responding to your inquiries
               and providing customer support.
+              <br />
               <br />- To improve our website and services. To send you updates,
               promotions, and other marketing communications (you can opt-out at
               any time).
@@ -52,8 +76,10 @@ const PrivacyPage = () => {
             <p>
               We may share your personal information with:
               <br />
+              <br />
               - Service providers and contractors who assist us in operating our
               business.
+              <br />
               <br />- Legal authorities, if required by law or to protect our
               rights or the rights of others.
             </p>

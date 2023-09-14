@@ -1,13 +1,33 @@
-import PageIntro from "../components/PageIntro/PageIntro";
 import Img from "../../../public/images/barry.jpg";
 import LayoutWrapper from "../components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../components/ContentPadding/ContentPadding";
 import styles from "../leagal.module.css";
+import Image from "next/image";
+import Nav from "../components/Nav/Nav";
 
 const AccessibilityPage = () => {
   return (
     <main>
-      <PageIntro heading='Accessibility Policy' src={Img} />
+      <section className={styles.container}>
+        <div className={styles.imgOverlay}></div>
+        <Image
+          src={Img}
+          alt='Accessibility Policy'
+          fill
+          className={styles.img2}
+        />
+        <Nav />
+        <LayoutWrapper>
+          <ContentPadding>
+            <div className={styles.content}>
+              <h1 className={styles.heading} lang='en'>
+                <span className={styles.span}>Accessibility </span>
+                <span className={styles.span}>Policy </span>
+              </h1>
+            </div>
+          </ContentPadding>
+        </LayoutWrapper>
+      </section>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
@@ -30,12 +50,16 @@ const AccessibilityPage = () => {
               (WCAG) 2.1 Level AA, a globally recognized standard for web
               accessibility. Our efforts include:
               <br />
+              <br />
               - Providing alternative text descriptions for non-text content,
               such as images and multimedia.
+              <br />
               <br />- Ensuring that our website is navigable using keyboard-only
               or screen-reader technology.
+              <br />
               <br />- Using adaptable and responsive design principles to
               accommodate various devices and screen sizes.
+              <br />
               <br />- Offering clear and consistent navigation and structure
               throughout the website.
             </p>
