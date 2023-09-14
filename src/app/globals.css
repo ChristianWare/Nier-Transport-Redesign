@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-size: 6rem;
 }
 
@@ -115,22 +115,24 @@ textarea {
 input:focus {
   outline: none;
 }
-/* 
+
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--secondary);
+  background: var(--red);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  background: var(--darkBlue);
 }
 
 ::selection {
-  background: var(--secondary);
+  background: var(--red);
+  color: var(--cream);
 }
 ::-moz-selection {
-  background: var(--secondary);
-} */
+  background: var(--red);
+  color: var(--cream);
+}
 
 @media screen and (max-width: 768px) {
   html {

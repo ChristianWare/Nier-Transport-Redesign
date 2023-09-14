@@ -101,6 +101,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-bottom: 5rem;
+  }
+  
   .btnContainer {
    flex-direction: column;
    justify-content: flex-start;

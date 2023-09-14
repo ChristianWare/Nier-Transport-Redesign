@@ -107,8 +107,12 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-bottom: 3rem;
+  }
+  
   .content {
-    padding: 1rem;
+    padding: 0rem;
     padding-top: 3rem;
   }
 

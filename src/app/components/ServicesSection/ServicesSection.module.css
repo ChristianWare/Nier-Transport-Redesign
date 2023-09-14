@@ -82,6 +82,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-bottom: 5rem;
+  }
+  
   .content {
     display: flex;
     flex-direction: column;
@@ -95,6 +99,7 @@
 
   .servicesGrid {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 
   .card {

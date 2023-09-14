@@ -82,6 +82,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
   .top {
     display: flex;
     flex-direction: column;
