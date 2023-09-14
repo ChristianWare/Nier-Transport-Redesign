@@ -15,8 +15,10 @@ const SlugConclusion = ({ copy }: { copy: string }) => {
           height={50}
           className={styles.personImage}
         />
-        <div className={styles.reviewer}>Barry LaNier</div>
-        <span className={styles.title}>CEO</span>
+        <div className={styles.reviewerTitleContainer}>
+          <div className={styles.reviewer}>Barry LaNier</div>
+          <span className={styles.title}>CEO</span>
+        </div>
       </div>
     </div>
   );
