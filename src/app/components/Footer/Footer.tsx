@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 import ArrowRight from "../../../../public/icons/arrowRight.svg";
 import { footer } from "@/app/lib/data";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import Logo from "../../../../public/icons/nierlogo.png";
+import Logo from "../../../../public/icons/newnierlogo.png";
 import Link from "next/link";
 import Image from "next/image";
 import ContentPadding from "../ContentPadding/ContentPadding";
@@ -26,7 +26,17 @@ const Footer = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
-            <div className={styles.top}></div>
+            <div className={styles.top}>
+              <Link href='/' className={styles.logo}>
+                <Image
+                  src={Logo}
+                  alt='logo'
+                  width={107}
+                  height={50}
+                  className={styles.officialLogo}
+                />
+              </Link>
+            </div>
             <div className={styles.middleDesktop}>
               {footer.map((f, index) => (
                 <div key={index} className={styles.sectionContainer}>
@@ -35,7 +45,11 @@ const Footer = () => {
                   </div>
                   <div className={styles.footerItemContainer}>
                     {f.section.map((s, index) => (
-                      <Link href={s.href} key={index} className={styles.footerItem}>
+                      <Link
+                        href={s.href}
+                        key={index}
+                        className={styles.footerItem}
+                      >
                         {s.name}
                       </Link>
                     ))}
@@ -86,7 +100,8 @@ const Footer = () => {
             <div className={styles.bottom}>
               <div className={styles.bottomLeft}>
                 <p className={styles.copy}>
-                  &copy; 2023 Nier Transportation || All Rights Reserved || Designed and Developed by The Chris Ware Agency{" "}
+                  &copy; 2023 Nier Transportation || All Rights Reserved ||
+                  Designed and Developed by The Chris Ware Agency{" "}
                 </p>
               </div>
               <div className={styles.bottomRight}>

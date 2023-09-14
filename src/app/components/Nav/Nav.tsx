@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Link from "next/link";
 import Logo from "../../../../public/icons/logowhite.png";
-import LogoMobile from "../../../../public/icons/nierlogo.png";
+import LogoMobile from "../../../../public/icons/newnierlogo.png";
 import Image from "next/image";
 import Phone from "../../../../public/icons/phone.svg";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
