@@ -7,6 +7,10 @@ import LayoutWrapper from "@/app/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/app/components/ContentPadding/ContentPadding";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
 import SlugImage from "@/app/components/SlugImage/SlugImage";
+import FinalCTA from "@/app/components/FinalCTA/FinalCTA";
+import BlogPreview from "@/app/components/BlogPreview/BlogPreview";
+import { BlogData, BlogSection } from "@/app/lib/interface";
+import { FC } from "react";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -25,7 +29,6 @@ function getPost({ slug }: { slug: string }) {
   );
 
   const { data: frontMatter, content } = matter(markdownFile);
-
   return {
     frontMatter,
     slug,
@@ -43,17 +46,28 @@ const blogs = files.map((filename: any) => {
   );
 
   const { data: frontMatter } = matter(fileContent);
+
+  // Define the properties within the `meta` object
+  const meta = {
+    category: frontMatter.category,
+    thumbnaillUrl: frontMatter.thumbnaillUrl,
+    date: frontMatter.date,
+    readingTime: frontMatter.readingTime,
+    title: frontMatter.title,
+    description: frontMatter.description,
+    // Add other properties from the interface if needed
+  };
+
   return {
-    meta: frontMatter,
+    meta,
     slug: filename.replace(".mdx", ""),
   };
 });
 
 const components = { SlugImage };
 
-export default function Page({ params }: any) {
+const Page: FC<BlogSection> = ({ params }: any) => {
   const props = getPost(params);
-  console.log(props);
 
   return (
     <main>
@@ -70,7 +84,6 @@ export default function Page({ params }: any) {
                 <span className={styles.headingTitle}>In This Article</span>
                 <div className={styles.gradient}></div>
                 {props.frontMatter.toc.map((x: any, index: number) => (
-                  // <TableOfCont key={index} info={x} slug={slug} />
                   <div key={index}>
                     <p>{x.heading}</p>
                   </div>
@@ -90,8 +103,16 @@ export default function Page({ params }: any) {
               ))}
             </div>
           </div>
+          <div className={styles.relatedArticles}>
+            {blogs.slice(0, 3).map((x: BlogData, index: number) => (
+              <BlogPreview key={index} mapData={x} />
+            ))}
+          </div>
         </ContentPadding>
       </LayoutWrapper>
+      <FinalCTA />
     </main>
   );
-}
+};
+
+export default Page;
