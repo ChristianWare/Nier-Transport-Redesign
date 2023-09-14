@@ -29,7 +29,7 @@ const ContactPage = () => {
     <main>
       <PageIntro
         heading='Reach Out'
-        copy='Our Contact Us page is your gateway to seamless communication with our dedicated team. Whether you have inquiries about our premium black car services, need assistance with bookings, or wish to discuss customized travel solutions, we&#39;re here to assist you. Reach out to us today and experience personalized support that ensures your every request is met with efficiency and care.'
+        
         src={Contact2}
       />
 

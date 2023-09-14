@@ -26,7 +26,7 @@ const BlogPage = () => {
     <main>
       <PageIntro
         heading='Our Blog'
-        copy='Explore our blog section to stay updated on the latest trends in luxury transportation, travel tips, and exclusive insights into the world of black car services. Whether you&#39;re seeking advice on planning a memorable event, discovering hidden gems in our service areas, or simply looking for inspiration for your next journey, our blog is your go-to resource. Join us on a journey of discovery and refinement in the world of premium transportation.'
+        
         src={Blog}
       />
       <BlogSection blogData={blogs} />

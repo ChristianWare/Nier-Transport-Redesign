@@ -34,7 +34,7 @@ const ServicesPage = () => {
     <main>
       <PageIntro
         heading='Our Services'
-        copy='Welcome to Nier Transportation, where your journey is our priority. We offer a range of distinguished services tailored to meet your transportation needs. Our service categories include:'
+       
         src={Fleet}
       />
       <IndivServiceSection />
