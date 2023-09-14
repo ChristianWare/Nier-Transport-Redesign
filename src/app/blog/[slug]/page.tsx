@@ -55,7 +55,6 @@ const blogs = files.map((filename: any) => {
     readingTime: frontMatter.readingTime,
     title: frontMatter.title,
     description: frontMatter.description,
-    // Add other properties from the interface if needed
   };
 
   return {
@@ -81,11 +80,10 @@ export default function Page({ params }: any) {
           <div className={styles.container}>
             <div className={styles.left}>
               <div className={styles.tocContainer}>
-                <span className={styles.headingTitle}>In This Article</span>
-                <div className={styles.gradient}></div>
+                <span className={styles.tocHeadingTitle}>In This Article</span>
                 {props.frontMatter.toc.map((x: any, index: number) => (
                   <div key={index}>
-                    <p>{x.heading}</p>
+                    <p className={styles.heading}>{x.heading}</p>
                   </div>
                 ))}
               </div>
