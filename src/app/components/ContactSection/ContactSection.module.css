@@ -36,6 +36,9 @@
 
 .copy {
   width: 90%;
+  font-size: 2rem;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
 .letsTalkContainer {
@@ -58,7 +61,7 @@
 }
 
 .info {
-  font-weight: 700;
+  font-weight: 500;
   font-family: var(--roboto);
   hyphens: auto;
   font-size: 1.8rem;
