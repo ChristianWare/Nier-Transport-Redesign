@@ -1,0 +1,10 @@
+.copyContainer {
+  padding: 3rem;
+  background-color: var(--darkBlue);
+  border-radius: 10px;
+}
+
+.copy {
+  color: var(--cream);
+  opacity: 0.7;
+}

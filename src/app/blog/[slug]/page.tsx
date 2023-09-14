@@ -7,6 +7,8 @@ import LayoutWrapper from "@/app/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/app/components/ContentPadding/ContentPadding";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
 import SlugImage from "@/app/components/SlugImage/SlugImage";
+import SlugHeading from "@/app/components/SlugHeading/SlugHeading";
+import SlugConclusion from "@/app/components/SlugConclusion/SlugConclusion";
 import FinalCTA from "@/app/components/FinalCTA/FinalCTA";
 import BlogPreview from "@/app/components/BlogPreview/BlogPreview";
 import { BlogData, BlogSection } from "@/app/lib/interface";
@@ -63,7 +65,7 @@ const blogs = files.map((filename: any) => {
   };
 });
 
-const components = { SlugImage };
+const components = { SlugImage, SlugHeading, SlugConclusion };
 
 export default function Page({ params }: any) {
   const props = getPost(params);
