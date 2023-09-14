@@ -28,7 +28,12 @@ const IndivServiceSection = () => {
               </article>
             ))}
             <div className={styles.btnContainer}>
-              <Button href='/' text='Book now' btnType='primary' />
+              <Button
+                href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
+                target='_blank'
+                text='Book Now'
+                btnType='primary'
+              />
               <Button href='/' text='Call us' btnType='tertiary' />
             </div>
           </div>

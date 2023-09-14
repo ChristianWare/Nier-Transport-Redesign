@@ -14,7 +14,8 @@ const FinalCTA = () => {
             <div className={styles.left}>
               <h2 className={styles.heading}>
                 <span className={styles.span}>
-                  <span className={styles.span}>Nier</span> <br className={styles.br} />
+                  <span className={styles.span}>Nier</span>{" "}
+                  <br className={styles.br} />
                   <span className={styles.span}>Transportation:</span>
                 </span>
               </h2>
@@ -24,7 +25,12 @@ const FinalCTA = () => {
                 enjoy the ultimate in luxury, comfort, and convenience.
               </p>
               <div className={styles.btnContainer}>
-                <Button href='/' text='Book Now' btnType='primary' />
+                <Button
+                  href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
+                  target='_blank'
+                  text='Book Now'
+                  btnType='primary'
+                />
                 <Button href='/' text='Contact us' btnType='secondary' />
               </div>
             </div>

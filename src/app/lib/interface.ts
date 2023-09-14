@@ -5,6 +5,7 @@ export interface Button {
   href: string;
   text: string;
   btnType: string;
+  target?: string;
   icon?: ReactNode;
 }
 
