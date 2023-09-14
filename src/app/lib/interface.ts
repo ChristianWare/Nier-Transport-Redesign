@@ -36,6 +36,13 @@ export interface PageIntroProps {
   src: StaticImageData;
 }
 
+export interface SlugIntroProps {
+  title: string;
+  description: string;
+  date: string;
+  src: StaticImageData;
+}
+
 export interface IndivServiceProps {
   src: StaticImageData;
   title: string;

@@ -5,15 +5,14 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import styles from "./SlugPage.module.css";
 import LayoutWrapper from "@/app/components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "@/app/components/ContentPadding/ContentPadding";
-import PageIntro from "@/app/components/PageIntro/PageIntro";
 import SlugImage from "@/app/components/SlugImage/SlugImage";
 import SlugHeading from "@/app/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/app/components/SlugConclusion/SlugConclusion";
 import FinalCTA from "@/app/components/FinalCTA/FinalCTA";
 import BlogPreview from "@/app/components/BlogPreview/BlogPreview";
-import { BlogData, BlogSection } from "@/app/lib/interface";
-import { FC } from "react";
+import { BlogData } from "@/app/lib/interface";
 import Link from "next/link";
+import SlugIntro from "@/app/components/SlugIntro/SlugIntro";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -73,9 +72,10 @@ export default function Page({ params }: any) {
 
   return (
     <main>
-      <PageIntro
-        heading={props.frontMatter.title}
-        copy={props.frontMatter.description}
+      <SlugIntro
+        title={props.frontMatter.title}
+        description={props.frontMatter.description}
+        date={props.frontMatter.date}
         src={props.frontMatter.thumbnaillUrl}
       />
       <LayoutWrapper>
