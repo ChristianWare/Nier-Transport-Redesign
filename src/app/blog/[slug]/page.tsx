@@ -66,7 +66,7 @@ const blogs = files.map((filename: any) => {
 
 const components = { SlugImage };
 
-const Page: FC<BlogSection> = ({ params }: any) => {
+export default function Page({ params }: any) {
   const props = getPost(params);
 
   return (
@@ -113,6 +113,4 @@ const Page: FC<BlogSection> = ({ params }: any) => {
       <FinalCTA />
     </main>
   );
-};
-
-export default Page;
+}
