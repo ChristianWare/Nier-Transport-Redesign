@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 import ArrowRight from "../../../../public/icons/arrowRight.svg";
 import { footer } from "@/app/lib/data";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
-import Logo from "../../../../public/icons/newnierlogo.png";
+import Logo from "../../../../public/icons/newnierlogofooter.png";
 import Link from "next/link";
 import Image from "next/image";
 import ContentPadding from "../ContentPadding/ContentPadding";
@@ -31,8 +31,8 @@ const Footer = () => {
                 <Image
                   src={Logo}
                   alt='logo'
-                  width={107}
-                  height={50}
+                  width={160}
+                  height={75}
                   className={styles.officialLogo}
                 />
               </Link>
@@ -88,11 +88,17 @@ const Footer = () => {
                         : styles.answer
                     }
                   >
-                    {f.section.map((s, index) => (
-                      <p key={index} className={styles.footerItem}>
-                        {s.name}
-                      </p>
-                    ))}
+                    <div className={styles.footerItemContainer}>
+                      {f.section.map((s, index) => (
+                        <Link
+                          href={s.href}
+                          key={index}
+                          className={styles.footerItem}
+                        >
+                          {s.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
