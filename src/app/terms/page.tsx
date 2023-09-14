@@ -4,13 +4,17 @@ import LayoutWrapper from "../components/LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../components/ContentPadding/ContentPadding";
 import styles from "../leagal.module.css";
 
-const page = () => {
+const TermsPage = () => {
   return (
     <main>
       <PageIntro heading='Terms and Conditions' src={Img} />
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
+            <p>
+              <strong>Effective Date: 09/14/2023</strong>
+            </p>
+            <br />
             <h2>1. Acceptance of Terms</h2>
             <p>
               Welcome to Nier Transportation&#39;s website. By accessing or
@@ -81,13 +85,27 @@ const page = () => {
             <h2>9. Contact Information</h2>
             <p>
               If you have any questions or concerns regarding these Terms,
-              please contact us at: 
+              please contact us at:
               <br />
               <br />
-              <strong>Address: 10105 E Vía Linda Suite A- 105 </strong>
-              <br /> <strong>Phone: 480-300-6003</strong>
+              <strong>
+                Address:
+                <br />
+                10105 E Vía Linda Suite A- 105 <br />
+                Scottsdale, AZ 85258
+              </strong>
               <br />
-              <strong>Email: hello@niertransportation.com</strong>
+              <br />
+              <strong>
+                Phone: <br />
+                480-300-6003
+              </strong>
+              <br />
+              <br />
+              <strong>
+                Email <br />
+                hello@niertransportation.com
+              </strong>
             </p>
           </div>
         </ContentPadding>
@@ -95,6 +113,6 @@ const page = () => {
     </main>
   );
 };
-export default page;
+export default TermsPage;
 
 // Nier Transportation
