@@ -66,4 +66,8 @@
   .heading {
     text-align: center;
   }
+
+  .bottom {
+    grid-gap: 2rem;
+  }
 }
