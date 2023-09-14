@@ -1,5 +1,5 @@
 import PageIntro from "../components/PageIntro/PageIntro";
-import Img from "../../../public/images/aboutPageIntro.png";
+import Img from "../../../public/images/barry.jpg";
 import CompanyOverview from "../components/CompanyOverview/CompanyOverview";
 import Mission from "../components/Mission/Mission";
 import ServicesSection from "../components/ServicesSection/ServicesSection";

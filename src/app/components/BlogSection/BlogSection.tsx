@@ -1,3 +1,5 @@
+"use client";
+
 import { BlogSection, BlogData } from "@/app/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
