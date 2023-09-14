@@ -7,7 +7,7 @@ import { FC } from "react";
 import { PageIntroProps } from "@/app/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 
-const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
+const PageIntro: FC<PageIntroProps> = ({ heading, src }) => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
@@ -19,7 +19,6 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
             <h1 className={styles.heading} lang='en'>
               {heading}
             </h1>
-            {/* <p className={styles.copy}>{copy}</p> */}
           </div>
         </ContentPadding>
       </LayoutWrapper>

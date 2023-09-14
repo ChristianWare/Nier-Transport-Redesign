@@ -260,18 +260,22 @@ export const footer = [
       {
         id: 2,
         name: "Terms of Use",
+        href: "/terms",
       },
       {
         id: 3,
         name: "Privacy Poilicy",
+        href: "/privacy",
       },
       {
         id: 4,
         name: "Accessibility Policy",
+        href: "/accessibility",
       },
       {
         id: 5,
         name: "California Disclosures",
+        href: "/california",
       },
     ],
   },
@@ -282,18 +286,22 @@ export const footer = [
       {
         id: 7,
         name: "Airport Transfers",
+        href: "/services",
       },
       {
         id: 8,
         name: "Long Distance",
+        href: "/services",
       },
       {
         id: 9,
         name: "Party Bus",
+        href: "/services",
       },
       {
         id: 10,
         name: "Special Events",
+        href: "/services",
       },
     ],
   },
@@ -304,18 +312,22 @@ export const footer = [
       {
         id: 12,
         name: "24/7",
+        href: "/contact",
       },
       {
         id: 13,
         name: "Phoenix",
+        href: "/contact",
       },
       {
         id: 146,
         name: "Scottsdale",
+        href: "/contact",
       },
       {
         id: 15,
-        name: "West Valle",
+        name: "West Valley",
+        href: "/contact",
       },
     ],
   },
@@ -326,18 +338,17 @@ export const footer = [
       {
         id: 17,
         name: "Phone",
+        href: "/contact",
       },
       {
         id: 18,
         name: "Email",
+        href: "/contact",
       },
       {
         id: 19,
         name: "Address",
-      },
-      {
-        id: 20,
-        name: "LinkedIn",
+        href: "/contact",
       },
     ],
   },

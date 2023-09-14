@@ -33,14 +33,13 @@ export interface BlogSection {
 
 export interface PageIntroProps {
   heading: string;
-  copy: string;
   src: StaticImageData;
 }
 
 export interface SlugIntroProps {
   title: string;
-  description: string;
-  date: string;
+  description?: string;
+  date?: string;
   src: StaticImageData;
 }
 

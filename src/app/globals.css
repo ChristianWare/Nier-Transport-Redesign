@@ -86,13 +86,13 @@ h6 {
   font-size: 2.6rem;
 }
 
-strong {
+/* strong {
   font-size: 2.4rem;
   font-family: var(--roboto);
   font-weight: 500;
   color: var(--darkBlue);
   text-transform: capitalize;
-}
+} */
 
 button {
   border: none;

@@ -35,9 +35,9 @@ const Footer = () => {
                   </div>
                   <div className={styles.footerItemContainer}>
                     {f.section.map((s, index) => (
-                      <p key={index} className={styles.footerItem}>
+                      <Link href={s.href} key={index} className={styles.footerItem}>
                         {s.name}
-                      </p>
+                      </Link>
                     ))}
                   </div>
                 </div>
