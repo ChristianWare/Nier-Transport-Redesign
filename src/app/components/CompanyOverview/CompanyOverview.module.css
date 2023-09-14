@@ -90,9 +90,19 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
   .rightTop,
   .rightBottom {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .rightBottom {
+    margin-top: 2rem;
   }
 
   .heading {

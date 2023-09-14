@@ -11,20 +11,22 @@ const BlogSection: FC<BlogSection> = ({ blogData }) => {
     <section className={styles.continer}>
       <LayoutWrapper>
         <ContentPadding>
-          <div className={styles.top}>
-            <h2 className={styles.heading}>Our Blog</h2>
-            <p className={styles.copy}>
-              Explore our blog for the latest updates, travel tips, and industry
-              insights to enhance your black car service experience.
-            </p>
-          </div>
-          <div className={styles.content}>
-            {blogData.map((x: BlogData, index: number) => (
-              <BlogPreview key={index} mapData={x} />
-            ))}
-          </div>
-          <div className={styles.btnContainer}>
-            <Button href='/' text='See all Articles' btnType='tertiary' />
+          <div className={styles.mainContent}>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>Our Blog</h2>
+              <p className={styles.copy}>
+                Explore our blog for the latest updates, travel tips, and
+                industry insights to enhance your black car service experience.
+              </p>
+            </div>
+            <div className={styles.content}>
+              {blogData.map((x: BlogData, index: number) => (
+                <BlogPreview key={index} mapData={x} />
+              ))}
+            </div>
+            <div className={styles.btnContainer}>
+              <Button href='/' text='See all Articles' btnType='tertiary' />
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>

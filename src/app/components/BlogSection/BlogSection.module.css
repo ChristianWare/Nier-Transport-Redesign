@@ -13,6 +13,8 @@
   margin-bottom: 2rem;
   position: relative;
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading::after {
@@ -27,9 +29,12 @@
 
 .copy {
   width: 60%;
+  text-align: center;
   font-size: 2rem;
   font-weight: 500;
   opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btnContainer {
@@ -58,7 +63,7 @@
 }
 
 @media screen and (max-width: 568px) {
-  .container {
+  .mainContent {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }

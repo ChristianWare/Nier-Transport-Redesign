@@ -58,6 +58,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
   .heading {
     text-align: center;
   }

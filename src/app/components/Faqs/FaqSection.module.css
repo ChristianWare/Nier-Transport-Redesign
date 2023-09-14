@@ -136,4 +136,8 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+
+  .bottom {
+    gap: 2rem;
+  }
 }
