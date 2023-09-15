@@ -27,7 +27,7 @@ const Footer = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.topTop}>
-              <div className={styles.top}>
+              <div className={styles.left}>
                 <Link href='/' className={styles.logo}>
                   <Image
                     src={Logo}
@@ -41,9 +41,7 @@ const Footer = () => {
                   We are Arizona&#39;s premier black car service, where every
                   ride is an experience of unmatched luxury and sophistication.
                 </p>
-                {/* <br /> */}
-
-                <p className={styles.desc2}>
+                <p className={styles.desc}>
                   <strong>Address:</strong>
                   <br />
                   10105 E Vía Linda Suite A- 105 <br />
@@ -62,25 +60,27 @@ const Footer = () => {
                   hello@niertransportation.com
                 </p>
               </div>
-              <div className={styles.middleDesktop}>
-                {footer.map((f, index) => (
-                  <div key={index} className={styles.sectionContainer}>
-                    <div className={styles.headingContainer}>
-                      <p className={styles.heading}>{f.heading}</p>
+              <div className={styles.right}>
+                <div className={styles.middleDesktop}>
+                  {footer.map((f, index) => (
+                    <div key={index} className={styles.sectionContainer}>
+                      <div className={styles.headingContainer}>
+                        <p className={styles.heading}>{f.heading}</p>
+                      </div>
+                      <div className={styles.footerItemContainer}>
+                        {f.section.map((s, index) => (
+                          <Link
+                            href={s.href}
+                            key={index}
+                            className={styles.footerItem}
+                          >
+                            {s.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                    <div className={styles.footerItemContainer}>
-                      {f.section.map((s, index) => (
-                        <Link
-                          href={s.href}
-                          key={index}
-                          className={styles.footerItem}
-                        >
-                          {s.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
             <div className={styles.middleMobile}>
@@ -135,9 +135,6 @@ const Footer = () => {
                   &copy; 2023 Nier Transportation || All Rights Reserved ||
                   Designed and Developed by The Chris Ware Agency{" "}
                 </p>
-              </div>
-              <div className={styles.bottomRight}>
-                {/* <Socials borderSize='smallBorder' iconSize='smallIcon' /> */}
               </div>
             </div>
           </div>
