@@ -138,7 +138,7 @@ export const reviews = [
     review:
       "Barry provides great reliable service in comfortable luxury. I travel out 1-2 times/month and I can schedule ahead. Barry will always verify the day before in the event anything changes (which it can with my job). I feel safer having someone I know pick me up sometimes at 4a. Thank you Barry!",
     reviewer: "Sheryl G.",
-    company: "Scottsdale, AZy",
+    company: "Scottsdale, AZ",
     person: Person,
   },
   {

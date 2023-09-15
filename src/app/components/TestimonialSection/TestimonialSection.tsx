@@ -26,13 +26,20 @@ const TestimonialSection = () => {
                         src={x.person}
                         alt='person'
                         title='person'
-                        width={50}
-                        height={50}
+                        width={70}
+                        height={70}
                         className={styles.personImage}
                       />
                       <p className={styles.reviewer}>
                         {x.reviewer}
                         <span className={styles.company}>{x.company}</span>
+                        <span className={styles.starContainer}>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -47,13 +54,20 @@ const TestimonialSection = () => {
                         src={x.person}
                         alt='person'
                         title='person'
-                        width={50}
-                        height={50}
+                        width={70}
+                        height={70}
                         className={styles.personImage}
                       />
                       <p className={styles.reviewer}>
                         {x.reviewer}
                         <span className={styles.company}>{x.company}</span>
+                        <span className={styles.starContainer}>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                          <span className={styles.star}></span>
+                        </span>
                       </p>
                     </div>
                   </div>
