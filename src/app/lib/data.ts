@@ -350,6 +350,11 @@ export const footer = [
         name: "Address",
         href: "/contact",
       },
+      {
+        id: 20,
+        name: "Phone",
+        href: "/contact",
+      },
     ],
   },
 ] as const;
