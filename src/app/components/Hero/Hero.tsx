@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
-      <Image src={BG} alt='Nier Transportation' fill className={styles.img} />
+      <Image src={BG} alt='Nier Transportation' fill className={styles.img} priority={true} />
       <Nav />
       <LayoutWrapper>
         <ContentPadding>

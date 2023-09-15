@@ -10,7 +10,13 @@ const SlugIntro: FC<SlugIntroProps> = ({ title, description, date, src }) => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
-      <Image src={src} alt='Nier Transportation' fill className={styles.img2} />
+      <Image
+        src={src}
+        alt='Nier Transportation'
+        fill
+        className={styles.img2}
+        priority={true}
+      />
       <Nav />
       <LayoutWrapper>
         <ContentPadding>
