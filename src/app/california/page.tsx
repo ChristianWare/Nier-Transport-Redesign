@@ -58,16 +58,25 @@ const CaliforniaPage = () => {
               This may include your name, email address, phone number, and
               similar identifiers.
               <br />
+              <br />
               <strong>Personal Information Categories:</strong>
               <br />
               This may include information such as your postal address and
               payment information.
+              <br />
+              <br />
               <strong>Internet or Other Network Activity Information:</strong>
+              <br />
               This may include information about your interaction with our
               website and services, including browsing history and usage data.
+              <br />
+              <br />
               <strong>Geolocation Data:</strong>
               This may include information about your physical location.
+              <br />
+              <br />
               <strong>Inferences: </strong>
+              <br />
               This may include information derived from the personal information
               we collect to create a profile about your preferences and
               characteristics.
@@ -76,12 +85,18 @@ const CaliforniaPage = () => {
             <h2>3. How We Use Your Personal Information</h2>
             <p>
               We may use your personal information for the following purposes:
+              <br />
               <br />- To provide and maintain our services.
+              <br />
               <br />- To communicate with you and respond to your inquiries.
+              <br />
               <br />- To improve our website and services.
+              <br />
               <br />- To personalize your experience and provide you with
               tailored content and offers.
+              <br />
               <br />- To comply with legal obligations.
+              <br />
             </p>
             <br />
             <h2>4. Your Rights Under the CCPA</h2>
