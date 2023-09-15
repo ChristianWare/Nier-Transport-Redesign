@@ -53,16 +53,18 @@
   margin-bottom: 3rem;
 }
 
-.right {
+/* .right {
+  
+} */
+
+.cityDescContainer {
   background-color: rgba(43, 52, 103, 0.5);
   padding: 2rem;
   border-radius: 10px;
-}
-
-.cityDescContainer {
   margin-bottom: 3rem;
   position: relative;
   padding-left: 3rem;
+  border: 1px solid var(--border2)
 }
 
 .cityDescContainer:last-child {
@@ -72,11 +74,11 @@
 .cityDescContainer::after {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 7px;
-  background-color: var(--red);
+  top: 17px;
+  left: 13px;
+  height: 75%;
+  width: 5px;
+  background-color: var(--cream);
 }
 
 .city {
