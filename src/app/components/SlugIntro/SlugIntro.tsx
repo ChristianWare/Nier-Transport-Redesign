@@ -16,6 +16,7 @@ const SlugIntro: FC<SlugIntroProps> = ({ title, description, date, src }) => {
         fill
         className={styles.img2}
         priority={true}
+        quality={100}
       />
       <Nav />
       <LayoutWrapper>

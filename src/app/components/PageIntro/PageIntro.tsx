@@ -17,6 +17,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, src }) => {
         fill
         className={styles.img2}
         priority={true}
+        quality={100}
       />
       <Nav />
       <LayoutWrapper>
