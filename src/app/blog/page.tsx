@@ -1,5 +1,5 @@
 import PageIntro from "../components/PageIntro/PageIntro";
-import Blog from "../../../public/images/blog.png";
+import Blog from "../../../public/images/blog3.png";
 import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCTA from "../components/FinalCTA/FinalCTA";
@@ -24,11 +24,7 @@ const BlogPage = () => {
 
   return (
     <main>
-      <PageIntro
-        heading='Our Blog'
-        
-        src={Blog}
-      />
+      <PageIntro heading='Our Blog' src={Blog} />
       <BlogSection blogData={blogs} />
       <ContactSection />
       <FinalCTA />
