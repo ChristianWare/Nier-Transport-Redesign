@@ -41,7 +41,7 @@ const Nav = () => {
 
   return (
     <header className={styles.header}>
-      <LayoutWrapper>
+      {/* <LayoutWrapper> */}
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <Link href='/' className={styles.logo}>
@@ -149,7 +149,7 @@ const Nav = () => {
             <span className={styles.whiteBar}></span>
           </span>
         </nav>
-      </LayoutWrapper>
+      {/* </LayoutWrapper> */}
     </header>
   );
 };
