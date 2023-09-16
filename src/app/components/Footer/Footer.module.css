@@ -65,6 +65,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 9rem;
+  grid-row-gap: 5rem;
   grid-auto-flow: dense;
   height: 100%;
 }
