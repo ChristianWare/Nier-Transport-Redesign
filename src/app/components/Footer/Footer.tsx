@@ -17,7 +17,7 @@ const Footer = () => {
     if (selected === i) {
       return setSelected(null);
     }
-
+ 
     setSelected(i);
   };
 
