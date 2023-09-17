@@ -153,6 +153,14 @@
 }
 
 @media screen and (max-width: 568px) {
+  .left {
+    padding: 0rem;
+  }
+
+  .topTop {
+    gap: 0rem;
+  }
+  
   .logo {
     margin-left: auto;
     margin-right: auto;
