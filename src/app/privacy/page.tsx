@@ -15,7 +15,7 @@ const PrivacyPage = () => {
           alt='Nier Transportation'
           fill
           className={styles.img2}
-          sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
+          sizes='100vw'
           priority
           quality={100}
         />
