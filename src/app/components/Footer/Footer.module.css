@@ -19,9 +19,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* background-color: var(--red); */
+  background-color: var(--red);
   padding: 2rem;
-  padding-top: .5rem;
+  /* padding-top: .5rem; */
   border-radius: 10px;
   flex: 1;
 }
@@ -153,9 +153,9 @@
 }
 
 @media screen and (max-width: 568px) {
-  .left {
+  /* .left {
     padding: 0rem;
-  }
+  } */
 
   .topTop {
     gap: 0rem;
