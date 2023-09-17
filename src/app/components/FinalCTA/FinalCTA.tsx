@@ -31,7 +31,7 @@ const FinalCTA = () => {
                   text='Book Now'
                   btnType='primary'
                 />
-                <Button href='/contact' text='Contact us' btnType='secondary' />
+                <Button href='/contact' text='Contact us' btnType='tertiary' />
               </div>
             </div>
             <div className={styles.right}>
