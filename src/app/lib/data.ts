@@ -63,7 +63,7 @@ export const servicesSection = [
   {
     id: 6,
     icon: Golf,
-    service: "Golf Tournament Pickup",
+    service: "Golf Outing Tours",
     descr:
       "Scottsdale TPC, Troon Golf Course, Grayhawk, We-Ko-Pa golf courses.",
   },
