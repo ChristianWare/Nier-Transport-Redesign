@@ -376,7 +376,7 @@ export const commitment = [
     id: 48,
     icon: Luxury,
     title: "Luxury",
-    desc: "Experience the epitome of luxury and comfort with our premium vehicles and courteous chauffeurs. Our commitment to excellence ensures an unforgettable experience.",
+    desc: "If your needed ride is for luxury and comfort, our premium vehicles and courteous chauffeurs are more than happy to provide that service. Our commitment to excellence ensures an unforgettable experience.",
   },
   {
     id: 49,
