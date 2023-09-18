@@ -30,9 +30,8 @@ const Hero = () => {
               Black Car Service in Phoenix & Scottsdale
             </h1>
             <p className={styles.copy}>
-              From airport pickups and drop-offs to seamless golf course
-              transportation, our professional chauffeurs and luxurious fleet
-              ensure you arrive in style and comfort.
+              Our Professional drivers and latest model high end fleet ensure
+              you arrive in styles and comfort.
             </p>
             <div className={styles.btnContainer}>
               <Button
