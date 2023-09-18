@@ -20,8 +20,8 @@ const FleetSection = () => {
                 our services and reserve your preferred vehicle today for a
                 transportation experience like no other. Travel in style with
                 Nier Transportation - where luxury meets the road. Our vehicle
-                line up includes the 2024 Chevy Suburban, and the 2023 Ford
-                Sprinter.
+                line up includes the late model Chevy Suburban, and the late
+                model Ford Sprinter, and Mercedes Sprinters.
               </p>
             </div>
             <div className={styles.bottom}>
