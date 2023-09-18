@@ -23,10 +23,10 @@ const AboutUsSection = () => {
               <h2 className={styles.heading}>About us</h2>
               <p className={styles.copy}>
                 At Nier Transportation, we&#39;re more than a car service;
-                we&#39;re your trusted partner in luxury transportation. With a
-                passion for providing the best car service in Phoenix and
-                Scottsdale, we&#39;ve been serving the Arizona community for 20
-                years. Our mission is clear: to provide unparalleled luxury car
+                we&#39;re your trusted partner in high end transportation. With
+                a passion for providing the best car service in the Phoenix
+                Metro area, we&#39;ve been serving the Arizona community for 20
+                years. Our mission is clear: to provide an unparalleled, high end, late model car
                 service near you while ensuring your comfort, safety, and peace
                 of mind.
               </p>
@@ -35,9 +35,9 @@ const AboutUsSection = () => {
                   <Driver width={50} height={50} />
                 </div>
                 <div className={styles.itexRight}>
-                  <h3 className={styles.h3}>Professional Chauffeurs</h3>
+                  <h3 className={styles.h3}>Professional Drivers</h3>
                   <p className={styles.copy}>
-                    Our experienced and courteous chauffeurs are the epitome of
+                    Our experienced and courteous drivers are the epitome of
                     professionalism, providing you with a seamless journey from
                     start to finish.
                   </p>

@@ -15,7 +15,7 @@ const ServicesSection = () => {
             <p className={styles.copy}>
               Whether it&#39;s a wedding, corporate event, or simply a night
               out, our black car service delivers the epitome of luxury, setting
-              us apart in Scottsdale airport transportation and beyond. Book
+              us apart in Scottsdale, Phoenix, and Mesa Gateway airport transportation and beyond. Book
               your next ride with us. Here are some of the services we provide:
             </p>
             <div className={styles.servicesGrid}>
