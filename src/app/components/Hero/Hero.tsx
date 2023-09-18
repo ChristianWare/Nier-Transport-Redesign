@@ -27,7 +27,7 @@ const Hero = () => {
                 <span className={styles.span}>Nier</span> Transportation:
               </span>
               <br />
-              Black Car Service in Phoenix & Scottsdale
+              Black Car Service in the Phoenix Metro Area
             </h1>
             <p className={styles.copy}>
               Our Professional drivers and latest model high end fleet ensure
