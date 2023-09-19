@@ -95,6 +95,16 @@ export const areas = [
     city: "West Valley",
     desc: "The West Valley is made up of Avondale, Goodyear, Buckeye, Surprise, Glendale, Tolleson, and Peoria. These cities are known for its suburban lifestyle, and access to recreational opportunities. ",
   },
+  {
+    id: 14,
+    city: "Casa Grande",
+    desc: "Casa Grande boasts a rich history, including the iconic Casa Grande Ruins National Monument, and offers a warm and inviting atmosphere for both residents and visitors to enjoy",
+  },
+  {
+    id: 15,
+    city: "Maricopa",
+    desc: "Maricopa, located in Pinal County, is a thriving city known for its rapid growth, family-friendly atmosphere, and proximity to the natural beauty of the Sonoran Desert, making it an ideal place to reside in the heart of Arizona.",
+  },
 ] as const;
 
 export const fleet = [
