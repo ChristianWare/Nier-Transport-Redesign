@@ -57,7 +57,7 @@
   background-color: rgba(43, 52, 103, 0.5);
   padding: 2rem;
   border-radius: 10px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   position: relative;
   padding-left: 3rem;
   border: 1px solid var(--border2);
@@ -101,6 +101,10 @@
 @media screen and (max-width: 568px) {
   .container {
     padding-bottom: 5rem;
+  }
+
+  .cityDescContainer {
+    margin-bottom: 2rem;
   }
 
   .btnContainer {
