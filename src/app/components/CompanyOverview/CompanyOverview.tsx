@@ -2,7 +2,7 @@ import styles from "./CompanyOverview.module.css";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import Image from "next/image";
-import Img from "../../../../public/images/companyOverview.png";
+import Img from "../../../../public/images/companyOverview2.png";
 import Img2 from "../../../../public/images/img4.png";
 import Img3 from "../../../../public/images/img5.png";
 import Img4 from "../../../../public/images/img1.png";
