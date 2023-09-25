@@ -81,6 +81,14 @@ const Footer = () => {
                     </div>
                   ))}
                 </div>
+                <div className={styles.bottomDesktop}>
+                  <div className={styles.bottomLeft}>
+                    <p className={styles.copy}>
+                      &copy; 2023 Nier Transportation || All Rights Reserved ||
+                      Designed and Developed by The Chris Ware Agency{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className={styles.middleMobile}>

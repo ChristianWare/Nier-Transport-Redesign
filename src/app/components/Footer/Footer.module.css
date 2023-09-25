@@ -8,10 +8,9 @@
 }
 
 .topTop {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
 
 .left {
@@ -21,9 +20,7 @@
   justify-content: flex-start;
   background-color: var(--red);
   padding: 2rem;
-  /* padding-top: .5rem; */
   border-radius: 10px;
-  flex: 1;
 }
 
 .logo {
@@ -42,7 +39,6 @@
   color: var(--cream);
   opacity: 0.7;
   hyphens: auto;
-  text-align: center;
   font-size: 1.4rem;
   margin-top: 2rem;
 }
@@ -71,6 +67,9 @@
 .sectionContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .heading {
@@ -111,13 +110,16 @@
   transition: all 2s ease-in-out;
 }
 
-.bottom {
+.bottom, .bottomDesktop {
   border-top: 1px solid rgba(214, 214, 214, 0.5);
-  /* : 1rem 0; */
   margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.bottom {
+  display: none;
 }
 
 .bottomRight .copy {
@@ -126,10 +128,14 @@
 }
 
 @media screen and (max-width: 968px) {
-  .topTop,
   .top {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .topTop {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
   }
 
   .desc {
@@ -153,10 +159,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  /* .left {
-    padding: 0rem;
-  } */
-
   .topTop {
     gap: 0rem;
   }
@@ -232,11 +234,16 @@
     margin-top: 2rem;
   }
 
+  .bottomDesktop {
+    display: none;
+  }
+
   .bottomLeft {
     order: 2;
   }
 
   .copy {
     margin-top: 0rem;
+    text-align: center;
   }
 }
