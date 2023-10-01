@@ -98,7 +98,7 @@ export const areas = [
   {
     id: 14,
     city: "Casa Grande",
-    desc: "Casa Grande boasts a rich history, including the iconic Casa Grande Ruins National Monument, and offers a warm and inviting atmosphere for both residents and visitors to enjoy",
+    desc: "Casa Grande, home of Lucid Motors, boasts a rich history, including the iconic Casa Grande Ruins National Monument, and offers a warm and inviting atmosphere for both residents and visitors to enjoy",
   },
   {
     id: 15,
