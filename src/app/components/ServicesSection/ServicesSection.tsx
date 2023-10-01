@@ -13,10 +13,10 @@ const ServicesSection = () => {
           <div className={styles.content}>
             <h2 className={styles.heading}>Our Services</h2>
             <p className={styles.copy}>
-              Whether it&#39;s a wedding, corporate event, or simply a night
-              out, our black car service delivers the epitome of luxury, setting
-              us apart in Scottsdale, Phoenix, and Mesa Gateway airport transportation and beyond. Book
-              your next ride with us. Here are some of the services we provide:
+              Whether it&#39;s a simple airport transfer, special event, or
+              girls night out, our black car service delivers the epitome of
+              luxury and class. Book your next ride with us. Hare are some of
+              the services we provide:
             </p>
             <div className={styles.servicesGrid}>
               {servicesSection.map((x) => (
@@ -35,9 +35,13 @@ const ServicesSection = () => {
                 </div>
               ))}
             </div>
-          <div className={styles.btnContainer}>
-            <Button href='/services' text='See All Services' btnType='secondary' />
-          </div>
+            <div className={styles.btnContainer}>
+              <Button
+                href='/services'
+                text='See All Services'
+                btnType='secondary'
+              />
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
