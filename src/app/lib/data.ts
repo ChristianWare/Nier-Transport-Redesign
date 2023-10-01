@@ -407,7 +407,7 @@ export const servicesPage = [
     id: 51,
     src: Event2,
     title: "Special Events",
-    desc: "Elevate your special event experience with our premium black car services, catering to a wide range of occasions including the Waste Management Open, PGA Tour, Super Bowl, Spring Training, and much more. From sporting events to cultural festivals, our chauffeurs are committed to ensuring your transportation is as memorable as the event itself. Count on us to provide luxurious and reliable transportation for all your special occasions.",
+    desc: "Transportation to special events plays a crucial role in ensuring that attendees arrive safely and on time. Whether it's a wedding, concert, sports game, or conference, having reliable transportation options is essential.  Instead of worrying about parking, traffic, or finding directions, attendees can simply sit back and enjoy the ride. Event transportation services often offer a range of options, from luxury vehicles to shuttle buses, accommodating different group sizes and preferences.",
   },
   {
     id: 52,
@@ -419,7 +419,7 @@ export const servicesPage = [
     id: 53,
     src: repeat,
     title: "Reoccurring Rides",
-    desc: "Streamline your regular transportation needs with our dependable recurring ride services. Whether it's a daily commute to work, weekly appointments, or monthly outings, we offer a hassle-free solution for your ongoing travel requirements. Our dedicated chauffeurs and flexible scheduling ensure that you have a dependable and convenient transportation partner for all your recurring journeys, making your life easier and more efficient.",
+    desc: "Providing transportation for reoccurring business travel is a crucial service that offers convenience and reliability to individuals with specific travel needs. Whether it is for airport transfers, or business meetings, scheduled rides ensure that passengers can reach their destinations on time and without the worries of the typical ride-share providers. By offering scheduled rides, we not only offer convenience but also peace of mind to our guests.   Our guest know their transportation needs will be taken care of in a timely and professional manner.",
   },
   {
     id: 54,
@@ -430,8 +430,8 @@ export const servicesPage = [
   {
     id: 55,
     src: Golf2,
-    title: "Golf Course Transfers",
-    desc: "Enjoy a seamless and stylish journey with our specialized golf course transfer services to renowned destinations such as Scottsdale TPC, Troon Golf Course, Grayhawk, and We-Ko-Pa golf courses. Whether you're hitting the links for a round of golf or attending events at these prestigious venues, our chauffeurs guarantee on-time and comfortable transportation, allowing you to fully relish your golfing experience. Count on us to elevate your time on the fairways and greens.",
+    title: "Golf Outings",
+    desc: " Heading out to TPC, We-Ko Pa, Troon, Grayhawk, or Gold Canyon?  We can provide transportation to the golf course. Our goal is to make the logistics of getting to the golf course as seamless as possible, allowing golfers to focus on their game and enjoy their day on the green. With our wide range of vehicles, we can accommodate groups of any size, ensuring that everyone travels together comfortably. Our experienced drivers are not only skilled at navigating the roads, but they also possess knowledge about the local golf courses, allowing for efficient and timely arrivals.  Whether it's a small group outing or a large tournament, we are dedicated to providing group transportation solutions that enhance the overall golfing experience.",
   },
   {
     id: 56,

@@ -4,7 +4,13 @@ import Link from "next/link";
 import styles from "./Button.module.css";
 import { Button } from "@/app/lib/interface";
 
-const Button: FC<Button> = ({ href = "", text, btnType, icon, target='' }) => {
+const Button: FC<Button> = ({
+  href = "",
+  text,
+  btnType,
+  icon,
+  target = "",
+}) => {
   return (
     <button className={styles.container}>
       <Link

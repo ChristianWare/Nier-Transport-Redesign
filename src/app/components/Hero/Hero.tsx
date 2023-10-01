@@ -30,8 +30,8 @@ const Hero = () => {
               Black Car Service in the Phoenix Metro Area
             </h1>
             <p className={styles.copy}>
-              Our Professional drivers and latest model high end fleet ensure
-              you arrive in styles and comfort.
+              Our professional drivers and latest model high end fleet ensure
+              you arrive in style and comfort.
             </p>
             <div className={styles.btnContainer}>
               <Button
