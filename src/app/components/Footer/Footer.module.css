@@ -1,5 +1,6 @@
 .container {
   background-color: var(--darkBlue);
+  margin-bottom: 100rem;
 }
 
 .content {
@@ -21,6 +22,7 @@
   background-color: var(--red);
   padding: 2rem;
   border-radius: 10px;
+  height: fit-content;
 }
 
 .logo {
@@ -41,14 +43,15 @@
   hyphens: auto;
   font-size: 1.4rem;
   margin-top: 2rem;
+  height: fit-content;
 }
 
 .right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   flex: 2;
+  height: 100%;
 }
 
 .middleDesktop {
