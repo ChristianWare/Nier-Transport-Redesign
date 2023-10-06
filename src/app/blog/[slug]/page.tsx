@@ -97,7 +97,7 @@ export default function Page({ params }: any) {
             <div className={styles.right}>
               <div className={styles.headingTitle}>You May Also Like</div>
               {blogs.slice(0, 3).map((x, index) => (
-                <div key={index}>
+                <div key={index} className={styles.box}>
                   <h3 className={styles.blogTitle}>{x.meta.title}</h3>
                   <p className={styles.blogDesc}>{x.meta.description}</p>
                   <Link href={`/blog/${x.slug}`} className={styles.link}>

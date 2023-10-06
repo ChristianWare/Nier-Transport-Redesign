@@ -52,6 +52,15 @@
   margin-top: 3rem;
 }
 
+.box {
+  background-color: var(--lightBlue);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .headingTitle {
   font-family: var(--roboto);
   opacity: 0.8;
@@ -63,6 +72,8 @@
 .blogTitle {
   padding-top: 1rem;
   opacity: 0.8;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .blogDesc {
@@ -72,6 +83,7 @@
   -webkit-line-clamp: 3;
   font-size: 1.6rem;
   opacity: 0.6;
+  margin-bottom: 2rem;
 }
 
 .link {
