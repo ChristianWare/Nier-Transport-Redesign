@@ -17,17 +17,16 @@ export interface BlogData {
     readingTime: number;
     title: string;
     description: string;
-    // Add other properties if needed
   };
   slug: string;
 }
 
-export interface BlogPreview {
+export interface BlogPreviewProps {
   mapData: BlogData;
   key: number;
 }
 
-export interface BlogSection {
+export interface BlogSectionProps {
   blogData: any;
 }
 

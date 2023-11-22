@@ -1,10 +1,10 @@
-import { BlogPreview } from "@/app/lib/interface";
+import { BlogPreviewProps } from "@/app/lib/interface";
 import styles from "./BlogPreview.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-const BlogPreview: FC<BlogPreview> = ({ mapData, key }) => {
+const BlogPreview: FC<BlogPreviewProps> = ({ mapData, key }) => {
   return (
     <div className={styles.container} key={key}>
       <div className={styles.content}>

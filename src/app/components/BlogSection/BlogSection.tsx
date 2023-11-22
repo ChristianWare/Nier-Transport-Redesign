@@ -1,6 +1,6 @@
 "use client";
 
-import { BlogSection, BlogData } from "@/app/lib/interface";
+import { BlogSectionProps, BlogData } from "@/app/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./BlogSection.module.css";
@@ -9,7 +9,7 @@ import BlogPreview from "../BlogPreview/BlogPreview";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 
-const BlogSection: FC<BlogSection> = ({ blogData }) => {
+const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
   const pathname = usePathname();
 
   return (
