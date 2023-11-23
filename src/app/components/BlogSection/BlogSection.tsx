@@ -12,6 +12,9 @@ import { usePathname } from "next/navigation";
 const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
   const pathname = usePathname();
 
+    const reversedBlogData = [...blogData].reverse();
+
+
   return (
     <section className={styles.continer}>
       <LayoutWrapper>
@@ -27,7 +30,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
               </p>
             </div>
             <div className={styles.content}>
-              {blogData.map((x: BlogData, index: number) => (
+              {reversedBlogData.map((x: BlogData, index: number) => (
                 <BlogPreview key={index} mapData={x} />
               ))}
             </div>
