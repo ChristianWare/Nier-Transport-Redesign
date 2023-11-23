@@ -8,6 +8,7 @@ import ContentPadding from "@/app/components/ContentPadding/ContentPadding";
 import SlugImage from "@/app/components/SlugImage/SlugImage";
 import SlugHeading from "@/app/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/app/components/SlugConclusion/SlugConclusion";
+import Highlight from "@/app/components/Highlight/Highlight";
 import FinalCTA from "@/app/components/FinalCTA/FinalCTA";
 import BlogPreview from "@/app/components/BlogPreview/BlogPreview";
 import { BlogData } from "@/app/lib/interface";
@@ -65,7 +66,7 @@ const blogs = files.map((filename: any) => {
   };
 });
 
-const components = { SlugImage, SlugHeading, SlugConclusion };
+const components = { SlugImage, SlugHeading, SlugConclusion, Highlight };
 
 export default function Page({ params }: any) {
   const props = getPost(params);
@@ -94,9 +95,9 @@ export default function Page({ params }: any) {
             <div className={styles.mdxContent}>
               <MDXRemote source={props.content} components={components} />
             </div>
-            <div className={styles.right}>
+            {/* <div999 className={styles.right}>
               <div className={styles.headingTitle}>You May Also Like</div>
-              {blogs.slice(0, 3).map((x, index) => (
+              {blogs.slice(0, 2).map((x, index) => (
                 <div key={index} className={styles.box}>
                   <h3 className={styles.blogTitle}>{x.meta.title}</h3>
                   <p className={styles.blogDesc}>{x.meta.description}</p>
@@ -105,9 +106,9 @@ export default function Page({ params }: any) {
                   </Link>
                 </div>
               ))}
-            </div>
+            </div999> */}
           </div>
-          <h2 className={styles.relatedArticlesHeading}>Relted Articles</h2>
+          <h2 className={styles.relatedArticlesHeading}>Other Articles</h2>
           <div className={styles.relatedArticles}>
             {blogs.slice(0, 3).map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />
