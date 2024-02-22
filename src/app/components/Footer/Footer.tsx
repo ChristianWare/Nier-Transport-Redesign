@@ -33,7 +33,7 @@ const Footer = () => {
                     src={Logo}
                     alt='logo'
                     width={107.5}
-                    height={50}
+                    height={107.5}
                     className={styles.officialLogo}
                   />
                 </Link>

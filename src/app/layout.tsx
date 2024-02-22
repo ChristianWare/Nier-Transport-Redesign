@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import type { Metadata } from "next";
 import { Roboto, Anton } from "next/font/google";
 import Footer from "./components/Footer/Footer";
+import PreNav from "./components/PreNav/PreNav";
 
 const roboto = Roboto({
   weight: ["900", "700", "500", "400"],
@@ -43,6 +44,7 @@ export default function RootLayout({
             className: "toastFont",
           }}
         />
+        <PreNav />
         {children}
         <Footer />
       </body>

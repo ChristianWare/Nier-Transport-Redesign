@@ -47,7 +47,7 @@ const Nav = () => {
               src={Logo}
               alt='logo'
               width={107}
-              height={50}
+              height={107}
               className={styles.officialLogo}
             />
           </Link>
