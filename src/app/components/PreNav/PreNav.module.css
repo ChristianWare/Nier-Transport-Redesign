@@ -6,6 +6,7 @@
   justify-content: center;
   font-family: var(--roboto);
   color: var(--white);
+  padding: 1rem;
 }
 
 .code {
