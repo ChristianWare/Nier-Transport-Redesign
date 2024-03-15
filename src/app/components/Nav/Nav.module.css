@@ -21,6 +21,12 @@
   margin-top: 1rem;
 }
 
+.newLogo {
+  width: 107px;
+  height: 45px;
+  color: var(--white)
+}
+
 .officialLogoMobile {
   display: none;
 }

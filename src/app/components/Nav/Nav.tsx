@@ -50,6 +50,7 @@ const Nav = () => {
               height={107}
               className={styles.officialLogo}
             />
+            {/* <Logo className={styles.newLogo} /> */}
           </Link>
         </div>
         <ul
