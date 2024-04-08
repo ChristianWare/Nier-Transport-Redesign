@@ -173,7 +173,7 @@ const CaliforniaPage = () => {
               <br />
               <strong>
                 Email <br />
-                hello@niertransportation.com
+                reservations@niertransportation.com
               </strong>
             </p>
             <br />

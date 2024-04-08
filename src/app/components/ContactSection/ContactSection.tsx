@@ -47,7 +47,9 @@ const ContactSection = () => {
                   <h3>Let&#39;s talk</h3>
                   <div className={styles.iconInfoContainer}>
                     <Email width={35} height={35} />
-                    <span className={styles.info}>hello@niertransportation.com</span>
+                    <span className={styles.info}>
+                      reservations@niertransportation.com
+                    </span>
                   </div>
                   <div className={styles.iconInfoContainer}>
                     <Phone width={35} height={35} />

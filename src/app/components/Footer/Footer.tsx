@@ -17,7 +17,7 @@ const Footer = () => {
     if (selected === i) {
       return setSelected(null);
     }
- 
+
     setSelected(i);
   };
 
@@ -57,7 +57,7 @@ const Footer = () => {
                   <strong>
                     Email <br />
                   </strong>
-                  hello@niertransportation.com
+                  reservations@niertransportation.com
                 </p>
               </div>
               <div className={styles.right}>
