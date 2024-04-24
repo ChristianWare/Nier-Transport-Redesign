@@ -24,9 +24,7 @@ const TermsPage = () => {
           <ContentPadding>
             <div className={styles.content}>
               <h1 className={styles.heading} lang='en'>
-                <span className={styles.span}>Terms </span>
-                <span className={styles.span}>and </span>
-                <span className={styles.span}>Conditions </span>
+                Terms and Conditions
               </h1>
             </div>
           </ContentPadding>

@@ -24,8 +24,7 @@ const AccessibilityPage = () => {
           <ContentPadding>
             <div className={styles.content}>
               <h1 className={styles.heading} lang='en'>
-                <span className={styles.span}>Accessibility </span>
-                <span className={styles.span}>Policy </span>
+                Accessibility Policy
               </h1>
             </div>
           </ContentPadding>

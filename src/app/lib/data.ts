@@ -274,7 +274,7 @@ export const footer = [
       },
       {
         id: 3,
-        name: "Privacy Poilicy",
+        name: "Privacy Policy",
         href: "/privacy",
       },
       {

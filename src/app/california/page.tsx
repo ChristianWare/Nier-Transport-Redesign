@@ -24,12 +24,7 @@ const CaliforniaPage = () => {
           <ContentPadding>
             <div className={styles.content}>
               <h1 className={styles.heading} lang='en'>
-                <span className={styles.span}>California </span>
-                <span className={styles.span}>Consumer </span>
-                <br />
-                <span className={styles.span}>privacy </span>
-                <span className={styles.span}>Act </span>
-                <span className={styles.span}>(CCPA) </span>
+                California Consumer privacy Act (CCPA)
               </h1>
             </div>
           </ContentPadding>
