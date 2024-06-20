@@ -1,33 +1,49 @@
 "use client";
 
 import { useState } from "react";
-import { sendEmail } from "../../../../actions/sendEmail";
+import { useForm, SubmitHandler } from "react-hook-form";
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./ContactSection.module.css";
-import SubmitButton from "../SubmitButton/SubmitButton";
 import toast from "react-hot-toast";
 import Phone from "../../../../public/icons/phone2.svg";
 import Email from "../../../../public/icons/email.svg";
 import Location from "../../../../public/icons/location.svg";
 
-const ContactSection = () => {
-  const [inputs, setInputs] = useState({
-    firstName: "",
-    lastName: "",
-    senderEmail: "",
-    companyName: "",
-    currentWebsiteUrl: "",
-    message: "",
-  });
+interface Inputs {
+  firstName: string;
+  lastName: string;
+  senderEmail: string;
+  companyName: string;
+  currentWebsiteUrl: string;
+  message: string;
+}
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setInputs((prev) => ({
-      ...prev,
-      [e.target.id]: e.target.value,
-    }));
+const ContactSection = () => {
+  const [loading, setLoading] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    setLoading(true);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }).then((res) => res.json());
+
+    if (response.messageId) {
+      toast.success("Email sent successfully!");
+      reset();
+    } else {
+      toast.error("Oops! Please try again");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -62,26 +78,7 @@ const ContactSection = () => {
                 </div>
               </div>
               <div className={styles.right}>
-                <form
-                  className={styles.form}
-                  action={async (formData) => {
-                    const { data, error } = await sendEmail(formData);
-
-                    if (error) {
-                      toast.error(error);
-                      return;
-                    }
-                    toast.success("Email sent successfully!");
-                    setInputs({
-                      firstName: "",
-                      lastName: "",
-                      senderEmail: "",
-                      companyName: "",
-                      currentWebsiteUrl: "",
-                      message: "",
-                    });
-                  }}
-                >
+                <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                   <div className={styles.namesContainer}>
                     <div className={styles.labelInputBox}>
                       <label htmlFor='firstName'>
@@ -89,12 +86,14 @@ const ContactSection = () => {
                       </label>
                       <input
                         id='firstName'
-                        name='firstName'
                         type='text'
-                        value={inputs.firstName}
-                        onChange={handleChange}
-                        required
+                        {...register("firstName", { required: true })}
                       />
+                      {errors.firstName && (
+                        <span className={styles.error}>
+                          *** First Name is required
+                        </span>
+                      )}
                     </div>
                     <div className={styles.labelInputBox}>
                       <label htmlFor='lastName'>
@@ -102,40 +101,47 @@ const ContactSection = () => {
                       </label>
                       <input
                         id='lastName'
-                        name='lastName'
                         type='text'
-                        value={inputs.lastName}
-                        onChange={handleChange}
-                        required
+                        {...register("lastName", { required: true })}
                       />
+                      {errors.lastName && (
+                        <span className={styles.error}>
+                          *** Last Name is required
+                        </span>
+                      )}
                     </div>
                   </div>
                   <div className={styles.everythingElse}>
                     <div className={styles.labelInputBox}>
-                      <label htmlFor='email'>
+                      <label htmlFor='senderEmail'>
                         Email <span className={styles.required}>*</span>
                       </label>
-                      <span>
-                        So we can respond. We won&#39;t send you spam.
-                      </span>
                       <input
                         id='senderEmail'
                         type='email'
-                        name='senderEmail'
-                        value={inputs.senderEmail}
-                        onChange={handleChange}
-                        required
+                        {...register("senderEmail", {
+                          required: true,
+                          pattern: {
+                            value: /\S+@\S+\.\S+/,
+                            message:
+                              "Entered value does not match email format",
+                          },
+                        })}
+                        placeholder='So we can respond. We won&#39;t send you spam.'
                         maxLength={500}
                       />
+                      {errors.senderEmail && (
+                        <span className={styles.error}>
+                          *** Email is required
+                        </span>
+                      )}
                     </div>
                     <div className={styles.labelInputBox}>
                       <label htmlFor='companyName'>Group Size</label>
                       <input
                         id='companyName'
                         type='text'
-                        name='companyName'
-                        value={inputs.companyName}
-                        onChange={handleChange}
+                        {...register("companyName")}
                       />
                     </div>
                     <div className={styles.labelInputBox}>
@@ -143,27 +149,30 @@ const ContactSection = () => {
                       <input
                         id='currentWebsiteUrl'
                         type='text'
-                        name='currentWebsiteUrl'
-                        value={inputs.currentWebsiteUrl}
-                        onChange={handleChange}
+                        {...register("currentWebsiteUrl")}
                       />
                     </div>
                     <div className={styles.labelInputBox}>
                       <label htmlFor='message'>
                         Message <span className={styles.required}>*</span>
                       </label>
-                      <span>No solicitations, please.</span>
                       <textarea
                         id='message'
-                        name='message'
+                        {...register("message", { required: true })}
                         maxLength={5000}
-                        value={inputs.message}
-                        onChange={handleChange}
+                        placeholder='No solicitations, please.'
                       />
+                      {errors.message && (
+                        <span className={styles.error}>
+                          *** Message is required
+                        </span>
+                      )}
                     </div>
                   </div>
                   <div className={styles.btnBtnContainer}>
-                    <SubmitButton />
+                    <button className={styles.btn} type='submit'>
+                      {loading ? "Sending..." : "Submit"}
+                    </button>
                   </div>
                 </form>
               </div>
@@ -174,4 +183,5 @@ const ContactSection = () => {
     </section>
   );
 };
+
 export default ContactSection;

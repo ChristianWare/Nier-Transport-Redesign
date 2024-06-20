@@ -2,9 +2,9 @@ import { FC } from "react";
 
 import Link from "next/link";
 import styles from "./Button.module.css";
-import { Button } from "@/app/lib/interface";
+import { ButtonInterface } from "@/app/lib/interface";
 
-const Button: FC<Button> = ({
+const Button: FC<ButtonInterface> = ({
   href = "",
   text,
   btnType,
