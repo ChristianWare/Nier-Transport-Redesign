@@ -5,6 +5,7 @@ const SEND_EMAIL = "chris.ware.dev@gmail.com";
 // const SEND_EMAIL = "reservations@niertransportation.com";
 const PASSWORD = "eayw aboq lrso ugqx";
 const ADDITIONAL_EMAIL = "reservations@niertransportation.com"; // Add the second email address here
+const ADDITIONAL_EMAILII = "chris.ware.dev@gmail.com"; // Add the second email address here
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -19,9 +20,9 @@ export async function POST(request: Request) {
   const data = await request.json();
   const info = await transporter.sendMail({
     from: `"Nier Transportation Contact Form Submission" <${ADDITIONAL_EMAIL}>`, // sender name and address
-    to: `${ADDITIONAL_EMAIL}`, // list of receivers
+    to: `${ADDITIONAL_EMAIL}, ${ADDITIONAL_EMAILII}`, // list of receivers
     replyTo: data.senderEmail, // reply-to address
-    subject: "You have a new message!", // Subject line
+    subject: "You have a new message!", 
     text: "Hello world?",
     html: `<b>First Name:</b> <br/> 
             ${data?.firstName} <br/> <br/>
@@ -33,12 +34,6 @@ export async function POST(request: Request) {
             ${data?.companyName} <br/> <br/>
             <b>Length of Stay:</b> <br/> 
             ${data?.currentWebsiteUrl} <br/> <br/>
-            <b>Arrival Date:</b> <br/> 
-            ${
-              data?.arrivalDate
-                ? new Date(data.arrivalDate).toLocaleDateString()
-                : "N/A"
-            } <br/> <br/>
             <b>Message:</b> </b> 
             ${data?.message}`,
   });
