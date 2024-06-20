@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 export async function POST(request: Request) {
   const data = await request.json();
   const info = await transporter.sendMail({
-    from: `"Portfolio Contact Form" <${SEND_EMAIL}>`, // sender name and address
+    from: `"Nier Transportation Contact Form Submission" <${SEND_EMAIL}>`, // sender name and address
     to: `${SEND_EMAIL}, ${ADDITIONAL_EMAIL}`, // list of receivers
     replyTo: data.senderEmail, // reply-to address
     subject: "Portfolio Contact Form Submission", // Subject line
