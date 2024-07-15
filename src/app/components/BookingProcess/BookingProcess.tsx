@@ -2,12 +2,35 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./BookingProcess.module.css";
 import Car from "../../../../public/icons/car.svg";
-import Date from "../../../../public/icons/date.svg";
+import Date from "../../../../public/icons/calendar.svg";
 import Success from "../../../../public/icons/success.svg";
 import Select from "../../../../public/icons/select.svg";
 import Button from "../Button/Button";
 import Image from "next/image";
-import Img from "../../../../public/images/img2.png";
+import Img from "../../../../public/images/img6.png";
+
+const data = [
+  {
+    id: 1,
+    icon: <Select width={40} height={40} className={styles.icon} />,
+    title: "Select Your Service",
+  },
+  {
+    id: 1,
+    icon: <Car width={40} height={40} className={styles.icon} />,
+    title: "Choose Your Vehicle",
+  },
+  {
+    id: 1,
+    icon: <Date width={40} height={40} className={styles.icon} />,
+    title: "Choose date/time",
+  },
+  {
+    id: 1,
+    icon: <Success width={40} height={40} className={styles.icon} />,
+    title: "Reserve Your Ride",
+  },
+];
 
 const BookingProcess = () => {
   return (
@@ -28,22 +51,12 @@ const BookingProcess = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.card}>
-                <Select width={50} height={50} />
-                <h3 className={styles.step}>Select Your Service</h3>
-              </div>
-              <div className={styles.card}>
-                <Car width={40} height={40} />
-                <h3 className={styles.step}>Choose Your Vehicle</h3>
-              </div>
-              <div className={styles.card}>
-                <Date width={40} height={40} />
-                <h3 className={styles.step}>Pick your date and Time</h3>
-              </div>
-              <div className={styles.card}>
-                <Success width={40} height={40} />
-                <h3 className={styles.step}>Reserve Your Ride</h3>
-              </div>
+              {data.map((x) => (
+                <div key={x.id} className={styles.card}>
+                  {x.icon}
+                  <h3 className={styles.step}>{x.title}</h3>
+                </div>
+              ))}
             </div>
           </div>
           <div className={styles.btnContainer}>

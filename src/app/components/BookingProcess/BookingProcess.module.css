@@ -15,6 +15,7 @@
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
@@ -55,7 +56,7 @@
 
 .imgContainer {
   position: relative;
-  height: 615px;
+  height: 500px;
   width: 100%;
   border-radius: 10px;
   z-index: 1;
@@ -70,7 +71,7 @@
 
 .right {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
 
@@ -79,6 +80,7 @@
   padding: 5rem;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -86,6 +88,11 @@
 
 .step {
   text-align: center;
+  font-size: 1.6rem;
+}
+
+.icon {
+  color: var(--red);
 }
 
 .btnContainer {
@@ -96,22 +103,34 @@
   margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 1168px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .imgContainer {
-    height: 800px;
-    width: 100%;
-  }
-
-  .heading {
-    text-align: center;
+@media screen and (max-width: 1068px) {
+  .right {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .copy {
     width: 100%;
+  }
+
+  .btnContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copy {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 1rem;
   }
 }
 
@@ -119,7 +138,7 @@
   .content {
     gap: 2rem;
   }
-  
+
   .top {
     flex-direction: column;
     align-items: center;
@@ -129,19 +148,17 @@
     grid-gap: 2rem;
   }
 
-  .btnContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 5rem;
-  }
-
   .imgContainer {
     border: 5px solid var(--red2);
     border-radius: 15px;
   }
 
   .imgContainer {
-    height: 500px;
+    height: 300px;
     width: 100%;
+  }
+
+  .btnContainer {
+    margin-top: 2rem;
   }
 }
