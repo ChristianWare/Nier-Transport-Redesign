@@ -37,35 +37,37 @@ const BookingProcess = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
-          <div className={styles.top}>
-            <h2 className={styles.heading}>Booking Process</h2>
-            <p className={styles.copy}>
-              Your journey begins here. Book a ride with Nier Transportation
-              with these four easy steps:
-            </p>
-          </div>
-          <div className={styles.content}>
-            <div className={styles.left}>
-              <div className={styles.imgContainer}>
-                <Image src={Img} alt='image' fill className={styles.img} />
+          <div className={styles.parent}>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>Booking Process</h2>
+              <p className={styles.copy}>
+                Your journey begins here. Book a ride with Nier Transportation
+                with these four easy steps:
+              </p>
+            </div>
+            <div className={styles.content}>
+              <div className={styles.left}>
+                <div className={styles.imgContainer}>
+                  <Image src={Img} alt='image' fill className={styles.img} />
+                </div>
+              </div>
+              <div className={styles.right}>
+                {data.map((x) => (
+                  <div key={x.id} className={styles.card}>
+                    {x.icon}
+                    <h3 className={styles.step}>{x.title}</h3>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className={styles.right}>
-              {data.map((x) => (
-                <div key={x.id} className={styles.card}>
-                  {x.icon}
-                  <h3 className={styles.step}>{x.title}</h3>
-                </div>
-              ))}
+            <div className={styles.btnContainer}>
+              <Button
+                href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
+                target='_blank'
+                text='Book Now'
+                btnType='primary'
+              />
             </div>
-          </div>
-          <div className={styles.btnContainer}>
-            <Button
-              href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
-              target='_blank'
-              text='Book Now'
-              btnType='primary'
-            />
           </div>
         </ContentPadding>
       </LayoutWrapper>

@@ -5,6 +5,10 @@
   background-color: var(--lightBlue);
 }
 
+.parent {
+  margin: 10rem 0rem;
+}
+
 .top {
   margin-bottom: 3rem;
   display: flex;
@@ -19,6 +23,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+  padding: 0rem 10rem;
 }
 
 .left,
@@ -120,6 +125,10 @@
 @media screen and (max-width: 768px) {
   .right {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content {
+    padding: 0rem;
   }
 
   .copy {
