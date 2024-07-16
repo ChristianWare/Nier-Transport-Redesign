@@ -33,11 +33,13 @@
 }
 
 .heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
   width: fit-content;
   z-index: 1;
-  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading::after {
@@ -56,12 +58,17 @@
   opacity: 0.8;
   font-size: 2rem;
   font-weight: 500;
+  width: 60%;
   opacity: 0.8;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .imgContainer {
   position: relative;
-  height: 500px;
+  height: 200px;
   width: 100%;
   border-radius: 10px;
   z-index: 1;
@@ -103,7 +110,7 @@
 .btnContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -129,11 +136,6 @@
 
   .content {
     padding: 0rem;
-  }
-
-  .copy {
-    width: 100%;
-    text-align: center;
   }
 
   .btnContainer {

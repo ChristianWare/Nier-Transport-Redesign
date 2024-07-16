@@ -39,18 +39,23 @@ const BookingProcess = () => {
         <ContentPadding>
           <div className={styles.parent}>
             <div className={styles.top}>
+              {/* <h2 className={styles.heading}>Booking Process</h2>
+              <p className={styles.copy}>
+                Your journey begins here. Book a ride with Nier Transportation
+                with these four easy steps:
+              </p> */}
+            </div>
+            <div className={styles.content}>
+              <div className={styles.left}>
+                {/* <div className={styles.imgContainer}>
+                  <Image src={Img} alt='image' fill className={styles.img} />
+                </div> */}
+              </div>
               <h2 className={styles.heading}>Booking Process</h2>
               <p className={styles.copy}>
                 Your journey begins here. Book a ride with Nier Transportation
                 with these four easy steps:
               </p>
-            </div>
-            <div className={styles.content}>
-              <div className={styles.left}>
-                <div className={styles.imgContainer}>
-                  <Image src={Img} alt='image' fill className={styles.img} />
-                </div>
-              </div>
               <div className={styles.right}>
                 {data.map((x) => (
                   <div key={x.id} className={styles.card}>
@@ -59,6 +64,9 @@ const BookingProcess = () => {
                   </div>
                 ))}
               </div>
+                <div className={styles.imgContainer}>
+                  <Image src={Img} alt='image' fill className={styles.img} />
+                </div>
             </div>
             <div className={styles.btnContainer}>
               <Button
