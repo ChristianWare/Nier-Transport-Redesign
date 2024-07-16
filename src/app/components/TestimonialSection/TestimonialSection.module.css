@@ -1,5 +1,16 @@
 .container {
-  margin-bottom: 8rem;
+  margin-bottom: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.top {
+  margin-bottom: 3rem;
 }
 
 .heading {
@@ -18,33 +29,63 @@
   left: 0;
 }
 
+.copy {
+  opacity: 0.8;
+  width: 90%;
+  opacity: 0.8;
+}
+
 .bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  margin-top: 2rem;
+  height: 500px;
+  position: relative;
 }
 
-.cardContainer1,
-.cardContainer2 {
-  display: grid;
-  grid-auto-flow: column;
-  animation: moveReverse 20s linear infinite;
+.bottom::before,
+.bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bottom::before {
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(248, 250, 252, 1),
+    rgba(248, 250, 252, 0)
+  );
+}
+
+.bottom::after {
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(248, 250, 252, 1),
+    rgba(248, 250, 252, 0)
+  );
+}
+
+.cardContainer1 {
+  display: flex;
+  flex-direction: column;
+  animation: moveReverse 60s linear infinite;
   width: 100%;
   grid-gap: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
 
-.cardContainer1:hover,
-.cardContainer2:hover {
+.cardContainer1:hover {
   animation-play-state: paused;
-}
-
-.cardContainer2 {
-  animation: move 20s linear infinite;
 }
 
 .card {
@@ -52,7 +93,7 @@
   padding: 2rem;
   border: 1px solid var(--border);
   border-radius: 10px;
-  width: 465px;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -93,8 +134,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .1rem;
-  margin-top: .2rem;
+  gap: 0.1rem;
+  margin-top: 0.2rem;
 }
 
 .star {
@@ -113,6 +154,25 @@
   width: 20px;
   height: 20px;
   background-color: var(--red);
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copy {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -138,20 +198,11 @@
   }
 }
 
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 @keyframes moveReverse {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(0);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(-50%);
   }
 }

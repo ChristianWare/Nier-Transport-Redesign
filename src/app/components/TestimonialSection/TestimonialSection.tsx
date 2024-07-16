@@ -12,42 +12,14 @@ const TestimonialSection = () => {
           <div className={styles.content}>
             <div className={styles.top}>
               <h2 className={styles.heading}>Testimonials</h2>
-              <p>
+              <p className={styles.copy}>
                 Read What Our Clients Have to Say About Their Journey with Us
               </p>
             </div>
             <div className={styles.bottom}>
               <div className={styles.cardContainer1}>
-                {reviews.slice(0, 4).map((x) => (
-                  <div key={x.id} className={styles.card}>
-                    <p className={styles.review}>&rdquo;{x.review}&rdquo;</p>
-                    <div className={styles.personBox}>
-                      <Image
-                        src={x.person}
-                        alt='person'
-                        title='person'
-                        width={70}
-                        height={70}
-                        className={styles.personImage}
-                      />
-                      <p className={styles.reviewer}>
-                        {x.reviewer}
-                        <span className={styles.company}>{x.company}</span>
-                        <span className={styles.starContainer}>
-                          <span className={styles.star}></span>
-                          <span className={styles.star}></span>
-                          <span className={styles.star}></span>
-                          <span className={styles.star}></span>
-                          <span className={styles.star}></span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className={styles.cardContainer2}>
-                {reviews.slice(4, 9).map((x) => (
-                  <div key={x.id} className={styles.card}>
+                {[...reviews, ...reviews].map((x, index) => (
+                  <div key={index} className={styles.card}>
                     <p className={styles.review}>&rdquo;{x.review}&rdquo;</p>
                     <div className={styles.personBox}>
                       <Image
@@ -80,4 +52,5 @@ const TestimonialSection = () => {
     </section>
   );
 };
+
 export default TestimonialSection;
