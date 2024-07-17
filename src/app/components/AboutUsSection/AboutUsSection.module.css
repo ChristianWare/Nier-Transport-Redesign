@@ -56,10 +56,10 @@
 
 .heading {
   margin-bottom: 2rem;
-  position: relative;
   width: fit-content;
+  border-bottom: 4px solid var(--red);
 }
-
+/* 
 .heading::after {
   position: absolute;
   content: "";
@@ -68,7 +68,7 @@
   background-color: var(--red);
   bottom: 0;
   left: 0;
-}
+} */
 
 .copy {
   margin-bottom: 3rem;
@@ -111,7 +111,7 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  
+
   .content {
     padding: 0rem;
     padding-top: 3rem;

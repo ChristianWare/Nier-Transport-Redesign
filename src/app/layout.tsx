@@ -1,9 +1,10 @@
 import Nav from "./components/Nav/Nav";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import localFont from "next/font/local";
 
 import type { Metadata } from "next";
-import { Roboto, Anton } from "next/font/google";
+import { Roboto, Anton, Bebas_Neue } from "next/font/google";
 import Footer from "./components/Footer/Footer";
 import PreNav from "./components/PreNav/PreNav";
 
@@ -21,6 +22,15 @@ const anton = Anton({
   variable: "--anton",
 });
 
+const bebas = Bebas_Neue({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--bebas",
+});
+
+
+
 export const metadata: Metadata = {
   title: "Nier Transportation | Premium Black Car Service in Phoenix AZ",
   description:
@@ -35,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${roboto.variable} ${anton.variable}`}
+        className={`${roboto.variable} ${anton.variable} ${bebas.variable}`}
         suppressHydrationWarning={true}
       >
         <Toaster
