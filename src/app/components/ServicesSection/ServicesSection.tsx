@@ -5,7 +5,7 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import Airport from "../../../../public/icons/airport.svg";
 import Distance from "../../../../public/icons/distance.svg";
 import Event from "../../../../public/icons/event.svg";
-import PartyBus from "../../../../public/icons/PartyBus.svg";
+import PartyBus from "../../../../public/icons/partybus.svg"
 import Reocurring from "../../../../public/icons/reocurring.svg";
 import Golf from "../../../../public/icons/golf.svg";
 
