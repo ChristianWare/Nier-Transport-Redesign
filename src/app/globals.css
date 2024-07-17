@@ -4,7 +4,7 @@
   --lightBlue: #f9faff;
   --white: #ffffff;
   --lightBlue2: #b7c3fc;
-  --lightBlue3: #e4e8fe;
+  --lightBlue3: rgb(228, 232, 254);
   --cream: #fefffa;
   --red: #eb455f;
   --red2: #f38493;
@@ -162,7 +162,7 @@ input:focus {
 @media screen and (max-width: 480px) {
   h1,
   h2 {
-    letter-spacing: -0.3rem;
+    letter-spacing: -0.2rem;
   }
 }
 

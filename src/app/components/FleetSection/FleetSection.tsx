@@ -5,7 +5,6 @@ import styles from "./FleetSection.module.css";
 import Image from "next/image";
 import Button from "../Button/Button";
 
-
 const FleetSection = () => {
   return (
     <section className={styles.container}>
@@ -16,12 +15,7 @@ const FleetSection = () => {
               <h2 className={styles.heading}>Our Fleet</h2>
               <p className={styles.copy}>
                 Experience the difference with our carefully curated fleet of
-                vehicles that cater to your every need. We invite you to explore
-                our services and reserve your preferred vehicle today for a
-                transportation experience like no other. Travel in style with
-                Nier Transportation - where luxury meets the road. Our vehicle
-                line up includes the late model Chevy Suburban, and the late
-                model Ford Sprinter, and Mercedes Sprinters.
+                vehicles that cater to your every need.
               </p>
             </div>
             <div className={styles.bottom}>
