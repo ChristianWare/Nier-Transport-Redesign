@@ -30,7 +30,6 @@ const FleetSection = () => {
                 </div>
               ))}
             </div>
-          </div>
           <div className={styles.btnContainer}>
             <Button
               href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
@@ -38,6 +37,7 @@ const FleetSection = () => {
               text='Book Now'
               btnType='primary'
             />
+          </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>

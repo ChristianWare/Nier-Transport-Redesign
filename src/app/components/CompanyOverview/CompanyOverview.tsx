@@ -15,11 +15,9 @@ const CompanyOverview = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h2 className={styles.heading}>
-                We&#39;re the best car service in phoenix
+                The best car service in phoenix
               </h2>
-              <h3 className={styles.subheading}>
-                Experience the premier Arizona Car Service
-              </h3>
+
               <p className={styles.copy}>
                 At Nier Transportation, we understand that every journey is
                 unique, and our mission is to transform each ride into an

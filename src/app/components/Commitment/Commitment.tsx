@@ -11,10 +11,7 @@ const Commitment = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>
-                <span className={styles.span}>Our</span>{" "}
-                <span className={styles.span}>Commitment</span>
-              </h2>
+              <h2 className={styles.heading}>Our Commitment</h2>
               <p>Our Commitment to you is guided by these prinicples:</p>
             </div>
             <div className={styles.bottom}>

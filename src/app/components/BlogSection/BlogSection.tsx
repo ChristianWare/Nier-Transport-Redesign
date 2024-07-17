@@ -16,7 +16,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
 
 
   return (
-    <section className={styles.continer}>
+    <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.mainContent}>
