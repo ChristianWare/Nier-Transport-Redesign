@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.content22 {
+  padding-bottom: 15rem;
+}
+
 .imgOverlay {
   z-index: 2;
   position: absolute;
@@ -69,7 +73,7 @@
   padding-left: 2rem;
 }
 
-.copy::after {
+/* .copy::after {
   position: absolute;
   content: "";
   top: 0;
@@ -79,8 +83,7 @@
   margin-top: auto;
   margin-bottom: auto;
   background-color: var(--cream);
-}
-
+} */
 
 .btnContainer {
   display: flex;
@@ -176,7 +179,7 @@
   .content2 {
     padding-bottom: 5rem;
   }
-  
+
   .copy,
   .desc {
     width: 100%;

@@ -17,12 +17,11 @@ const Mission = () => {
             </div>
             <div className={styles.right}>
               <p className={styles.copy}>
-                At Nier transportation, our mission is clear: to provide
-                professional friendly transportation services to our customers
-                safely and efficiently by utilizing quality personnel and
-                resources. We offer cost-effective, time-efficient, and
-                problem-solving solutions that assist our customers in achieving
-                their objectives.
+                Our mission is to provide professional friendly transportation
+                services to our customers safely and efficiently by utilizing
+                quality personnel and resources. We offer cost-effective,
+                time-efficient, and problem-solving solutions that assist our
+                customers in achieving their objectives.
               </p>
             </div>
           </div>

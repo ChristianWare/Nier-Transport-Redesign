@@ -329,25 +329,25 @@ export const commitment = [
     id: 46,
     icon: Saftey,
     title: "Safety",
-    desc: "Your safety is our top priority. We adhere to the highest safety standards, regularly maintain our vehicles, and ensure that our chauffeurs are trained to deliver a secure and comfortable ride.",
+    desc: "Your safety is our top priority",
   },
   {
     id: 47,
     icon: Punctuality,
     title: "Punctuality",
-    desc: "We understand the importance of your time. Count on us for prompt and reliable service that keeps you on schedule. We will get you where you need to go in a secure and timely manner.",
+    desc: "Count on us for prompt service",
   },
   {
     id: 48,
     icon: Luxury,
     title: "Luxury",
-    desc: "If your needed ride is for luxury and comfort, our premium vehicles and courteous chauffeurs are more than happy to provide that service. Our commitment to excellence ensures an unforgettable experience.",
+    desc: "Ride in luxury and comfort",
   },
   {
     id: 49,
     icon: Customer,
-    title: "Customer Satisfaction",
-    desc: "We're dedicated to making every trip exceptional. Your satisfaction is our measure of success. We always strive for excellence and make your journeys truly memorable.",
+    title: "Satisfaction",
+    desc: "Making every trip exceptional",
   },
 ] as const;
 

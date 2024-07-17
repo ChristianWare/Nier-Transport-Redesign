@@ -2,6 +2,10 @@
   background-color: var(--lightBlue);
 }
 
+.content {
+  padding-bottom: 15rem;
+}
+
 .top,
 .commitBox {
   display: flex;
@@ -15,7 +19,6 @@
   width: fit-content;
   margin-bottom: 2rem;
 }
-
 
 .copy {
   color: var(--cream);
@@ -35,8 +38,13 @@
 
 .commitBox {
   padding: 3rem;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .img {
@@ -48,12 +56,16 @@
   text-align: center;
 }
 
+.commitBox p {
+  text-align: center;
+}
+
 @media screen and (max-width: 568px) {
   .container {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  
+
   .heading {
     text-align: center;
   }
