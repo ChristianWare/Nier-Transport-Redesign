@@ -11,7 +11,7 @@ const Areas = () => {
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
       <Image src={BG} alt='Nier Transportation' fill className={styles.img} />
-      <LayoutWrapper>
+      <LayoutWrapper> 
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
