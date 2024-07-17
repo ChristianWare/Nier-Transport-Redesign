@@ -29,15 +29,14 @@ const Hero = () => {
               <br />
               Black Car Service in the Phoenix Metro Area
             </h1>
-            <p className={styles.copy}>
-              Our professional drivers and latest model high end fleet ensure
-              you arrive in style and comfort.
-            </p>
+            <h2 className={styles.copy}>
+              Professional Black Car Services from Phoenix to Sedona and Beyond
+            </h2>
             <div className={styles.btnContainer}>
               <Button
                 href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
                 target='_blank'
-                text='Book Now'
+                text='Book Your Ride Now'
                 btnType='primary'
               />
               <Button href='/contact' text='Contact us' btnType='secondary' />
