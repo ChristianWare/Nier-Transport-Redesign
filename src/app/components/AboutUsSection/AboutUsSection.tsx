@@ -15,6 +15,7 @@ const AboutUsSection = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
+              <h2 className={styles.headingii}>About us</h2>
               <div className={styles.imgContainer}>
                 <Image src={Img1} alt='image' fill className={styles.img} />
               </div>
@@ -26,9 +27,9 @@ const AboutUsSection = () => {
                 we&#39;re your trusted partner in high end transportation. With
                 a passion for providing the best car service in the Phoenix
                 Metro area, we&#39;ve been serving the Arizona community for 20
-                years. Our mission is clear: to provide an unparalleled, high end, late model car
-                service near you while ensuring your comfort, safety, and peace
-                of mind.
+                years. Our mission is clear: to provide an unparalleled, high
+                end, late model car service near you while ensuring your
+                comfort, safety, and peace of mind.
               </p>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>

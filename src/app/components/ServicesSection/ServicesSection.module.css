@@ -21,7 +21,6 @@
 .copy {
   color: var(--cream);
   width: 90%;
-  font-size: 1.8rem;
   opacity: 0.8;
 }
 
@@ -47,18 +46,18 @@
   padding: 4rem 3rem;
   background-color: var(--red);
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .icon {
   color: var(--white);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .subheading {
   color: var(--cream);
   text-align: center;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 @media screen and (max-width: 1068px) {

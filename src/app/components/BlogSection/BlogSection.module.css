@@ -7,31 +7,22 @@
 
 .top {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading {
   margin-bottom: 2rem;
-  position: relative;
+  border-bottom: 4px solid var(--red);
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.heading::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 7px;
-  background-color: var(--red);
-  bottom: 0;
-  left: 0;
+  text-align: center;
 }
 
 .copy {
   width: 60%;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
   opacity: 0.8;
   margin-left: auto;
   margin-right: auto;
@@ -67,7 +58,7 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  
+
   .content {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 3rem;

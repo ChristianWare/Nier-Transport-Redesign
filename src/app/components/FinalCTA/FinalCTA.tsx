@@ -12,13 +12,7 @@ const FinalCTA = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h2 className={styles.heading}>
-                <span className={styles.span}>
-                  <span className={styles.span}>Nier</span>{" "}
-                  <br className={styles.br} />
-                  <span className={styles.span}>Transportation:</span>
-                </span>
-              </h2>
+              <h2 className={styles.heading}>Nier Transportation</h2>
               <p className={styles.copy}>
                 Ready to elevate your travel experience? Choose Nier
                 Transportation for exceptional black car services. Book now to

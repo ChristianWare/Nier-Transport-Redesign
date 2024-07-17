@@ -8,23 +8,29 @@
   padding-top: 15rem;
   padding-bottom: 15rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .top {
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .heading {
   margin-bottom: 2rem;
   border-bottom: 4px solid var(--red);
   width: fit-content;
+  text-align: center;
 }
 
 .copy {
   opacity: 0.8;
   width: 90%;
   opacity: 0.8;
+  text-align: center;
 }
 
 .bottom {
@@ -35,6 +41,8 @@
   overflow: hidden;
   height: 500px;
   position: relative;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .bottom::before,
@@ -148,6 +156,13 @@
   background-color: var(--red);
 }
 
+@media screen and (max-width: 1068px) {
+  .bottom {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
 @media screen and (max-width: 968px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
@@ -168,8 +183,7 @@
 }
 
 @media screen and (max-width: 568px) {
-  .cardContainer1,
-  .cardContainer2 {
+  .cardContainer1 {
     grid-gap: 2rem;
   }
 
@@ -187,6 +201,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .bottom {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 
