@@ -83,9 +83,7 @@ const ServicesSection = () => {
                   <div key={x.id} className={styles.card}>
                     {x.icon}
                     <h3 className={styles.subheading}>{x.service}</h3>
-                    {/* <p content={styles.desc} className={styles.desc}>
-                      {x.descr}
-                    </p> */}
+                   
                   </div>
                 ))}
               </div>

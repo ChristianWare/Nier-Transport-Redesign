@@ -15,6 +15,7 @@ import { aboutPageAdditionalInfo } from "@/app/lib/data";
 import Img1 from "../../../public/images/Hero5.png";
 import History from "../components/History/History";
 import FleetInfo from "../components/FleetInfo/FleetInfo";
+import Usp from "../components/Usp/Usp";
 
 const AboutPage = () => {
   const fs = require("fs");
@@ -64,8 +65,8 @@ const AboutPage = () => {
       <Mission />
       <Commitment />
       <ServicesSection />
-      {/* <FleetSection /> */}
       <FleetInfo />
+      <Usp />
       <TestimonialSection />
       <FaqSection />
       <BlogSection blogData={blogs} />
