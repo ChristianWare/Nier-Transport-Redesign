@@ -28,8 +28,8 @@ const ContactPage = () => {
   return (
     <main>
       <PageIntro
-        heading='Reach Out'
-        
+        title='Contact Us'
+        heading='Reach Out any time'
         src={Contact2}
       />
 

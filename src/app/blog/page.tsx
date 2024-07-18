@@ -24,7 +24,11 @@ const BlogPage = () => {
 
   return (
     <main>
-      <PageIntro heading='Our Blog' src={Blog} />
+      <PageIntro
+        title='Our Blog'
+        heading='Nier Transportation Insights'
+        src={Blog}
+      />
       <BlogSection blogData={blogs} />
       <ContactSection />
       <FinalCTA />
