@@ -2,11 +2,6 @@
   position: relative;
 }
 
-.content {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-
 .imgOverlay {
   z-index: 2;
   position: absolute;
@@ -23,12 +18,20 @@
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   grid-gap: 5rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .left,
 .right {
   z-index: 3;
-  /* flex: 1; */
+}
+
+.left {
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
 }
 
 .heading {
@@ -80,7 +83,11 @@
   color: var(--cream);
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
+  .container {
+    overflow: hidden;
+  }
+
   .content {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -3,6 +3,7 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./TestimonialSection.module.css";
 import { reviews } from "@/app/lib/data";
+import Button from "../Button/Button";
 
 const TestimonialSection = () => {
   return (
@@ -10,15 +11,9 @@ const TestimonialSection = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
-            <div className={styles.top}>
-              <h2 className={styles.heading}>Testimonials</h2>
-              <p className={styles.copy}>
-                Read What Our Clients Have to Say About Their Journey with Us
-              </p>
-            </div>
             <div className={styles.bottom}>
               <div className={styles.cardContainer1}>
-                {[...reviews, ...reviews].map((x, index) => (
+                {reviews.slice(0, 3).map((x, index) => (
                   <div key={index} className={styles.card}>
                     <p className={styles.review}>&rdquo;{x.review}&rdquo;</p>
                     <div className={styles.personBox}>
@@ -44,6 +39,19 @@ const TestimonialSection = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>Testimonials</h2>
+              <p className={styles.copy}>
+                Read What Our Clients Have to Say About Their Journey with Us
+              </p>
+              <div className={styles.btnContainer}>
+                <Button
+                  href='/testimonials'
+                  text='See all reviews'
+                  btnType='primary'
+                />
               </div>
             </div>
           </div>

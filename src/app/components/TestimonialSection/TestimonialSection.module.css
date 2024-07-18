@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  overflow: hidden;
   background-color: var(--border);
 }
 
@@ -8,29 +7,37 @@
   padding-top: 5rem;
   padding-bottom: 15rem;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
 
 .top {
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .heading {
   margin-bottom: 2rem;
   border-bottom: 4px solid var(--red);
   width: fit-content;
-  text-align: center;
+  text-align: right;
 }
 
 .copy {
   opacity: 0.8;
   width: 90%;
   opacity: 0.8;
-  text-align: center;
+  text-align: right;
+}
+
+.btnContainer {
+  margin-top: 2rem;
 }
 
 .bottom {
@@ -39,45 +46,12 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  height: 500px;
   position: relative;
-  margin-left: 20rem;
-  margin-right: 20rem;
-}
-
-.bottom::before,
-.bottom::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 50px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.bottom::before {
-  top: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(217, 218, 226, 1),
-    rgba(248, 250, 252, 0)
-  );
-}
-
-.bottom::after {
-  bottom: 0;
-  background: linear-gradient(
-    to top,
-    rgba(217, 218, 226, 1),
-    rgba(248, 250, 252, 0)
-  );
 }
 
 .cardContainer1 {
   display: flex;
   flex-direction: column;
-  animation: moveReverse 60s linear infinite;
   width: 100%;
   grid-gap: 1rem;
   margin-bottom: 1rem;
@@ -90,14 +64,16 @@
 
 .card {
   background-color: var(--lightBlue);
-  padding: 2rem;
+  padding: 3rem;
   border: 1px solid var(--border);
   border-radius: 10px;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
 }
 
 .review {
@@ -108,7 +84,6 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .personImage {
@@ -157,16 +132,8 @@
 }
 
 @media screen and (max-width: 1068px) {
-  .bottom {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-
-@media screen and (max-width: 968px) {
-  .content {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5rem;
+  .container {
+    overflow: hidden;
   }
 
   .top {
@@ -174,6 +141,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    order: -1;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 
   .copy {
@@ -182,38 +155,10 @@
   }
 }
 
-@media screen and (max-width: 568px) {
-  .cardContainer1 {
-    grid-gap: 2rem;
-  }
-
-  .cardContainer1 {
-    margin-bottom: 2rem;
-  }
-
-  .container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .bottom {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-}
-
-@keyframes moveReverse {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-50%);
+@media screen and (max-width: 768px) {
+  .btnContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
