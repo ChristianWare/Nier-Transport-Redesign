@@ -56,11 +56,11 @@
   gap: 10rem;
 }
 
-  .usp {
-    text-align: center;
-  }
+.usp {
+  text-align: center;
+}
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1168px) {
   .bottom {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 5rem;
@@ -79,8 +79,6 @@
     /* padding-top: 5rem; */
     /* padding-right: 3rem; */
   }
-
-
 
   .imgContainer {
     align-items: center;
