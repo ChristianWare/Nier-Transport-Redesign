@@ -1,13 +1,18 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./PageIntro.module.css";
 import Nav from "../Nav/Nav";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import Button from "../Button/Button";
 import { FC } from "react";
-import { PageIntroProps } from "@/app/lib/interface";
 import ContentPadding from "../ContentPadding/ContentPadding";
 
-const PageIntro: FC<PageIntroProps> = ({ heading, src }) => {
+interface Props {
+  title?: string;
+  heading: string;
+  src: StaticImageData;
+}
+
+const PageIntro: FC<Props> = ({ title, heading, src }) => {
   return (
     <section className={styles.container}>
       <div className={styles.imgOverlay}></div>
@@ -24,6 +29,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, src }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
+            <span className={styles.title}>{title}</span>
             <h1 className={styles.heading} lang='en'>
               {heading}
             </h1>

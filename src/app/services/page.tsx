@@ -33,8 +33,8 @@ const ServicesPage = () => {
   return (
     <main>
       <PageIntro
-        heading='Our Services'
-       
+        title='Our Services'
+        heading='heading will go here'
         src={Fleet}
       />
       <IndivServiceSection />

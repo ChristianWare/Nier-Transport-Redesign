@@ -423,4 +423,24 @@ export const options = [
     city: "Payment Options",
     desc: "For your convenience, we offer secure online payment options for those who wish to pay in advance. We accept major payment methods, including credit cards and PayPal.",
   },
-];
+] as const;
+
+// Additioanl info map data
+
+export const aboutPageAdditionalInfo = [
+  {
+    heading: "Full-Stack Development",
+    value:
+      "Our team of drivers is dedicated to providing you with top-notch service.",
+  },
+  {
+    heading: "Full-Stack Development",
+    value:
+      "They're trained in safe driving and know the roads well. This means you get a smooth and safe trip, so you can relax.",
+  },
+  {
+    heading: "Full-Stack Development",
+    value:
+      "Need airport transfers, corporate travel, or event transport? We've got you covered!",
+  },
+] as const;

@@ -1,5 +1,4 @@
 .content {
-  padding-top: 15rem;
   padding-bottom: 15rem;
 }
 
@@ -29,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-top: 0rem;
 }
 
@@ -73,7 +72,7 @@
 
 @media screen and (max-width: 568px) {
   .container {
-    padding-top: 5rem;
+    padding-top: .5rem;
     padding-bottom: 0rem;
   }
 

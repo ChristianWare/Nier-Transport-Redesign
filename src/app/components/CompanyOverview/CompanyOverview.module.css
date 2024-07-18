@@ -1,24 +1,24 @@
 .content {
   padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .heading {
-  border-bottom: 4px solid var(--red);
-  width: fit-content;
+  width: 60%;
 }
 
 .copy {
   margin-bottom: 3rem;
   width: 60%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .right {
@@ -31,7 +31,6 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 2fr 1fr;
-  /* margin-bottom: 1rem; */
 }
 
 .rightBottom {
@@ -52,6 +51,20 @@
   object-fit: cover;
   font-size: 0;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1068px) {
+  .heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .copy {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -77,7 +90,8 @@
 }
 
 @media screen and (max-width: 568px) {
-  .rightTop, .rightBottom {
+  .rightTop,
+  .rightBottom {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
   }

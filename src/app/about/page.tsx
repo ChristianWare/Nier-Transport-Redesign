@@ -10,6 +10,11 @@ import FinalCTA from "../components/FinalCTA/FinalCTA";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import Commitment from "../components/Commitment/Commitment";
 import FleetSection from "../components/FleetSection/FleetSection";
+import AdditionalInfo from "../components/AdditionalInfo/AdditionalInfo";
+import { aboutPageAdditionalInfo } from "@/app/lib/data";
+import Img1 from "../../../public/images/Hero5.png";
+import History from "../components/History/History";
+import FleetInfo from "../components/FleetInfo/FleetInfo";
 
 const AboutPage = () => {
   const fs = require("fs");
@@ -36,12 +41,31 @@ const AboutPage = () => {
   });
   return (
     <main>
-      <PageIntro heading='About Us' src={Img} />
+      <PageIntro
+        title='About Us'
+        heading="We're your premier Phoenix Black Car Luxury Transportation Car Service"
+        src={Img}
+      />
       <CompanyOverview />
-      <Commitment />
+      <AdditionalInfo
+        bgColor='gray'
+        heading='Redefining Transportation'
+        copy="We're all about top-tier transportation services. When you get into one of our vehicles, you're in for a world of comfort and style. We have the latest models, so you'll travel in style and elegance."
+        mapData={aboutPageAdditionalInfo}
+        btn={true}
+        href='/'
+        btnText='Book Now'
+        btnType='primary'
+        h3='Professional Chauffeurs at Your Service'
+        more="Our drivers are prepared to fulfill your requirements with the utmost professionalism. Choose Phoenix Black Nier Transportation for a travel experience that's all about luxury, ease, and amazing service. It's a journey you won't forget."
+        src={Img1}
+      />
+      <History />
       <Mission />
+      <Commitment />
       <ServicesSection />
-      <FleetSection />
+      {/* <FleetSection /> */}
+      <FleetInfo />
       <TestimonialSection />
       <FaqSection />
       <BlogSection blogData={blogs} />

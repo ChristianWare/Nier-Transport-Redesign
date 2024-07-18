@@ -30,11 +30,6 @@ export interface BlogSectionProps {
   blogData: any;
 }
 
-export interface PageIntroProps {
-  heading: string;
-  src: StaticImageData;
-}
-
 export interface SlugIntroProps {
   title: string;
   description?: string;

@@ -9,6 +9,7 @@ import TestimonialSection from "./components/TestimonialSection/TestimonialSecti
 import FaqSection from "./components/Faqs/FaqSection";
 import BlogSection from "./components/BlogSection/BlogSection";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
+import FleetInfo from "./components/FleetInfo/FleetInfo";
 
 export default function Home() {
   const fs = require("fs");
@@ -39,7 +40,8 @@ export default function Home() {
       <Hero />
       <AboutUsSection />
       <ServicesSection />
-      <FleetSection />
+      {/* <FleetSection /> */}
+      <FleetInfo />
       <Areas />
       <BookingProcess />
       <TestimonialSection />

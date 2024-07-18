@@ -15,15 +15,14 @@ const CompanyOverview = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h2 className={styles.heading}>
-                We are The best car service in phoenix
+                Elevate Your Travel Experience with Nier Transportation{" "}
               </h2>
               <p className={styles.copy}>
-                At Nier Transportation, we understand that every journey is
-                unique, and our mission is to transform each ride into an
-                extraordinary experience. When you choose us, you&#39;re not
-                just selecting a transportation service; you&#39;re choosing
-                timeless elegance, unwavering reliability, and the assurance of
-                arriving in style.
+                At Nier Transportation, we change what transportation means. Our
+                excellent selection of vehicles and skilled drivers ensure that
+                each journey is a unique experience. Whether it be for work, a
+                special occasion, or a casual outing, we guarantee a comfortable
+                and unforgettable ride.
               </p>
             </div>
             <div className={styles.right}>

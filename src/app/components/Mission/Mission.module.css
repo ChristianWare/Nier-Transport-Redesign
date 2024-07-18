@@ -2,7 +2,11 @@
   position: relative;
 }
 
-.content22 {
+.content {
+  padding-top: 15rem;
+}
+
+.content2 {
   padding-bottom: 15rem;
 }
 
@@ -67,23 +71,6 @@
   font-weight: 500;
   opacity: 0.8;
 }
-
-.copy {
-  position: relative;
-  padding-left: 2rem;
-}
-
-/* .copy::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 7px;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: var(--cream);
-} */
 
 .btnContainer {
   display: flex;
