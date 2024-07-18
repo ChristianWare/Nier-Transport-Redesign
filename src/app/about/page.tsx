@@ -16,6 +16,7 @@ import Img1 from "../../../public/images/Hero5.png";
 import History from "../components/History/History";
 import FleetInfo from "../components/FleetInfo/FleetInfo";
 import Usp from "../components/Usp/Usp";
+import { aboutPageFaqs } from "@/app/lib/data";
 
 const AboutPage = () => {
   const fs = require("fs");
@@ -68,7 +69,7 @@ const AboutPage = () => {
       <FleetInfo />
       <Usp />
       <TestimonialSection />
-      <FaqSection />
+      <FaqSection mapData={aboutPageFaqs} />
       <BlogSection blogData={blogs} />
       <ContactSection />
       <FinalCTA />

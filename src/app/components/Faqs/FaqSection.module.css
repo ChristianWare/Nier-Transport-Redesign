@@ -12,6 +12,13 @@
   padding-bottom: 15rem;
 }
 
+.top {
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
 .heading {
   margin-bottom: 2rem;
   border-bottom: 4px solid var(--red);

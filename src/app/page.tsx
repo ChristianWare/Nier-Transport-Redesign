@@ -10,6 +10,7 @@ import FaqSection from "./components/Faqs/FaqSection";
 import BlogSection from "./components/BlogSection/BlogSection";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 import FleetInfo from "./components/FleetInfo/FleetInfo";
+import { homePageFaqs } from "./lib/data";
 
 export default function Home() {
   const fs = require("fs");
@@ -45,7 +46,7 @@ export default function Home() {
       <Areas />
       <BookingProcess />
       <TestimonialSection />
-      <FaqSection />
+      <FaqSection mapData={homePageFaqs} />
       <BlogSection blogData={blogs} />
       <ContactSection />
       <FinalCTA />

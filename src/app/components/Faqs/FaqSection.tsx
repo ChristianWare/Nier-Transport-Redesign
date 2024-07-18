@@ -4,10 +4,14 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./FaqSection.module.css";
 import { useState } from "react";
-import { faqs } from "@/app/lib/data";
 import Plus from "../../../../public/icons/plus.svg";
+import { FC } from "react";
 
-const FaqSection = () => {
+interface Props {
+  mapData: any;
+}
+
+const FaqSection: FC<Props> = ({ mapData }) => {
   const [selected, setSelected] = useState(0);
 
   const toggle = (i: any) => {
@@ -28,7 +32,7 @@ const FaqSection = () => {
               </p>
             </div>
             <div className={styles.bottom}>
-              {faqs.slice(0, 5).map((x, i) => (
+              {mapData.map((x: any, i: any) => (
                 <div
                   key={x.id}
                   className={`${styles.qaContainer} ${

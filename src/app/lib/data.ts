@@ -156,7 +156,7 @@ export const reviews = [
   },
 ] as const;
 
-export const faqs = [
+export const homePageFaqs = [
   {
     id: 36,
     question:
@@ -217,7 +217,7 @@ export const faqs = [
   },
 ] as const;
 
-export  const aboutPageFaqs = [
+export const aboutPageFaqs = [
   {
     id: 46,
     question: "What services do you offer?",
@@ -254,7 +254,13 @@ export  const aboutPageFaqs = [
     answer:
       "Booking a reservation with us is easy. You can visit their website, call their customer service, or contact them directly. They'll work with you to understand your needs and offer a customized solution.",
   },
-] as const ;
+  {
+    id: 52,
+    question: "Do you offer specialized wedding transportation services?",
+    answer:
+      "Yes, we provide specialized wedding transportation services to ensure your special day runs smoothly. Our services include luxury vehicles for the bridal party, guest shuttles, and customized transportation plans to fit your wedding schedule and needs.",
+  },
+] as const;
 
 export const footer = [
   {
