@@ -217,6 +217,45 @@ export const faqs = [
   },
 ] as const;
 
+export  const aboutPageFaqs = [
+  {
+    id: 46,
+    question: "What services do you offer?",
+    answer:
+      "Nier Transportation offers luxury transportation services. Some services offered are private chauffeurs, airport transfers, and corporate transportation. They also offer event transportation and VIP experiences.",
+  },
+  {
+    id: 47,
+    question: "What is the quality of the vehicles in your fleet?",
+    answer:
+      "The fleet at Nier Transportation has sleek and stylish vehicles. These include sedans and SUVs that are well-maintained. They offer plush interiors, advanced entertainment systems, and many comforts for a top-notch travel experience.",
+  },
+  {
+    id: 48,
+    question: "How are the drivers at Nier Transportation trained and vetted?",
+    answer:
+      "All our employees go through extensive training and background checks. They aim to provide top-notch customer service and ensure passengers' safety and comfort.",
+  },
+  {
+    id: 49,
+    question: "Can you accommodate large groups or special events?",
+    answer:
+      "Yes, they can. Nier Transportation can handle large groups and special events. This includes weddings, corporate functions, and night-outs. They offer a fleet of vehicles and coordinate transportation to make your event a hit.",
+  },
+  {
+    id: 50,
+    question: "Do you offer airport transfer services?",
+    answer:
+      "Yes, we do. We will greet you at the airport, assist with your bags, and guarantee a seamless journey to and from the airport.",
+  },
+  {
+    id: 51,
+    question: "How can I book a reservation with Nier Transportation?",
+    answer:
+      "Booking a reservation with us is easy. You can visit their website, call their customer service, or contact them directly. They'll work with you to understand your needs and offer a customized solution.",
+  },
+] as const ;
+
 export const footer = [
   {
     id: 1,
