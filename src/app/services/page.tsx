@@ -34,7 +34,7 @@ const ServicesPage = () => {
     <main>
       <PageIntro
         title='Our Services'
-        heading='heading will go here'
+        heading='What we have to offer'
         src={Fleet}
       />
       <IndivServiceSection />
