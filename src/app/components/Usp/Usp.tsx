@@ -1,24 +1,23 @@
 import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Usp.module.css";
-import Image from "next/image";
-import Img from "../../../../public/images/Sub1.png";
+import Airport from "../../../../public/icons/airport.svg";
 
 const data = [
   {
     id: 1,
     usp: "Unwavering commitment to excellence",
-    src: Img,
+    icon: <Airport className={styles.icon} width={60} height={60} />,
   },
   {
     id: 2,
     usp: "Meticulously maintained fleet of luxury vehicles",
-    src: Img,
+    icon: <Airport className={styles.icon} width={60} height={60} />,
   },
   {
     id: 3,
     usp: "Desire to go above and beyond to exceed your expectations",
-    src: Img,
+    icon: <Airport className={styles.icon} width={60} height={60} />,
   },
 ];
 
@@ -35,15 +34,8 @@ const Usp = () => {
             <div className={styles.bottom}>
               {data.map((x) => (
                 <div key={x.id} className={styles.card}>
-                  <div className={styles.imgContainer}>
-                    <Image
-                      src={x.src}
-                      alt=''
-                      width={150}
-                      height={150}
-                      className={styles.img}
-                    />
-                  </div>
+                 
+                  {x.icon}
                   <h3 className={styles.usp}>{x.usp}</h3>
                 </div>
               ))}
