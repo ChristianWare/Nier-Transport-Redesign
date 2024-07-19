@@ -46,13 +46,13 @@ const TestimonialSection = () => {
               <p className={styles.copy}>
                 Read What Our Clients Have to Say About Their Journey with Us
               </p>
-              <div className={styles.btnContainer}>
+              {/* <div className={styles.btnContainer}>
                 <Button
                   href='/testimonials'
                   text='See all reviews'
                   btnType='primary'
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </ContentPadding>

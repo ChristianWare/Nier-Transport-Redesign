@@ -43,7 +43,7 @@
   padding: 3rem;
   border-radius: 10px;
   background-color: var(--border);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
 }
 
 .title {
