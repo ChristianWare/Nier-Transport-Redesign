@@ -31,13 +31,13 @@ const FaqSection: FC<Props> = ({ mapData }) => {
                 question here, feel free to call us anytime to ask, and we will
                 gladly give you a satisfactory answer.
               </p>
-              <div className={styles.btnContainer}>
+              {/* <div className={styles.btnContainer}>
                 <Button
                   href='/testimonials'
                   text='See all Questions'
                   btnType='secondary'
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.bottom}>
               {mapData.map((x: any, i: any) => (

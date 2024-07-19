@@ -1,0 +1,29 @@
+.heading {
+  text-align: center;
+  width: 100%;
+}
+
+.bottom {
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 3rem;
+  background-color: var(--darkBlue);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.headingii,
+.copy {
+  color: var(--white);
+}
+
+.headingii {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  /* text-align: center; */
+}
+
+.copy {
+  margin-bottom: 6rem;
+}

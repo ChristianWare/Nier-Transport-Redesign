@@ -262,6 +262,68 @@ export const aboutPageFaqs = [
   },
 ] as const;
 
+export const servicesPageFaqs = [
+  {
+    id: 1,
+    question:
+      "What advantages does Nier Transportation offer over traditional shuttles or ride-shares?",
+    answer:
+      "We give you luxury, comfort, and reliability. They have professional drivers, high-end cars, and fit your schedule and likes.",
+  },
+  {
+    id: 2,
+    question: "How can Nier Transportation enhance my Phoenix to Sedona drive?",
+    answer:
+      "We make your drive luxurious and classy. You get leather seats and climate control. The drivers know the best spots in Sedona and Scottsdale.",
+  },
+  {
+    id: 3,
+    question: "Is your booking process complex?",
+    answer:
+      "No, our booking process is easy and stress-free. You can use online platforms or mobile apps for quick reservations and tracking.",
+  },
+  {
+    id: 4,
+    question:
+      "What transportation options do you offer between Phoenix and Tucson?",
+    answer:
+      "We give you many options, like black SUVs for a private ride or buses for a budget-friendly trip.",
+  },
+  {
+    id: 5,
+    question: "Can you accommodate group travel?",
+    answer:
+      "Yes, we can handle groups and individual travelers. Everyone gets to travel in comfort and style.",
+  },
+  {
+    id: 6,
+    question:
+      "How does using a town car service near me impact my travel experience?",
+    answer:
+      "This makes traveling better since you get luxury and convenience with a professional driver. It cuts down on traffic and parking stress.",
+  },
+  {
+    id: 7,
+    question:
+      "What should I look for when finding the best town car or airport limo service near me?",
+    answer:
+      "Make sure they have a great fleet, good reviews, and options that fit your travel needs.",
+  },
+  {
+    id: 8,
+    question: "Do you provide shuttle services from Tucson to Phoenix airport?",
+    answer:
+      "Yes, we do! We provide shuttle transportation from Tucson to Phoenix airport, offering a convenient way to get to your flight.",
+  },
+  {
+    id: 9,
+    question: "Are there any services similar to Super Shuttle in Phoenix?",
+    answer:
+      "While Super Shuttle is well-known, many other transportation companies now offer top-quality airport transport in Phoenix.",
+  },
+] as const;
+
+
 export const footer = [
   {
     id: 1,
@@ -499,18 +561,34 @@ export const options = [
 
 export const aboutPageAdditionalInfo = [
   {
-    heading: "Full-Stack Development",
     value:
       "Our team of drivers is dedicated to providing you with top-notch service.",
   },
   {
-    heading: "Full-Stack Development",
     value:
       "They're trained in safe driving and know the roads well. This means you get a smooth and safe trip, so you can relax.",
   },
   {
-    heading: "Full-Stack Development",
     value:
       "Need airport transfers, corporate travel, or event transport? We've got you covered!",
+  },
+] as const;
+
+export const servicesPageAdditionalInfo = [
+  {
+    value:
+      'When you need to be on time and want style, we are the best option. Our reputation is built on our high-end transportation and attentive care. Your trip to or from the airport will be flawless. Forget about crowded shuttles or the ups and downs of ride-sharing. Experience tranquility and reliability with our expert town solutions, conveniently located by searching for "town car service near me".',
+  },
+  {
+    value:
+      "A sleek black ride parked outside a terminal with a private driver waiting by the open door. The headlights are on, casting a warm glow on the glossy exterior. The driver, dressed in a professional suit, holds a sign with the company's logo. Luggage is visible in the trunk, ready for departure. The backdrop features a busy scene with airplanes and passengers in the distance.",
+  },
+  {
+    value:
+      "We fit your schedule, whether you're flying early in the morning or late at night. Say hello to hassle-free travel with just a few clicks. For bigger groups or those who love extra room, our super shuttle phoenix option offers luxury and space.",
+  },
+  {
+    value:
+      "For travelers seeking an airport limo near me, we're your top choice. Our fleet of high-end rides and dedicated chauffeurs ensure your safety and satisfaction. Choosing us means you get a worry-free journey from the city to the terminal.",
   },
 ] as const;
