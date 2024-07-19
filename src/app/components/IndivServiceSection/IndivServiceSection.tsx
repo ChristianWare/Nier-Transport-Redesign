@@ -3,6 +3,7 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./IndivServiceSection.module.css";
 import Image from "next/image";
+import Img from "../../../../public/images/Hero1.png";
 import Button from "../Button/Button";
 
 const IndivServiceSection = () => {
@@ -10,15 +11,36 @@ const IndivServiceSection = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <ContentPadding>
-          <h2 className={styles.heading}>Service Details</h2>
-          <div className={styles.content}>
+          
+          <div className={styles.top}>
+            <h2 className={styles.heading}>Service Details</h2>
+            <p className={styles.copy}>
+              Welcome to Nier Transportation, your premier provider of phoenix
+              black car services. We offer a range of luxury transportation
+              options to meet all your needs.
+            </p>
+          </div>
+          <div className={styles.bottom}>
             {servicesPage.map((x, index) => (
-              <article key={index} className={styles.serviceContainer}>
+              <article key={x.id} className={styles.servicesContainer}>
                 <div className={styles.left}>
-                  <h3 className={styles.title}>
-                    {index + 1}. {x.title}
-                  </h3>
-                  <p className={styles.desc}>{x.desc}</p>
+                  <div className={styles.leftTop}>
+                    <h3 className={styles.title}>
+                      {index + 1}. {x.title}
+                    </h3>
+                    <p className={styles.desc}>{x.desc}</p>
+                  </div>
+                  <div className={styles.leftBottomFlex}>
+                    <div className={styles.lb1}>
+                      <p className={styles.desc2}>{x.desc2}</p>
+                    </div>
+                    <div className={styles.lb1}>
+                      <p className={styles.desc2}>{x.desc3}</p>
+                    </div>
+                    <div className={styles.lb1}>
+                      <p className={styles.desc2}>{x.desc4}</p>
+                    </div>
+                  </div>
                 </div>
                 <div className={styles.right}>
                   <div className={styles.imgContainer}>
@@ -27,15 +49,6 @@ const IndivServiceSection = () => {
                 </div>
               </article>
             ))}
-            <div className={styles.btnContainer}>
-              <Button
-                href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
-                target='_blank'
-                text='Book Now'
-                btnType='primary'
-              />
-              <Button href='/' text='Call us' btnType='tertiary' />
-            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>

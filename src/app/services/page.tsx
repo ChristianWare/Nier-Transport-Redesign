@@ -6,6 +6,7 @@ import PageIntro from "../components/PageIntro/PageIntro";
 import Fleet from "../../../public/images/fleet.png";
 import IndivServiceSection from "../components/IndivServiceSection/IndivServiceSection";
 import Options from "../components/Options/Options";
+import { homePageFaqs } from "../lib/data";
 
 const ServicesPage = () => {
   const fs = require("fs");
@@ -34,13 +35,13 @@ const ServicesPage = () => {
     <main>
       <PageIntro
         title='Our Services'
-        heading='What we have to offer'
+        heading='We are a Reliable Black Car Airport Service - and More!'
         src={Fleet}
       />
       <IndivServiceSection />
       <Options />
       <BlogSection blogData={blogs} />
-      <FaqSection />
+      <FaqSection mapData={homePageFaqs} />
       <ContactSection />
       <FinalCTA />
     </main>
