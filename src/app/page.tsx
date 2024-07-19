@@ -11,6 +11,7 @@ import BlogSection from "./components/BlogSection/BlogSection";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 import FleetInfo from "./components/FleetInfo/FleetInfo";
 import { homePageFaqs } from "./lib/data";
+import IndivServiceSection from "./components/IndivServiceSection/IndivServiceSection";
 
 export default function Home() {
   const fs = require("fs");
@@ -41,6 +42,7 @@ export default function Home() {
       <Hero />
       <AboutUsSection />
       <ServicesSection />
+      <IndivServiceSection />
       {/* <FleetSection /> */}
       <FleetInfo />
       <Areas />

@@ -7,6 +7,7 @@ import ContactSection from "../components/ContactSection/ContactSection";
 import BlogSection from "../components/BlogSection/BlogSection";
 import FaqSection from "../components/Faqs/FaqSection";
 import styles from "./Contactpage.module.css";
+import { homePageFaqs } from "../lib/data";
 
 const ContactPage = () => {
   const fs = require("fs");
@@ -47,7 +48,7 @@ const ContactPage = () => {
           ></iframe>
         </ContentPadding>
       </LayoutWrapper>
-      <FaqSection />
+      <FaqSection mapData={homePageFaqs} />
       <BlogSection blogData={blogs} />
       <FinalCTA />
     </main>
