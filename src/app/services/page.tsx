@@ -37,11 +37,7 @@ const ServicesPage = () => {
   });
   return (
     <main>
-      <PageIntro
-        title='Our Services'
-        heading='We are a Reliable Black Car Airport Service - and More!'
-        src={Fleet}
-      />
+      <PageIntro title='Our Services' heading='What we offer' src={Fleet} />
       <IndivServiceSection />
       <Options />
       {/* <AdditionalInfo

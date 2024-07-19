@@ -45,7 +45,7 @@ const AboutPage = () => {
     <main>
       <PageIntro
         title='About Us'
-        heading="We're your premier Phoenix Black Car Luxury Transportation Car Service"
+        heading='Learn about Nier Transportation'
         src={Img}
       />
       <CompanyOverview />
