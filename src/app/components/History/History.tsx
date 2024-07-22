@@ -18,7 +18,7 @@ const data = [
   {
     title: "What Sets Us Apart: Commitment to Quality and Comfort",
     description:
-      "Our unwavering commitment to quality and comfort is what sets us apart, making every journey with [Your Company Name] a superior experience.",
+      "Our unwavering commitment to quality and comfort is what sets us apart, making every journey with Nier Transportation a superior experience.",
   },
 ] as const;
 

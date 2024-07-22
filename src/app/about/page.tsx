@@ -59,7 +59,7 @@ const AboutPage = () => {
         btnText='Book Now'
         btnType='primary'
         h3='Professional Chauffeurs at Your Service'
-        more="Our drivers are prepared to fulfill your requirements with the utmost professionalism. Choose Phoenix Black Nier Transportation for a travel experience that's all about luxury, ease, and amazing service. It's a journey you won't forget."
+        more="Our drivers are prepared to fulfill your requirements with the utmost professionalism. Choose Nier Transportation for a travel experience that's all about luxury, ease, and amazing service. It's a journey you won't forget."
         src={Img1}
       />
       <History />

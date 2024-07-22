@@ -24,17 +24,11 @@ const Hero = () => {
           <div className={styles.content}>
             <h1 className={styles.heading} lang='en'>
               Nier Transportation
-              {/* <br />
-              <span className={styles.span2}>
-                Black Car Service in the Phoenix Metro Area
-              </span> */}
             </h1>
             <h2 className={styles.heading2}>
               Black Car Service in the Phoenix Metro Area
             </h2>
-            {/* <h2 className={styles.copy}>
-              Professional Black Car Services from Phoenix to Sedona and Beyond
-            </h2> */}
+
             <div className={styles.btnContainer}>
               <Button
                 href='https://bookridesonline.com/book/?dbaid=L4JAaOi0gExXw5xek9dmgQ%3d%3d'
