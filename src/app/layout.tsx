@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { Roboto, Anton, Bebas_Neue } from "next/font/google";
 import Footer from "./components/Footer/Footer";
 import PreNav from "./components/PreNav/PreNav";
+import PlausibleProvider from "next-plausible";
 
 const roboto = Roboto({
   weight: ["900", "700", "500", "400"],
@@ -44,6 +45,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <PlausibleProvider
+          domain='niertransportation.com'
+          trackLocalhost={true}
+          enabled={true}
+        />
+      </head>
       <body
         className={`${roboto.variable} ${anton.variable} ${bebas.variable}`}
         suppressHydrationWarning={true}
