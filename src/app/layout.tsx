@@ -62,7 +62,7 @@ export default function RootLayout({
             className: "toastFont",
           }}
         />
-        <PreNav />
+        {/* <PreNav /> */}
         {children}
         <Footer />
       </body>

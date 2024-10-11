@@ -1,13 +1,13 @@
 .header {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   font-family: var(--roboto);
-  color: var(--cream);
+  /* color: var(--cream); */
   z-index: 1000;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  /* padding-right: 30px;
+  padding-left: 30px; */
 }
 
 .navbar {
@@ -22,9 +22,9 @@
 }
 
 .newLogo {
-  width: 107px;
-  height: 45px;
-  color: var(--white)
+  width: 113px;
+  height: 50px;
+  color: var(--darkBlue);
 }
 
 .officialLogoMobile {
@@ -59,7 +59,7 @@
 
 .activeLink::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -5px;
   left: 0;
   width: 100%;
@@ -105,7 +105,7 @@
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
-  background-color: var(--cream);
+  background-color: var(--darkBlue);
   transition: all 0.3s ease-in-out;
 }
 
@@ -202,9 +202,9 @@
     padding-right: 5px;
     padding-left: 5px;
   }
-  
+
   .logo {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 }
 

@@ -43,14 +43,14 @@ const Nav = () => {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
-            <Image
-              src={Logo}
+            {/* <Image
+              src={LogoMobile}
               alt='logo'
-              width={107}
-              height={107}
+              width={113}
+              height={50}
               className={styles.officialLogo}
-            />
-            {/* <Logo className={styles.newLogo} /> */}
+            /> */}
+            Nier Transportation
           </Link>
         </div>
         <ul
@@ -122,8 +122,8 @@ const Nav = () => {
           </li>
           <div className={styles.bottom}>
             <p className={styles.copy}>
-              Copyright &copy; 2023 Nier Transportation || All Rights Reserved
-              || Designed and Developed By The Chris Ware Agency
+              Copyright &copy; 2024 Nier Transportation || All Rights Reserved
+              || Designed and Developed By Fonts & Footers
             </p>
           </div>
         </ul>

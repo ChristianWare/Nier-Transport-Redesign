@@ -41,10 +41,3 @@
   color: var(--cream);
   background-color: var(--darkBlue);
 }
-
-@media screen and (max-width: 768px) {
-  .btn {
-    font-size: 2rem;
-    padding: 15px 35px;
-  }
-}
