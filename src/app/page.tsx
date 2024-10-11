@@ -12,6 +12,8 @@ import FinalCTA from "./components/FinalCTA/FinalCTA";
 import FleetInfo from "./components/FleetInfo/FleetInfo";
 import { homePageFaqs } from "./lib/data";
 import IndivServiceSection from "./components/IndivServiceSection/IndivServiceSection";
+import Nav from "./components/Nav/Nav";
+import styles from "./page.module.css";
 
 export default function Home() {
   const fs = require("fs");
@@ -38,7 +40,10 @@ export default function Home() {
   });
 
   return (
-    <main>
+    <main className={styles.main}>
+      <div className={styles.navContainer}>
+        <Nav />
+      </div>
       <Hero />
       <AboutUsSection />
       <ServicesSection />

@@ -1,16 +1,18 @@
 .header {
-  /* padding-top: 1rem; */
+  position: relative;
+  padding-top: 1rem;
   font-family: var(--roboto);
-  /* color: var(--cream); */
+  color: var(--cream);
   z-index: 1000;
-  /* max-width: 1500px; */
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  /* padding-right: 30px;
-  padding-left: 30px; */
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,13 +20,13 @@
 
 .logo {
   z-index: 998;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .newLogo {
-  width: 113px;
-  height: 50px;
-  color: var(--darkBlue);
+  width: 107px;
+  height: 45px;
+  color: var(--white);
 }
 
 .officialLogoMobile {
@@ -45,7 +47,7 @@
   font-weight: 900;
   text-transform: uppercase;
   user-select: none;
-  transition: all 0.1s ease-in;
+  /* transition: all 0.1s ease-in; */
   z-index: 998;
 }
 
@@ -105,15 +107,33 @@
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
-  background-color: var(--darkBlue);
+  background-color: var(--cream);
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1362px) {
+  .header {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .header {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .header {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
   .navMenu {
     position: fixed;
-    left: -100%;
-    top: 0;
+    left: -120%;
+    top: -20px;
     flex-direction: column;
     gap: 3rem;
     justify-content: space-between;
@@ -192,15 +212,15 @@
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
+  /* .logo {
     font-size: 3rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 568px) {
   .header {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .logo {

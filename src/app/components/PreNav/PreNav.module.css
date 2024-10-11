@@ -7,10 +7,9 @@
   font-family: var(--roboto);
   color: var(--white);
   padding: 1rem;
+  border-radius: 8px;
 }
 
 .code {
-    font-weight: 600;
-    /* margin-left: .5rem; */
-    /* display: inline-block; */
+  font-weight: 600;
 }
