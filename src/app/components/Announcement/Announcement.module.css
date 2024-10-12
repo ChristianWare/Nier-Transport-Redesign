@@ -75,3 +75,21 @@
     margin-right: auto;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .content {
+    grid-gap: 2rem;
+  }
+  
+  .imgContainer {
+    border: 5px solid var(--red2);
+    border-radius: 15px;
+  }
+
+  .imgContainer::after,
+  .imgContainer::before {
+    width: 0%;
+    height: 0%;
+  }
+
+}
