@@ -8,13 +8,13 @@
 .content {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 610px;
   margin-top: 1rem;
 }
 
 .video {
   width: 100%;
-  height: 80vh;
+  height: 610px;
   object-fit: cover;
   border-radius: 10px;
   position: absolute;
@@ -68,7 +68,6 @@
   z-index: 3;
 }
 
-
 @media screen and (max-width: 1068px) {
   .contentChildren {
     align-items: center;
@@ -78,6 +77,17 @@
   .heading,
   .heading2 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    height: 85vh;
+    margin-top: 1rem;
+  }
+
+  .video {
+    height: 100%;
   }
 }
 
