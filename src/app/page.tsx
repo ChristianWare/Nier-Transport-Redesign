@@ -14,6 +14,7 @@ import { homePageFaqs } from "./lib/data";
 import IndivServiceSection from "./components/IndivServiceSection/IndivServiceSection";
 import Nav from "./components/Nav/Nav";
 import styles from "./page.module.css";
+import Announcement from "./components/Announcement/Announcement";
 
 export default function Home() {
   const fs = require("fs");
@@ -45,6 +46,7 @@ export default function Home() {
         <Nav />
       </div>
       <Hero />
+      <Announcement />
       <AboutUsSection />
       <ServicesSection />
       <IndivServiceSection />
