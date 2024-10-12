@@ -3,6 +3,8 @@ import Blog from "../../../public/images/blog3.png";
 import BlogSection from "../components/BlogSection/BlogSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCTA from "../components/FinalCTA/FinalCTA";
+import styles from "../page.module.css";
+import Nav from "../components/Nav/Nav";
 
 const BlogPage = () => {
   const fs = require("fs");
@@ -23,11 +25,15 @@ const BlogPage = () => {
   });
 
   return (
-    <main>
+    <main className={styles.main}>
+      <div className={styles.navContainer}>
+        <Nav />
+      </div>{" "}
       <PageIntro
         title='Our Blog'
         heading='Nier Transportation Insights'
         src={Blog}
+        videoSrc='/video/blog.mp4'
       />
       <BlogSection blogData={blogs} />
       <ContactSection />

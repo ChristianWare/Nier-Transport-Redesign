@@ -17,16 +17,16 @@ import History from "../components/History/History";
 import FleetInfo from "../components/FleetInfo/FleetInfo";
 import Usp from "../components/Usp/Usp";
 import { aboutPageFaqs } from "@/app/lib/data";
+import styles from '../page.module.css'
+import Nav from "../components/Nav/Nav";
 
 const AboutPage = () => {
   const fs = require("fs");
   const path = require("path");
   const matter = require("gray-matter");
 
-  // Determine the correct path to the 'blogs' directory
   const blogsDirectory = path.join(process.cwd(), "blogs");
 
-  // Use readdirSync to list files in the 'blogs' directory
   const files = fs.readdirSync(blogsDirectory);
 
   const blogs = files.map((filename: any) => {
@@ -42,11 +42,15 @@ const AboutPage = () => {
     };
   });
   return (
-    <main>
+    <main className={styles.main}>
+      <div className={styles.navContainer}>
+        <Nav />
+      </div>
       <PageIntro
         title='About Us'
-        heading='Learn about Nier Transportation'
+        heading='Learn all about us'
         src={Img}
+        videoSrc='/video/about.mp4'
       />
       <CompanyOverview />
       <AdditionalInfo

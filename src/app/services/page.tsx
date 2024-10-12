@@ -11,6 +11,8 @@ import AdditionalInfo from "../components/AdditionalInfo/AdditionalInfo";
 import { servicesPageAdditionalInfo } from "@/app/lib/data";
 import Img1 from "../../../public/images/Hero2.png";
 import ServicesSEO from "../components/ServicesSEO/ServicesSEO";
+import Nav from "../components/Nav/Nav";
+import styles from "../page.module.css";
 
 const ServicesPage = () => {
   const fs = require("fs");
@@ -36,8 +38,16 @@ const ServicesPage = () => {
     };
   });
   return (
-    <main>
-      <PageIntro title='Our Services' heading='What we offer' src={Fleet} />
+    <main className={styles.main}>
+      <div className={styles.navContainer}>
+        <Nav />
+      </div>{" "}
+      <PageIntro
+        title='Our Services'
+        heading='What we offer'
+        src={Fleet}
+        videoSrc='/video/services.mp4'
+      />
       <IndivServiceSection />
       <Options />
       {/* <AdditionalInfo

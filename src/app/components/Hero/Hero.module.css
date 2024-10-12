@@ -2,7 +2,6 @@
   margin-top: -2rem;
   margin-bottom: 8rem;
   position: relative;
-  /* background-color: var(--darkBlue); */
 }
 
 .content {
@@ -20,7 +19,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Set lower z-index for the video */
+  z-index: 1;
 }
 
 .imgOverlay {
@@ -32,7 +31,7 @@
   left: 0;
   border-radius: 10px;
   height: 100%;
-  z-index: 2; /* Set higher z-index for overlay */
+  z-index: 2; 
 }
 
 .contentChildren {
@@ -40,7 +39,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  /* padding-left: 2rem; */
   padding: 2rem;
   padding-top: 5rem;
   z-index: 3;
@@ -64,7 +62,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  /* margin-bottom: 2rem; */
   z-index: 3;
 }
 
@@ -107,10 +104,6 @@
 @media screen and (max-width: 568px) {
   .contentChildren {
     gap: 1rem;
-  }
-
-  .heading2 {
-    display: none;
   }
 
   .btnContainer {

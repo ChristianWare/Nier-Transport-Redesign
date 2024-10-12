@@ -3,3 +3,46 @@
   border: 3px solid var(--border);
   margin-bottom: 8rem;
 }
+
+.main {
+  margin-top: -13.5rem;
+}
+
+.navContainer {
+  position: relative;
+  width: 100%;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1068px) {
+  .main {
+    margin-top: -12.1rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .main {
+    margin-top: -10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-top: -10.1rem;
+  }
+  .navContainer {
+    top: 85px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    margin-top: -8.5rem;
+  }
+
+  .navContainer {
+    top: 65px;
+  }
+}

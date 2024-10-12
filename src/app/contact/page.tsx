@@ -8,6 +8,7 @@ import BlogSection from "../components/BlogSection/BlogSection";
 import FaqSection from "../components/Faqs/FaqSection";
 import styles from "./Contactpage.module.css";
 import { homePageFaqs } from "../lib/data";
+import Nav from "../components/Nav/Nav";
 
 const ContactPage = () => {
   const fs = require("fs");
@@ -27,13 +28,16 @@ const ContactPage = () => {
     };
   });
   return (
-    <main>
+    <main className={styles.main}>
+      <div className={styles.navContainer}>
+        <Nav />
+      </div>{" "}
       <PageIntro
         title='Contact Us'
         heading='Reach Out any time'
         src={Contact2}
+        videoSrc='/video/contact.mp4'
       />
-
       <ContactSection />
       <LayoutWrapper>
         <ContentPadding>
