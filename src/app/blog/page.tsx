@@ -33,7 +33,7 @@ const BlogPage = () => {
         title='Our Blog'
         heading='Nier Transportation Insights'
         src={Blog}
-        videoSrc='/video/blog.mp4'
+        videoSrc='/video/hero.mp4'
       />
       <BlogSection blogData={blogs} />
       <ContactSection />

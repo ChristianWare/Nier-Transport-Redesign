@@ -9,7 +9,6 @@ import ContactSection from "../components/ContactSection/ContactSection";
 import FinalCTA from "../components/FinalCTA/FinalCTA";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import Commitment from "../components/Commitment/Commitment";
-import FleetSection from "../components/FleetSection/FleetSection";
 import AdditionalInfo from "../components/AdditionalInfo/AdditionalInfo";
 import { aboutPageAdditionalInfo } from "@/app/lib/data";
 import Img1 from "../../../public/images/Hero5.png";
@@ -17,7 +16,7 @@ import History from "../components/History/History";
 import FleetInfo from "../components/FleetInfo/FleetInfo";
 import Usp from "../components/Usp/Usp";
 import { aboutPageFaqs } from "@/app/lib/data";
-import styles from '../page.module.css'
+import styles from "../page.module.css";
 import Nav from "../components/Nav/Nav";
 
 const AboutPage = () => {
@@ -50,7 +49,7 @@ const AboutPage = () => {
         title='About Us'
         heading='Learn all about us'
         src={Img}
-        videoSrc='/video/about.mp4'
+        videoSrc='/video/heroii.mp4'
       />
       <CompanyOverview />
       <AdditionalInfo

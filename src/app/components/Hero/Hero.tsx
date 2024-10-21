@@ -11,7 +11,7 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <video preload='auto' autoPlay muted loop className={styles.video}>
-              <source src='./video/hero.mp4' />
+              <source src='./video/heroiii.mp4' />
             </video>
             <div className={styles.imgOverlay}></div>
             <div className={styles.contentChildren}>
