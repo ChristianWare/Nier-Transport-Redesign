@@ -26,11 +26,11 @@ const FleetInfo = () => {
             <h2 className={styles.heading}>
               Explore the Nier Transportation Fleet
             </h2>
-            <p className={styles.copy}>
+            {/* <p className={styles.copy}>
               Having a direct booking website that facilitates direct
               communication offers several benefits for vacation rental property
               owners:
-            </p>
+            </p> */}
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (
