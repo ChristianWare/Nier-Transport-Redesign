@@ -1,7 +1,6 @@
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
-import Nav from "../Nav/Nav";
 import ContentPadding from "../ContentPadding/ContentPadding";
 
 const Hero = () => {
