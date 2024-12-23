@@ -16,31 +16,15 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 1068px) {
-  .main {
-    margin-top: -12.1rem;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .main {
-    margin-top: -10rem;
-  }
-}
 
 @media screen and (max-width: 768px) {
-  .main {
-    margin-top: -10.1rem;
-  }
+
   .navContainer {
     top: 85px;
   }
 }
 
 @media screen and (max-width: 568px) {
-  .main {
-    margin-top: -8.5rem;
-  }
 
   .navContainer {
     top: 65px;
