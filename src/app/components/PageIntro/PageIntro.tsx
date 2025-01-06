@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import  { StaticImageData } from "next/image";
 import styles from "./PageIntro.module.css";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import Button from "../Button/Button";

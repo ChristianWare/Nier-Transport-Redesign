@@ -5,13 +5,13 @@ import styles from "./LayoutWrapper.module.css";
 
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <motion.div
+    <div
       className={styles.layout}
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      // initial={{ y: -100, opacity: 0 }}
+      // animate={{ y: 0, opacity: 1 }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 export default LayoutWrapper;
