@@ -11,7 +11,7 @@ const Announcement = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h2 className={styles.heading}>2024-2025 Footbal Season</h2>
+              <h2 className={styles.heading}>2025 Spring Training</h2>
               <p className={styles.copy}>
                 Spring training in Arizona is a beloved tradition for baseball
                 fans, offering a chance to see Major League Baseball teams up
