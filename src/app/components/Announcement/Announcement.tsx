@@ -2,7 +2,7 @@ import ContentPadding from "../ContentPadding/ContentPadding";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import styles from "./Announcement.module.css";
 import Image from "next/image";
-import Img1 from "../../../../public/images/announcement.webp";
+import Img1 from "../../../../public/images/announcement.jpg";
 
 const Announcement = () => {
   return (
@@ -13,11 +13,15 @@ const Announcement = () => {
             <div className={styles.left}>
               <h2 className={styles.heading}>2024-2025 Footbal Season</h2>
               <p className={styles.copy}>
-                Exciting times ahead! Join us for the Cardinals football game
-                and make your experience hassle-free by chartering a van.
-                Request your pricing today and enjoy a comfortable ride with
-                friends and family. Don&apos;t miss out on the fun-contact us
-                now to learn more!
+                Spring training in Arizona is a beloved tradition for baseball
+                fans, offering a chance to see Major League Baseball teams up
+                close in a more relaxed and intimate setting. In 2025, the
+                Cactus League season will run from February 20 through March 25,
+                featuring exciting games, sunny skies, and the opportunity to
+                watch your favorite players prepare for the upcoming MLB season.
+                Whether you&apos;re a die-hard fan or just looking for a fun way
+                to enjoy the Arizona spring, spring training is an unforgettable
+                experience for all ages.
               </p>
             </div>
             <div className={styles.right}>
